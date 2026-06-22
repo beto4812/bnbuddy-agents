@@ -1,0 +1,27 @@
+{
+  "slug": "cuanto-ganar-airbnb-estado-mexico-2026",
+  "fetchedAt": "2026-04-08T18:36:15.289Z",
+  "images": {
+    "hero": {
+      "source": "manual",
+      "localFile": "hero.png",
+      "width": 1200,
+      "height": 798,
+      "alt": "Valle de Bravo, Estado de México/ Valle de Bravo, State of Mexico"
+    },
+    "landmark": {
+      "source": "wikimedia",
+      "query": "Metepec",
+      "author": "Thelmadatter",
+      "license": "CC BY-SA 3.0",
+      "pageUrl": "https://commons.wikimedia.org/wiki/File:PanMetepecMX.JPG",
+      "originalWidth": 3872,
+      "originalHeight": 2592,
+      "localFile": "landmark.webp",
+      "width": 1200,
+      "height": 803,
+      "alt": "Panoramic of Villa Metepec taken from the Capilla del Calvario in Metepec, Mexico State",
+      "fileTitle": "File:PanMetepecMX.JPG"
+    }
+  }
+}

@@ -1,0 +1,1558 @@
+{
+  "generatedAt": "2026-05-02T21:42:19.731Z",
+  "pulledDate": "2026-05-02",
+  "summary": {
+    "total": 19,
+    "pending": 10,
+    "in_progress": 3,
+    "completed": 0,
+    "new_this_run": 19,
+    "en_keywords": 17,
+    "es_keywords": 2,
+    "brand_aligned": 6,
+    "brand_unaligned": 13,
+    "skipped": 6
+  },
+  "keywords": [
+    {
+      "id": "182c181b-bb6a-428e-b672-67f57e578c0c",
+      "keyword": "airbnb customer service",
+      "language": "en",
+      "location": "United States",
+      "search_volume": 40500,
+      "difficulty": 27,
+      "competition_level": "LOW",
+      "cpc": 17.25,
+      "trend_quarterly": 0,
+      "seasonal_monthly": [
+        {
+          "year": 2026,
+          "month": 3,
+          "volume": 40500
+        },
+        {
+          "year": 2026,
+          "month": 2,
+          "volume": 33100
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "volume": 40500
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "volume": 33100
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "volume": 33100
+        },
+        {
+          "year": 2025,
+          "month": 10,
+          "volume": 40500
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "volume": 40500
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "volume": 49500
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "volume": 49500
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "volume": 49500
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "volume": 49500
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "volume": 49500
+        }
+      ],
+      "intent": "informational",
+      "brand_relevance": 0,
+      "brand_pillars": [],
+      "priority_score": 2956.5,
+      "status": "pending",
+      "created_at": "2026-05-02T21:42:19.731Z",
+      "local_scheduled_date": "2026-05-06"
+    },
+    {
+      "id": "71ed597b-a383-4ae7-8086-f7aca9514a77",
+      "keyword": "short term rentals",
+      "language": "en",
+      "location": "United States",
+      "search_volume": 27100,
+      "difficulty": 14,
+      "competition_level": "LOW",
+      "cpc": 3.34,
+      "trend_quarterly": 173,
+      "seasonal_monthly": [
+        {
+          "year": 2026,
+          "month": 3,
+          "volume": 49500
+        },
+        {
+          "year": 2026,
+          "month": 2,
+          "volume": 22200
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "volume": 18100
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "volume": 22200
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "volume": 22200
+        },
+        {
+          "year": 2025,
+          "month": 10,
+          "volume": 27100
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "volume": 27100
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "volume": 27100
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "volume": 22200
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "volume": 22200
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "volume": 33100
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "volume": 33100
+        }
+      ],
+      "intent": "informational",
+      "brand_relevance": 0,
+      "brand_pillars": [],
+      "priority_score": 2330.6,
+      "status": "skipped",
+      "created_at": "2026-05-02T21:42:19.731Z",
+      "local_scheduled_date": "2026-05-03",
+      "claimedAt": "2026-05-06T23:25:50.907Z"
+    },
+    {
+      "id": "1b17cd76-ae6e-492d-9d41-dc618ef55599",
+      "keyword": "airbnb short term rental",
+      "language": "en",
+      "location": "United States",
+      "search_volume": 9900,
+      "difficulty": 32,
+      "competition_level": "LOW",
+      "cpc": 3.06,
+      "trend_quarterly": -77,
+      "seasonal_monthly": [
+        {
+          "year": 2026,
+          "month": 3,
+          "volume": 1900
+        },
+        {
+          "year": 2026,
+          "month": 2,
+          "volume": 1600
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "volume": 8100
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "volume": 9900
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "volume": 12100
+        },
+        {
+          "year": 2025,
+          "month": 10,
+          "volume": 9900
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "volume": 12100
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "volume": 14800
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "volume": 22200
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "volume": 18100
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "volume": 8100
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "volume": 4400
+        }
+      ],
+      "intent": "informational",
+      "brand_relevance": 0,
+      "brand_pillars": [],
+      "priority_score": 673.2,
+      "status": "pending",
+      "created_at": "2026-05-02T21:42:19.731Z",
+      "local_scheduled_date": "2026-05-04"
+    },
+    {
+      "id": "71080d3d-fd43-403c-ab8e-ce6edf7f1c07",
+      "keyword": "long term airbnb",
+      "language": "en",
+      "location": "United States",
+      "search_volume": 8100,
+      "difficulty": 25,
+      "competition_level": "LOW",
+      "cpc": 2.67,
+      "trend_quarterly": 23,
+      "seasonal_monthly": [
+        {
+          "year": 2026,
+          "month": 3,
+          "volume": 8100
+        },
+        {
+          "year": 2026,
+          "month": 2,
+          "volume": 6600
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "volume": 6600
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "volume": 5400
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "volume": 5400
+        },
+        {
+          "year": 2025,
+          "month": 10,
+          "volume": 6600
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "volume": 6600
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "volume": 8100
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "volume": 8100
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "volume": 8100
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "volume": 9900
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "volume": 9900
+        }
+      ],
+      "intent": "informational",
+      "brand_relevance": 0,
+      "brand_pillars": [],
+      "priority_score": 607.5,
+      "status": "skipped",
+      "created_at": "2026-05-02T21:42:19.731Z",
+      "local_scheduled_date": "2026-05-07",
+      "claimedAt": "2026-05-06T23:26:54.256Z"
+    },
+    {
+      "id": "c8c0b176-6c95-4c4d-b600-f1eaab3336cb",
+      "keyword": "airbnb vacation rentals",
+      "language": "en",
+      "location": "United States",
+      "search_volume": 14800,
+      "difficulty": 59,
+      "competition_level": "LOW",
+      "cpc": 2.05,
+      "trend_quarterly": 21,
+      "seasonal_monthly": [
+        {
+          "year": 2026,
+          "month": 3,
+          "volume": 2900
+        },
+        {
+          "year": 2026,
+          "month": 2,
+          "volume": 2400
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "volume": 2400
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "volume": 9900
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "volume": 14800
+        },
+        {
+          "year": 2025,
+          "month": 10,
+          "volume": 18100
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "volume": 22200
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "volume": 18100
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "volume": 33100
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "volume": 27100
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "volume": 12100
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "volume": 5400
+        }
+      ],
+      "intent": "informational",
+      "brand_relevance": 0,
+      "brand_pillars": [],
+      "priority_score": 606.8,
+      "status": "skipped",
+      "created_at": "2026-05-02T21:42:19.729Z",
+      "local_scheduled_date": "2026-05-02",
+      "claimedAt": "2026-05-06T23:26:54.256Z"
+    },
+    {
+      "id": "d01b858a-28a1-47e7-9120-ae3622f9ec46",
+      "keyword": "airbnb monthly rentals",
+      "language": "en",
+      "location": "United States",
+      "search_volume": 8100,
+      "difficulty": 37,
+      "competition_level": "LOW",
+      "cpc": 3.3,
+      "trend_quarterly": 0,
+      "seasonal_monthly": [
+        {
+          "year": 2026,
+          "month": 3,
+          "volume": 6600
+        },
+        {
+          "year": 2026,
+          "month": 2,
+          "volume": 5400
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "volume": 6600
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "volume": 6600
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "volume": 8100
+        },
+        {
+          "year": 2025,
+          "month": 10,
+          "volume": 9900
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "volume": 6600
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "volume": 8100
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "volume": 9900
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "volume": 9900
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "volume": 8100
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "volume": 8100
+        }
+      ],
+      "intent": "informational",
+      "brand_relevance": 0,
+      "brand_pillars": [],
+      "priority_score": 510.3,
+      "status": "pending",
+      "created_at": "2026-05-02T21:42:19.731Z",
+      "local_scheduled_date": "2026-05-17"
+    },
+    {
+      "id": "c72ce9af-2a9d-4dfa-90ff-37c67c010ed6",
+      "keyword": "airbnb long term rentals",
+      "language": "en",
+      "location": "United States",
+      "search_volume": 6600,
+      "difficulty": 36,
+      "competition_level": "LOW",
+      "cpc": 3.04,
+      "trend_quarterly": 22,
+      "seasonal_monthly": [
+        {
+          "year": 2026,
+          "month": 3,
+          "volume": 6600
+        },
+        {
+          "year": 2026,
+          "month": 2,
+          "volume": 5400
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "volume": 5400
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "volume": 4400
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "volume": 4400
+        },
+        {
+          "year": 2025,
+          "month": 10,
+          "volume": 5400
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "volume": 6600
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "volume": 6600
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "volume": 8100
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "volume": 8100
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "volume": 8100
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "volume": 8100
+        }
+      ],
+      "intent": "informational",
+      "brand_relevance": 0,
+      "brand_pillars": [],
+      "priority_score": 422.4,
+      "status": "skipped",
+      "created_at": "2026-05-02T21:42:19.731Z",
+      "local_scheduled_date": "2026-05-05",
+      "claimedAt": "2026-05-06T23:26:54.256Z"
+    },
+    {
+      "id": "e83b16b3-9c15-40ba-8b1f-7188e141f359",
+      "keyword": "airbnb property management",
+      "language": "en",
+      "location": "United States",
+      "search_volume": 3600,
+      "difficulty": 30,
+      "competition_level": "LOW",
+      "cpc": 14.77,
+      "trend_quarterly": 21,
+      "seasonal_monthly": [
+        {
+          "year": 2026,
+          "month": 3,
+          "volume": 2900
+        },
+        {
+          "year": 2026,
+          "month": 2,
+          "volume": 1900
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "volume": 2400
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "volume": 2400
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "volume": 1300
+        },
+        {
+          "year": 2025,
+          "month": 10,
+          "volume": 1900
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "volume": 2900
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "volume": 2900
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "volume": 3600
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "volume": 3600
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "volume": 4400
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "volume": 12100
+        }
+      ],
+      "intent": "informational",
+      "brand_relevance": 1,
+      "brand_pillars": [
+        "management"
+      ],
+      "priority_score": 378,
+      "status": "in-progress",
+      "created_at": "2026-05-02T21:42:19.731Z",
+      "local_scheduled_date": "2026-05-08",
+      "claimedAt": "2026-05-06T23:27:38.851Z"
+    },
+    {
+      "id": "8163e47d-5bf1-4903-a96f-ff245476d103",
+      "keyword": "airbnb host",
+      "language": "en",
+      "location": "United States",
+      "search_volume": 4400,
+      "difficulty": 34,
+      "competition_level": "MEDIUM",
+      "cpc": 4.62,
+      "trend_quarterly": 0,
+      "seasonal_monthly": [
+        {
+          "year": 2026,
+          "month": 3,
+          "volume": 4400
+        },
+        {
+          "year": 2026,
+          "month": 2,
+          "volume": 3600
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "volume": 4400
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "volume": 4400
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "volume": 3600
+        },
+        {
+          "year": 2025,
+          "month": 10,
+          "volume": 4400
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "volume": 4400
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "volume": 5400
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "volume": 5400
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "volume": 5400
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "volume": 6600
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "volume": 5400
+        }
+      ],
+      "intent": "informational",
+      "brand_relevance": 0,
+      "brand_pillars": [],
+      "priority_score": 290.4,
+      "status": "pending",
+      "created_at": "2026-05-02T21:42:19.731Z",
+      "local_scheduled_date": "2026-05-18"
+    },
+    {
+      "id": "d33ba7e3-98c9-4798-be4e-e1ce09340bc2",
+      "keyword": "short term rental loophole",
+      "language": "en",
+      "location": "United States",
+      "search_volume": 1900,
+      "difficulty": 0,
+      "competition_level": "MEDIUM",
+      "cpc": 2.49,
+      "trend_quarterly": 26,
+      "seasonal_monthly": [
+        {
+          "year": 2026,
+          "month": 3,
+          "volume": 2400
+        },
+        {
+          "year": 2026,
+          "month": 2,
+          "volume": 1900
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "volume": 1900
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "volume": 1600
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "volume": 1900
+        },
+        {
+          "year": 2025,
+          "month": 10,
+          "volume": 1900
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "volume": 1900
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "volume": 1600
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "volume": 2400
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "volume": 1900
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "volume": 1600
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "volume": 1000
+        }
+      ],
+      "intent": "informational",
+      "brand_relevance": 0,
+      "brand_pillars": [],
+      "priority_score": 190,
+      "status": "skipped",
+      "created_at": "2026-05-02T21:42:19.731Z",
+      "local_scheduled_date": "2026-05-13",
+      "claimedAt": "2026-05-06T23:27:25.807Z"
+    },
+    {
+      "id": "78dde208-8804-4905-a051-ba983f52b147",
+      "keyword": "vacation rental management",
+      "language": "en",
+      "location": "United States",
+      "search_volume": 3600,
+      "difficulty": 77,
+      "competition_level": "LOW",
+      "cpc": 21.17,
+      "trend_quarterly": -33,
+      "seasonal_monthly": [
+        {
+          "year": 2026,
+          "month": 3,
+          "volume": 2400
+        },
+        {
+          "year": 2026,
+          "month": 2,
+          "volume": 1300
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "volume": 3600
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "volume": 1600
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "volume": 1600
+        },
+        {
+          "year": 2025,
+          "month": 10,
+          "volume": 6600
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "volume": 4400
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "volume": 5400
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "volume": 3600
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "volume": 3600
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "volume": 4400
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "volume": 5400
+        }
+      ],
+      "intent": "informational",
+      "brand_relevance": 1,
+      "brand_pillars": [
+        "management"
+      ],
+      "priority_score": 124.2,
+      "status": "pending",
+      "created_at": "2026-05-02T21:42:19.731Z",
+      "local_scheduled_date": "2026-05-14"
+    },
+    {
+      "id": "ea6b23d6-1ac5-46b5-a4e2-15040f8eb166",
+      "keyword": "short term rental property management",
+      "language": "en",
+      "location": "United States",
+      "search_volume": 1000,
+      "difficulty": 26,
+      "competition_level": "LOW",
+      "cpc": 23.69,
+      "trend_quarterly": -19,
+      "seasonal_monthly": [
+        {
+          "year": 2026,
+          "month": 3,
+          "volume": 1300
+        },
+        {
+          "year": 2026,
+          "month": 2,
+          "volume": 880
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "volume": 1600
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "volume": 590
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "volume": 480
+        },
+        {
+          "year": 2025,
+          "month": 10,
+          "volume": 720
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "volume": 1300
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "volume": 1000
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "volume": 1000
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "volume": 1300
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "volume": 1300
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "volume": 1300
+        }
+      ],
+      "intent": "informational",
+      "brand_relevance": 1,
+      "brand_pillars": [
+        "management"
+      ],
+      "priority_score": 111,
+      "status": "in-progress",
+      "created_at": "2026-05-02T21:42:19.731Z",
+      "local_scheduled_date": "2026-05-12",
+      "claimedAt": "2026-05-06T23:27:38.851Z"
+    },
+    {
+      "id": "cb013933-2e9f-412d-bee0-e56581cfc88b",
+      "keyword": "short term vacation rental",
+      "language": "en",
+      "location": "United States",
+      "search_volume": 1300,
+      "difficulty": 42,
+      "competition_level": "MEDIUM",
+      "cpc": 4.65,
+      "trend_quarterly": 69,
+      "seasonal_monthly": [
+        {
+          "year": 2026,
+          "month": 3,
+          "volume": 1000
+        },
+        {
+          "year": 2026,
+          "month": 2,
+          "volume": 480
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "volume": 590
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "volume": 4400
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "volume": 2900
+        },
+        {
+          "year": 2025,
+          "month": 10,
+          "volume": 590
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "volume": 880
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "volume": 880
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "volume": 720
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "volume": 1600
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "volume": 1000
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "volume": 1000
+        }
+      ],
+      "intent": "informational",
+      "brand_relevance": 0,
+      "brand_pillars": [],
+      "priority_score": 75.4,
+      "status": "skipped",
+      "created_at": "2026-05-02T21:42:19.731Z",
+      "local_scheduled_date": "2026-05-15"
+    },
+    {
+      "id": "0fda72b0-65cf-4083-970f-5894761debaa",
+      "keyword": "short term rental management",
+      "language": "en",
+      "location": "United States",
+      "search_volume": 1300,
+      "difficulty": 77,
+      "competition_level": "LOW",
+      "cpc": 23.5,
+      "trend_quarterly": 69,
+      "seasonal_monthly": [
+        {
+          "year": 2026,
+          "month": 3,
+          "volume": 1000
+        },
+        {
+          "year": 2026,
+          "month": 2,
+          "volume": 720
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "volume": 590
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "volume": 480
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 10,
+          "volume": 4400
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "volume": 1000
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "volume": 880
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "volume": 1000
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "volume": 880
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "volume": 2400
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "volume": 1600
+        }
+      ],
+      "intent": "informational",
+      "brand_relevance": 1,
+      "brand_pillars": [
+        "management"
+      ],
+      "priority_score": 44.85,
+      "status": "in-progress",
+      "created_at": "2026-05-02T21:42:19.731Z",
+      "local_scheduled_date": "2026-05-09",
+      "claimedAt": "2026-05-06T23:27:38.852Z"
+    },
+    {
+      "id": "b52481c9-8588-4465-a304-8f8df539b514",
+      "keyword": "short term rental websites",
+      "language": "en",
+      "location": "United States",
+      "search_volume": 1300,
+      "difficulty": 79,
+      "competition_level": "MEDIUM",
+      "cpc": 6.17,
+      "trend_quarterly": 23,
+      "seasonal_monthly": [
+        {
+          "year": 2026,
+          "month": 3,
+          "volume": 1600
+        },
+        {
+          "year": 2026,
+          "month": 2,
+          "volume": 1000
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "volume": 1300
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "volume": 1300
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "volume": 1300
+        },
+        {
+          "year": 2025,
+          "month": 10,
+          "volume": 1300
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "volume": 1600
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "volume": 1600
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "volume": 1600
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "volume": 1600
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "volume": 1600
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "volume": 1900
+        }
+      ],
+      "intent": "informational",
+      "brand_relevance": 0,
+      "brand_pillars": [],
+      "priority_score": 27.3,
+      "status": "pending",
+      "created_at": "2026-05-02T21:42:19.731Z",
+      "local_scheduled_date": "2026-05-16"
+    },
+    {
+      "id": "1a0dee00-a2a5-41cc-8852-f59b0e3ed79e",
+      "keyword": "cuánto cobra airbnb de comisión",
+      "language": "es",
+      "location": "Mexico",
+      "search_volume": 320,
+      "difficulty": null,
+      "competition_level": null,
+      "cpc": 1.66,
+      "trend_quarterly": null,
+      "seasonal_monthly": [
+        {
+          "year": 2026,
+          "month": 3,
+          "volume": 320
+        },
+        {
+          "year": 2026,
+          "month": 2,
+          "volume": 320
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "volume": 390
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 10,
+          "volume": 210
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "volume": 260
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "volume": 320
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "volume": 320
+        }
+      ],
+      "intent": "service",
+      "brand_relevance": 0,
+      "brand_pillars": [],
+      "priority_score": 19.2,
+      "status": "pending",
+      "created_at": "2026-05-02T21:42:19.731Z",
+      "local_scheduled_date": "2026-05-20"
+    },
+    {
+      "id": "e7cd3bfd-6f2f-47dd-a016-72f479882268",
+      "keyword": "rental property management software",
+      "language": "en",
+      "location": "United States",
+      "search_volume": 1600,
+      "difficulty": 93,
+      "competition_level": "LOW",
+      "cpc": 68.14,
+      "trend_quarterly": 90,
+      "seasonal_monthly": [
+        {
+          "year": 2026,
+          "month": 3,
+          "volume": 1900
+        },
+        {
+          "year": 2026,
+          "month": 2,
+          "volume": 720
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "volume": 1000
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "volume": 880
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "volume": 880
+        },
+        {
+          "year": 2025,
+          "month": 10,
+          "volume": 1000
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "volume": 3600
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "volume": 1900
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "volume": 1300
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "volume": 1600
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "volume": 1600
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "volume": 2400
+        }
+      ],
+      "intent": "commercial",
+      "brand_relevance": 1,
+      "brand_pillars": [
+        "management"
+      ],
+      "priority_score": 16.8,
+      "status": "pending",
+      "created_at": "2026-05-02T21:42:19.731Z",
+      "local_scheduled_date": "2026-05-11"
+    },
+    {
+      "id": "b36152e4-fcb9-41ce-8907-fe87099c6cae",
+      "keyword": "short term vacation rental property management",
+      "language": "en",
+      "location": "United States",
+      "search_volume": 30,
+      "difficulty": 27,
+      "competition_level": "LOW",
+      "cpc": null,
+      "trend_quarterly": 200,
+      "seasonal_monthly": [
+        {
+          "year": 2026,
+          "month": 3,
+          "volume": 30
+        },
+        {
+          "year": 2026,
+          "month": 2,
+          "volume": 10
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "volume": 20
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 10,
+          "volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "volume": 10
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "volume": 90
+        }
+      ],
+      "intent": "informational",
+      "brand_relevance": 1,
+      "brand_pillars": [
+        "management"
+      ],
+      "priority_score": 3.29,
+      "status": "pending",
+      "created_at": "2026-05-02T21:42:19.731Z",
+      "local_scheduled_date": "2026-05-10"
+    },
+    {
+      "id": "fe727f2e-5dfb-4431-8f5b-15de121419a8",
+      "keyword": "cómo poner mi casa en airbnb",
+      "language": "es",
+      "location": "Mexico",
+      "search_volume": 50,
+      "difficulty": null,
+      "competition_level": null,
+      "cpc": 1.52,
+      "trend_quarterly": null,
+      "seasonal_monthly": [
+        {
+          "year": 2026,
+          "month": 3,
+          "volume": 30
+        },
+        {
+          "year": 2026,
+          "month": 2,
+          "volume": 30
+        },
+        {
+          "year": 2026,
+          "month": 1,
+          "volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 12,
+          "volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 11,
+          "volume": 50
+        },
+        {
+          "year": 2025,
+          "month": 10,
+          "volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 9,
+          "volume": 90
+        },
+        {
+          "year": 2025,
+          "month": 8,
+          "volume": 70
+        },
+        {
+          "year": 2025,
+          "month": 7,
+          "volume": 40
+        },
+        {
+          "year": 2025,
+          "month": 6,
+          "volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 5,
+          "volume": 30
+        },
+        {
+          "year": 2025,
+          "month": 4,
+          "volume": 30
+        }
+      ],
+      "intent": "informational",
+      "brand_relevance": 0,
+      "brand_pillars": [],
+      "priority_score": 3,
+      "status": "pending",
+      "created_at": "2026-05-02T21:42:19.731Z",
+      "local_scheduled_date": "2026-05-19"
+    }
+  ]
+}

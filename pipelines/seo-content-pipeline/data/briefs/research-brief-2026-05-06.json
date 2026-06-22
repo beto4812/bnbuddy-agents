@@ -1,0 +1,189 @@
+{
+  "generatedAt": "2026-05-06T23:27:38.854Z",
+  "weekOf": "2026-05-04",
+  "agentVersion": "4.0",
+  "existingPages": [
+    "malinalco",
+    "metepec",
+    "toluca",
+    "valle-de-bravo"
+  ],
+  "existingBlogPosts": [
+    "about-us",
+    "airbnb-alternative-platforms-for-hosts",
+    "airbnb-house-manual",
+    "airbnb-management",
+    "airbnb-welcome-book-template",
+    "create-your-ai-assistant-for-airbnb-in-3-easy-steps",
+    "privacy",
+    "terms",
+    "the-ultimate-digital-welcome-guide-for-your-vacation-rental",
+    "acerca-de",
+    "administracion-renta-vacacional",
+    "blog-es",
+    "como-invertir-en-airbnb",
+    "cuanto-ganar-airbnb-estado-mexico-2026",
+    "guia-como-iniciar-en-airbnb",
+    "guias-digitales",
+    "home-es",
+    "optimizar-anuncio-alquiler-vacacional",
+    "planes"
+  ],
+  "keywordQueue": {
+    "totalPending": 10,
+    "selectedThisRun": [
+      "airbnb property management",
+      "short term rental property management",
+      "short term rental management"
+    ],
+    "topPrioritySkipped": "none"
+  },
+  "rankingInsights": {
+    "dataSource": "ranking-comparison.json",
+    "dataDate": "2026-04-30T15:34:22.478Z",
+    "decliningPages": [
+      {
+        "page": "/vacation-rental-property-management/",
+        "position": 50.8,
+        "positionDelta": -14.1,
+        "trendDelta": -19.6
+      },
+      {
+        "page": "/es/administracion-renta-vacacional-valle-de-bravo/",
+        "position": 22.2,
+        "positionDelta": -7.4,
+        "trendDelta": null
+      }
+    ],
+    "lowHangingFruit": [
+      {
+        "page": "/vacation-rental-website-builder/",
+        "position": 29.7,
+        "impressions": 198
+      },
+      {
+        "page": "/es/como-invertir-en-airbnb/",
+        "position": 25.4,
+        "impressions": 36
+      },
+      {
+        "page": "/es/administracion-renta-vacacional-valle-de-bravo/",
+        "position": 22.2,
+        "impressions": 27
+      }
+    ],
+    "ctrGaps": [
+      {
+        "page": "/es/cuanto-ganar-airbnb-estado-mexico-2026/",
+        "position": 5.7,
+        "ctr": 0,
+        "action": "title/meta refresh"
+      },
+      {
+        "page": "/blog/",
+        "position": 3.6,
+        "ctr": 0,
+        "action": "title/meta refresh"
+      },
+      {
+        "page": "/about-us/",
+        "position": 2.2,
+        "ctr": 0,
+        "action": "title/meta refresh"
+      },
+      {
+        "page": "/airbnb-management/",
+        "position": 7.9,
+        "ctr": 0,
+        "action": "title/meta refresh"
+      },
+      {
+        "page": "/es/home-es/",
+        "position": 4.1,
+        "ctr": 0,
+        "action": "title/meta refresh"
+      },
+      {
+        "page": "/start/",
+        "position": 2.6,
+        "ctr": 0,
+        "action": "title/meta refresh"
+      },
+      {
+        "page": "/airbnb-alternative-platforms-for-hosts/",
+        "position": 7.7,
+        "ctr": 0,
+        "action": "title/meta refresh"
+      },
+      {
+        "page": "/privacy/",
+        "position": 2.3,
+        "ctr": 0,
+        "action": "title/meta refresh"
+      },
+      {
+        "page": "/terms/",
+        "position": 4,
+        "ctr": 0,
+        "action": "title/meta refresh"
+      },
+      {
+        "page": "/es/blog-es/",
+        "position": 2.2,
+        "ctr": 0,
+        "action": "title/meta refresh"
+      }
+    ]
+  },
+  "contentPlan": [
+    {
+      "run": 1,
+      "type": "blog-post",
+      "slug": "airbnb-property-management",
+      "keyword": "airbnb property management",
+      "search_volume": 3600,
+      "difficulty": 30,
+      "intent": "informational",
+      "priority_score": 378,
+      "trend_quarterly": 21,
+      "language": "en",
+      "brand_relevance": 1,
+      "rationale": "Priority 0 — Product-aligned (brand_relevance: 1)"
+    },
+    {
+      "run": 2,
+      "type": "blog-post",
+      "slug": "short-term-rental-property-management",
+      "keyword": "short term rental property management",
+      "search_volume": 1000,
+      "difficulty": 26,
+      "intent": "informational",
+      "priority_score": 111,
+      "trend_quarterly": -19,
+      "language": "en",
+      "brand_relevance": 1,
+      "rationale": "Priority 0 — Product-aligned (brand_relevance: 1)"
+    },
+    {
+      "run": 3,
+      "type": "blog-post",
+      "slug": "short-term-rental-management",
+      "keyword": "short term rental management",
+      "search_volume": 1300,
+      "difficulty": 77,
+      "intent": "informational",
+      "priority_score": 44.85,
+      "trend_quarterly": 69,
+      "language": "en",
+      "brand_relevance": 1,
+      "rationale": "Priority 2 — Trending (+69% QoQ)"
+    }
+  ],
+  "dataQuality": {
+    "keywordQueueAge": "fresh (< 7 days)",
+    "rankingDataAge": "fresh (< 7 days)",
+    "keywordsPending": 10,
+    "keywordsMarkedInProgress": 3,
+    "notes": []
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BnBuddy SEO Research Brief",
+  "type": "object",
+  "required": [
+    "generatedAt",
+    "weekOf",
+    "agentVersion",
+    "existingPages",
+    "existingBlogPosts",
+    "contentPlan",
+    "dataQuality"
+  ],
+  "properties": {
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "weekOf": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "agentVersion": { "type": "string" },
+    "confidence": { "type": "string", "enum": ["high", "medium", "low"] },
+    "confidenceReason": { "type": "string" },
+    "existingPages": { "type": "array", "items": { "type": "string" } },
+    "existingBlogPosts": { "type": "array", "items": { "type": "string" } },
+    "keywordQueue": {
+      "type": "object",
+      "properties": {
+        "totalPending": { "type": "integer" },
+        "selectedThisRun": { "type": "array", "items": { "type": "string" } },
+        "topPrioritySkipped": { "type": "string" }
+      }
+    },
+    "rankingInsights": {
+      "type": "object",
+      "properties": {
+        "dataSource": { "type": "string" },
+        "dataDate": { "type": "string" },
+        "decliningPages": { "type": "array" },
+        "lowHangingFruit": { "type": "array" },
+        "ctrGaps": { "type": "array" }
+      }
+    },
+    "blogTopics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["slug", "title", "targetKeyword", "linkedGeoPages"],
+        "properties": {
+          "slug": { "type": "string" },
+          "title": { "type": "string" },
+          "targetKeyword": { "type": "string" },
+          "linkedGeoPages": { "type": "array", "items": { "type": "string" } },
+          "rationale": { "type": "string" }
+        }
+      }
+    },
+    "competitorUpdates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["domain", "status"],
+        "properties": {
+          "domain": { "type": "string" },
+          "status": { "type": "string" },
+          "newPages": { "type": "array", "items": { "type": "string" } },
+          "changes": { "type": "string" },
+          "checkedAt": { "type": "string" }
+        }
+      }
+    },
+    "contentPlan": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["run", "type", "ref", "rationale"],
+        "properties": {
+          "run": { "type": "integer", "minimum": 1, "maximum": 3 },
+          "type": { "type": "string", "enum": ["blog-post", "comparison-post"] },
+          "ref": { "type": "string" },
+          "rationale": { "type": "string" }
+        }
+      }
+    },
+    "dataQuality": {
+      "type": "object",
+      "properties": {
+        "searchesUsed": { "type": "integer" },
+        "searchBudget": { "type": "integer" },
+        "competitorSitesUnreachable": { "type": "array", "items": { "type": "string" } },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

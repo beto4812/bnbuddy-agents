@@ -1,0 +1,38 @@
+{
+  "generatedAt": "2026-06-22T16:36:40.437Z",
+  "dryRun": true,
+  "subreddits": [
+    {
+      "name": "airbnb_hosts",
+      "rssUrl": "https://www.reddit.com/r/airbnb_hosts/top/.rss?t=week",
+      "postsScanned": 25,
+      "topPosts": [
+        {
+          "title": "Would you refund cleaning fee?",
+          "url": "https://www.reddit.com/r/airbnb_hosts/comments/1uas5sv/would_you_refund_cleaning_fee/",
+          "date": "2026-06-20"
+        },
+        {
+          "title": "What a week 😵‍💫 the last guests stole a boat this one booked for six adults, which is our max and showed up with 15 people 🤦🏼‍♀️",
+          "url": "https://www.reddit.com/r/airbnb_hosts/comments/1u89jit/what_a_week_the_last_guests_stole_a_boat_this_one/",
+          "date": "2026-06-17"
+        },
+        {
+          "title": "So this happened",
+          "url": "https://www.reddit.com/r/airbnb_hosts/comments/1u9msrr/so_this_happened/",
+          "date": "2026-06-19"
+        },
+        {
+          "title": "Guest popped in early while I was cleaning",
+          "url": "https://www.reddit.com/r/airbnb_hosts/comments/1ubdv2o/guest_popped_in_early_while_i_was_cleaning/",
+          "date": "2026-06-21"
+        },
+        {
+          "title": "Found Camera",
+          "url": "https://www.reddit.com/r/airbnb_hosts/comments/1ub7lw5/found_camera/",
+          "date": "2026-06-20"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "generatedAt": "2026-05-02T21:35:35.652Z",
+  "weekOf": "2026-04-27",
+  "agentVersion": "4.0",
+  "existingPages": [
+    "malinalco",
+    "metepec",
+    "toluca",
+    "valle-de-bravo"
+  ],
+  "existingBlogPosts": [
+    "about-us",
+    "airbnb-alternative-platforms-for-hosts",
+    "airbnb-house-manual",
+    "airbnb-management",
+    "airbnb-welcome-book-template",
+    "create-your-ai-assistant-for-airbnb-in-3-easy-steps",
+    "privacy",
+    "terms",
+    "the-ultimate-digital-welcome-guide-for-your-vacation-rental",
+    "acerca-de",
+    "administracion-renta-vacacional",
+    "blog-es",
+    "como-invertir-en-airbnb",
+    "cuanto-ganar-airbnb-estado-mexico-2026",
+    "guia-como-iniciar-en-airbnb",
+    "guias-digitales",
+    "home-es",
+    "optimizar-anuncio-alquiler-vacacional",
+    "planes"
+  ],
+  "keywordQueue": {
+    "totalPending": 83,
+    "selectedThisRun": [
+      "southern vacation rentals",
+      "long term airbnb",
+      "airbnb vacation rentals"
+    ],
+    "topPrioritySkipped": "none"
+  },
+  "rankingInsights": {
+    "dataSource": "ranking-comparison.json",
+    "dataDate": "2026-04-30T15:34:22.478Z",
+    "decliningPages": [
+      {
+        "page": "/vacation-rental-property-management/",
+        "position": 50.8,
+        "positionDelta": -14.1,
+        "trendDelta": -19.6
+      },
+      {
+        "page": "/es/administracion-renta-vacacional-valle-de-bravo/",
+        "position": 22.2,
+        "positionDelta": -7.4,
+        "trendDelta": null
+      }
+    ],
+    "lowHangingFruit": [
+      {
+        "page": "/vacation-rental-website-builder/",
+        "position": 29.7,
+        "impressions": 198
+      },
+      {
+        "page": "/es/como-invertir-en-airbnb/",
+        "position": 25.4,
+        "impressions": 36
+      },
+      {
+        "page": "/es/administracion-renta-vacacional-valle-de-bravo/",
+        "position": 22.2,
+        "impressions": 27
+      }
+    ],
+    "ctrGaps": [
+      {
+        "page": "/es/cuanto-ganar-airbnb-estado-mexico-2026/",
+        "position": 5.7,
+        "ctr": 0,
+        "action": "title/meta refresh"
+      },
+      {
+        "page": "/blog/",
+        "position": 3.6,
+        "ctr": 0,
+        "action": "title/meta refresh"
+      },
+      {
+        "page": "/about-us/",
+        "position": 2.2,
+        "ctr": 0,
+        "action": "title/meta refresh"
+      },
+      {
+        "page": "/airbnb-management/",
+        "position": 7.9,
+        "ctr": 0,
+        "action": "title/meta refresh"
+      },
+      {
+        "page": "/es/home-es/",
+        "position": 4.1,
+        "ctr": 0,
+        "action": "title/meta refresh"
+      },
+      {
+        "page": "/start/",
+        "position": 2.6,
+        "ctr": 0,
+        "action": "title/meta refresh"
+      },
+      {
+        "page": "/airbnb-alternative-platforms-for-hosts/",
+        "position": 7.7,
+        "ctr": 0,
+        "action": "title/meta refresh"
+      },
+      {
+        "page": "/privacy/",
+        "position": 2.3,
+        "ctr": 0,
+        "action": "title/meta refresh"
+      },
+      {
+        "page": "/terms/",
+        "position": 4,
+        "ctr": 0,
+        "action": "title/meta refresh"
+      },
+      {
+        "page": "/es/blog-es/",
+        "position": 2.2,
+        "ctr": 0,
+        "action": "title/meta refresh"
+      }
+    ]
+  },
+  "contentPlan": [
+    {
+      "run": 1,
+      "type": "blog-post",
+      "slug": "southern-vacation-rentals",
+      "keyword": "southern vacation rentals",
+      "search_volume": 8100,
+      "difficulty": 22,
+      "intent": "informational",
+      "priority_score": 631.8,
+      "trend_quarterly": 49,
+      "language": "en",
+      "brand_relevance": 0,
+      "rationale": "Priority 2 — Trending (+49% QoQ)"
+    },
+    {
+      "run": 2,
+      "type": "blog-post",
+      "slug": "long-term-airbnb",
+      "keyword": "long term airbnb",
+      "search_volume": 8100,
+      "difficulty": 25,
+      "intent": "informational",
+      "priority_score": 607.5,
+      "trend_quarterly": 23,
+      "language": "en",
+      "brand_relevance": 0,
+      "rationale": "Priority 2 — Trending (+23% QoQ)"
+    },
+    {
+      "run": 3,
+      "type": "blog-post",
+      "slug": "airbnb-vacation-rentals",
+      "keyword": "airbnb vacation rentals",
+      "search_volume": 14800,
+      "difficulty": 59,
+      "intent": "informational",
+      "priority_score": 606.8,
+      "trend_quarterly": 21,
+      "language": "en",
+      "brand_relevance": 0,
+      "rationale": "Priority 2 — Trending (+21% QoQ)"
+    }
+  ],
+  "dataQuality": {
+    "keywordQueueAge": "fresh (< 7 days)",
+    "rankingDataAge": "fresh (< 7 days)",
+    "keywordsPending": 83,
+    "keywordsMarkedInProgress": 8,
+    "notes": []
+  }
+}

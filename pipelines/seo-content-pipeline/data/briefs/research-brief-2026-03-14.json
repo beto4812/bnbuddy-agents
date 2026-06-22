@@ -1,0 +1,187 @@
+{
+  "generatedAt": "2026-03-14T17:38:00Z",
+  "weekOf": "2026-03-16",
+  "agentVersion": "2.0",
+  "confidence": "high",
+  "existingPages": ["toluca"],
+  "existingBlogPosts": ["como-invertir-en-airbnb", "optimizar-anuncio-alquiler-vacacional", "guia-como-iniciar-en-airbnb"],
+  "targetCities": [
+    {
+      "slug": "valle-de-bravo",
+      "cityName": "Valle de Bravo",
+      "state": "Estado de México",
+      "qualified": true,
+      "urgent": true,
+      "research": {
+        "tourismProfile": "Pueblo Mágico. Top tourism destination in Estado de México. Lake town, parapente capital of Mexico, weekend escape from CDMX. 1,477 active Airbnb listings. Strong seasonality with December and Semana Santa as peak months.",
+        "businessDemand": "Limited business travel. Primarily tourism and weekend getaway destination.",
+        "airbnbSupply": "1,477 active listings. ADR MXN $2,642/night ($154 USD). 30% median occupancy. Annual revenue MXN $299K ($17K USD). Top 25% revenue, top 8% ADR in Mexico. Strong seasonality.",
+        "events": "Semana Santa 2026 (March 29 – April 5): MASSIVE tourism event, school vacations March 30 – April 10. Festival Vallesano (March): cultural, sports, gastronomy events. Santa Cruz festival (May 3).",
+        "competitionLevel": "low",
+        "competitorDomains": ["bnbhomemx.com (lists VdB as market, no dedicated geo page)"],
+        "notes": "Largest Airbnb market in EdoMex by far. bnbhomemx.com lists VdB as a market they serve but has no city-specific landing page. No other competitor has a dedicated 'administracion-airbnb-valle-de-bravo' page."
+      },
+      "keywords": {
+        "service": [
+          "administración airbnb valle de bravo",
+          "administración de renta vacacional valle de bravo",
+          "co-anfitrión airbnb valle de bravo",
+          "quién administra airbnb en valle de bravo"
+        ],
+        "informational": [
+          "es rentable airbnb en valle de bravo",
+          "cuánto se gana con airbnb en valle de bravo",
+          "mejores zonas airbnb valle de bravo",
+          "cómo rentar mi departamento en valle de bravo"
+        ]
+      }
+    },
+    {
+      "slug": "metepec",
+      "cityName": "Metepec",
+      "state": "Estado de México",
+      "qualified": true,
+      "urgent": false,
+      "research": {
+        "tourismProfile": "Pueblo Mágico. Known for artisan pottery (Árbol de la Vida), colonial architecture, gastronomy. Adjacent to Toluca. Major cultural events: Quimera Festival (October), Feria de San Isidro (May 1-17, 2026).",
+        "businessDemand": "Strong — adjacent to Toluca (state capital), near industrial corridors. University presence (UAEM, Tec de Monterrey). Government hub proximity.",
+        "airbnbSupply": "Smaller market than Valle de Bravo. Primarily serves business travelers and Toluca overflow. Growing short-term rental presence.",
+        "events": "Feria de San Isidro Metepec 2026 (May 1-17): Major fair with big-name artists (Julión Álvarez, Carín León, Grupo Firme, Yuridia). Thousands of visitors. Within 60-day window.",
+        "competitionLevel": "low",
+        "competitorDomains": [],
+        "notes": "No competitor has a dedicated geo page for Metepec. BnBuddy already operates in this market (launching phase per context). Natural extension from Toluca page."
+      },
+      "keywords": {
+        "service": [
+          "administración airbnb metepec",
+          "administración de renta vacacional metepec",
+          "co-anfitrión airbnb metepec",
+          "quién administra airbnb en metepec"
+        ],
+        "informational": [
+          "es rentable airbnb en metepec",
+          "cuánto se gana con airbnb en metepec",
+          "mejores zonas airbnb metepec",
+          "cómo rentar mi departamento en metepec"
+        ]
+      }
+    },
+    {
+      "slug": "malinalco",
+      "cityName": "Malinalco",
+      "state": "Estado de México",
+      "qualified": true,
+      "urgent": true,
+      "research": {
+        "tourismProfile": "Pueblo Mágico. Archaeological zone (Cuauhtinchán), Augustinian ex-convent, Museo Vivo Los Bichos. Known for spiritual tourism, temazcal, mezcal, artisan woodcarving. Growing weekend tourism from CDMX and Toluca.",
+        "businessDemand": "Minimal. Primarily tourism-driven.",
+        "airbnbSupply": "Moderate market. Appears frequently in Airbnb results alongside Ixtapan de la Sal. Properties include boutique cabins, houses with pools. Growing supply.",
+        "events": "Semana Santa / La Judea (March 29 – April 5): Famous 200+ year tradition. Inhabitants dress as Roman soldiers, unique cultural spectacle. Major tourism draw. Festival Cultural de Malinalco (April): 60+ cultural events. Both within 60-day window.",
+        "competitionLevel": "low",
+        "competitorDomains": [],
+        "notes": "Zero competitor geo pages found for Malinalco. Strong tourism brand as Pueblo Mágico with unique Semana Santa tradition. Opportunity to be first mover."
+      },
+      "keywords": {
+        "service": [
+          "administración airbnb malinalco",
+          "administración de renta vacacional malinalco",
+          "co-anfitrión airbnb malinalco",
+          "quién administra airbnb en malinalco"
+        ],
+        "informational": [
+          "es rentable airbnb en malinalco",
+          "cuánto se gana con airbnb en malinalco",
+          "mejores zonas airbnb malinalco",
+          "cómo rentar mi departamento en malinalco"
+        ]
+      }
+    },
+    {
+      "slug": "ixtapan-de-la-sal",
+      "cityName": "Ixtapan de la Sal",
+      "state": "Estado de México",
+      "qualified": true,
+      "urgent": false,
+      "research": {
+        "tourismProfile": "Pueblo Mágico. Famous for thermal springs, spa tourism. Parque Acuático Ixtapan. Year-round warm climate. Popular family destination.",
+        "businessDemand": "Limited. Tourism and wellness-focused.",
+        "airbnbSupply": "100 total properties, 70 houses. ADR varies by season (April/May highest at ~$126-131 USD). 4.6 avg rating. 50 properties with pools.",
+        "events": "Steady year-round tourism due to thermal springs. No specific major event in next 60 days identified.",
+        "competitionLevel": "low",
+        "competitorDomains": [],
+        "notes": "No competitor geo pages found. Good candidate for future week. Not urgent — no event-driven spike in next 60 days."
+      },
+      "keywords": {
+        "service": [
+          "administración airbnb ixtapan de la sal",
+          "administración de renta vacacional ixtapan de la sal",
+          "co-anfitrión airbnb ixtapan de la sal",
+          "quién administra airbnb en ixtapan de la sal"
+        ],
+        "informational": [
+          "es rentable airbnb en ixtapan de la sal",
+          "cuánto se gana con airbnb en ixtapan de la sal",
+          "mejores zonas airbnb ixtapan de la sal"
+        ]
+      }
+    }
+  ],
+  "blogTopics": [
+    {
+      "slug": "cuanto-ganas-airbnb-estado-de-mexico",
+      "title": "¿Cuánto se gana con Airbnb en el Estado de México? Guía 2026",
+      "targetKeyword": "cuánto se gana con airbnb estado de méxico",
+      "linkedGeoPages": ["toluca", "valle-de-bravo", "metepec", "malinalco"],
+      "rationale": "Strong informational intent keyword. Links naturally to all geo pages. Evergreen with annual data refresh potential. Addresses the #1 question property owners have before hiring a manager."
+    },
+    {
+      "slug": "semana-santa-airbnb-estado-de-mexico-2026",
+      "title": "Semana Santa 2026: Cómo preparar tu Airbnb en el Estado de México para la temporada alta",
+      "targetKeyword": "semana santa airbnb estado de méxico 2026",
+      "linkedGeoPages": ["valle-de-bravo", "malinalco", "ixtapan-de-la-sal"],
+      "rationale": "URGENT seasonal topic. Semana Santa is March 29 – April 5 (2 weeks away). Property owners searching now for tips. Links to VdB and Malinalco geo pages. Time-sensitive but high conversion potential."
+    }
+  ],
+  "competitorUpdates": [
+    {
+      "domain": "bnbhomemx.com",
+      "status": "active",
+      "newPages": [],
+      "changes": "Still a Wix site. Claims 60+ properties across Mexico. Lists CDMX, Querétaro, Valle de Bravo, Tequesquiapan, Mérida, Tulum as markets. No city-specific landing pages — single-page site with services page. No new geo pages since last check.",
+      "checkedAt": "2026-03-14"
+    },
+    {
+      "domain": "guestify.mx",
+      "status": "active",
+      "newPages": [],
+      "changes": "Professional CoHost selected by Airbnb. Offers two tiers of service. No city-specific pages detected. National scope but no geo-targeting strategy visible.",
+      "checkedAt": "2026-03-14"
+    }
+  ],
+  "contentPlan": [
+    {
+      "run": 1,
+      "type": "geo-page",
+      "ref": "valle-de-bravo",
+      "rationale": "URGENT: Semana Santa in 2 weeks (Mar 29 – Apr 5). Largest Airbnb market in EdoMex (1,477 listings, $154 ADR). Zero competitor geo pages. Massive search volume around 'airbnb valle de bravo'. Publishing now captures pre-Semana Santa traffic and establishes long-term ranking."
+    },
+    {
+      "run": 2,
+      "type": "geo-page",
+      "ref": "malinalco",
+      "rationale": "URGENT: Famous Semana Santa 'Judea' tradition drives major tourism spike. Zero competition. Pueblo Mágico status. Publishing alongside VdB creates a two-city Semana Santa content push. Festival Cultural in April adds continued relevance."
+    },
+    {
+      "run": 3,
+      "type": "geo-page",
+      "ref": "metepec",
+      "rationale": "BnBuddy already launching in Metepec. Pueblo Mágico with Feria de San Isidro (May 1-17) featuring major artists. Natural extension from existing Toluca page. Zero competition. Supports on-the-ground operations."
+    }
+  ],
+  "dataQuality": {
+    "searchesUsed": 15,
+    "searchBudget": 40,
+    "competitorSitesUnreachable": [],
+    "notes": "Strong data quality. Airbtics provided detailed Valle de Bravo market data. Semana Santa dates confirmed from multiple 2026 sources. Competitor sites both reachable. Metepec Feria dates confirmed from Excelsior article published 2026-03-05."
+  }
+}

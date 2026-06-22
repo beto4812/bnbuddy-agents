@@ -1,0 +1,15 @@
+{
+  "weekOf": "2026-05-04",
+  "briefRef": "research-brief-2026-05-06.json",
+  "items": {
+    "airbnb-property-management": {
+      "status": "pending"
+    },
+    "short-term-rental-property-management": {
+      "status": "pending"
+    },
+    "short-term-rental-management": {
+      "status": "pending"
+    }
+  }
+}

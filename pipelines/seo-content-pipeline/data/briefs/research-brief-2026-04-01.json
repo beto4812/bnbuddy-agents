@@ -1,0 +1,271 @@
+{
+  "generatedAt": "2026-03-14T19:30:00Z",
+  "weekOf": "2026-03-16",
+  "agentVersion": "2.0",
+  "confidence": "high",
+  "existingPages": [
+    "toluca"
+  ],
+  "existingBlogPosts": [
+    "como-invertir-en-airbnb",
+    "optimizar-anuncio-alquiler-vacacional",
+    "guia-como-iniciar-en-airbnb"
+  ],
+  "targetCities": [
+    {
+      "slug": "valle-de-bravo",
+      "cityName": "Valle de Bravo",
+      "state": "Estado de México",
+      "qualified": true,
+      "urgent": true,
+      "research": {
+        "tourismProfile": "Pueblo Mágico. Top tourism destination in Estado de México. Lake town, parapente capital of Mexico, weekend escape from CDMX. 1,477 active Airbnb listings. Strong seasonality with Semana Santa and December as peak months.",
+        "businessDemand": "Limited business travel. Primarily tourism and weekend getaway destination.",
+        "airbnbSupply": "1,477 active listings. ADR MXN $2,642/night ($154 USD). 30% median occupancy. Annual revenue MXN $299K ($17K USD). Top 25% revenue, top 8% ADR in Mexico.",
+        "events": "Semana Santa 2026 (March 29 – April 5): MASSIVE tourism event, school vacations March 30 – April 10. Festival Vallesano (March): cultural, sports, gastronomy events. Santa Cruz festival (May 3). 85%+ hotel occupancy reported pre-Semana Santa.",
+        "competitionLevel": "low",
+        "competitorDomains": [
+          "bnbhomemx.com (lists VdB as market, no dedicated geo page)",
+          "otium.com.mx (lists VdB as market, no dedicated geo page)"
+        ],
+        "notes": "Largest Airbnb market in EdoMex. bnbhomemx.com and otium.com.mx list VdB as a market they serve but neither has a city-specific landing page. Zero dedicated competitor geo pages for service keywords."
+      },
+      "keywords": {
+        "service": [
+          "administración airbnb valle de bravo",
+          "administración de renta vacacional valle de bravo",
+          "co-anfitrión airbnb valle de bravo",
+          "quién administra airbnb en valle de bravo"
+        ],
+        "informational": [
+          "es rentable airbnb en valle de bravo",
+          "cuánto se gana con airbnb en valle de bravo",
+          "mejores zonas airbnb valle de bravo",
+          "cómo rentar mi departamento en valle de bravo"
+        ]
+      }
+    },
+    {
+      "slug": "malinalco",
+      "cityName": "Malinalco",
+      "state": "Estado de México",
+      "qualified": true,
+      "urgent": true,
+      "research": {
+        "tourismProfile": "Pueblo Mágico. Archaeological zone (Cuauhtinchan), Augustinian ex-convent, Museo Vivo Los Bichos. Known for spiritual tourism, temazcal, mezcal, artisan woodcarving. Growing weekend tourism from CDMX and Toluca.",
+        "businessDemand": "Minimal. Primarily tourism-driven.",
+        "airbnbSupply": "Moderate market. Properties include boutique cabins, houses with pools. Growing supply with pool properties popular.",
+        "events": "Equinoccio de Primavera (March 21): Major event at Cuauhtinchan archaeological zone with danzas and rituales. Semana Santa / La Judea (March 29 – April 5): Famous 200+ year tradition with inhabitants dressed as Roman soldiers. Festival Cultural de Malinalco (April): 60+ cultural events. All within 60-day window.",
+        "competitionLevel": "low",
+        "competitorDomains": [],
+        "notes": "Zero competitor geo pages found for Malinalco. Strong tourism brand with unique Equinoccio and Semana Santa traditions. First-mover opportunity."
+      },
+      "keywords": {
+        "service": [
+          "administración airbnb malinalco",
+          "administración de renta vacacional malinalco",
+          "co-anfitrión airbnb malinalco",
+          "quién administra airbnb en malinalco"
+        ],
+        "informational": [
+          "es rentable airbnb en malinalco",
+          "cuánto se gana con airbnb en malinalco",
+          "mejores zonas airbnb malinalco",
+          "cómo rentar mi departamento en malinalco"
+        ]
+      }
+    },
+    {
+      "slug": "metepec",
+      "cityName": "Metepec",
+      "state": "Estado de México",
+      "qualified": true,
+      "urgent": false,
+      "research": {
+        "tourismProfile": "Pueblo Mágico. Known for artisan pottery (Árbol de la Vida), colonial architecture, gastronomy. Adjacent to Toluca.",
+        "businessDemand": "Strong — adjacent to Toluca (state capital), near industrial corridors. University presence (UAEM, Tec de Monterrey). Government hub proximity.",
+        "airbnbSupply": "Smaller market than Valle de Bravo. Primarily serves business travelers and Toluca overflow. Growing short-term rental presence.",
+        "events": "Feria de San Isidro Metepec 2026 (May 1-17): Major fair with big-name artists (Julión Álvarez, Carín León, Grupo Firme, Yuridia). Thousands of visitors. Within 60-day window from today.",
+        "competitionLevel": "low",
+        "competitorDomains": [],
+        "notes": "No competitor has a dedicated geo page for Metepec. BnBuddy already operates in this market (launching phase). Natural extension from existing Toluca page."
+      },
+      "keywords": {
+        "service": [
+          "administración airbnb metepec",
+          "administración de renta vacacional metepec",
+          "co-anfitrión airbnb metepec",
+          "quién administra airbnb en metepec"
+        ],
+        "informational": [
+          "es rentable airbnb en metepec",
+          "cuánto se gana con airbnb en metepec",
+          "mejores zonas airbnb metepec",
+          "cómo rentar mi departamento en metepec"
+        ]
+      }
+    },
+    {
+      "slug": "teotihuacan",
+      "cityName": "San Juan Teotihuacán",
+      "state": "Estado de México",
+      "qualified": true,
+      "urgent": true,
+      "research": {
+        "tourismProfile": "Pueblo Mágico. UNESCO World Heritage archaeological zone (Pyramids of the Sun and Moon). One of Mexico's top tourist destinations. Near AIFA airport. Massive day-trip and overnight tourism from CDMX.",
+        "businessDemand": "Limited. Primarily tourism-driven. Some archaeological research activity.",
+        "airbnbSupply": "120 properties, 5,100+ reviews. Mix of casas de campo and apartments. Growing market near archaeological zone.",
+        "events": "Equinoccio de Primavera (March 21): 10,000+ visitors gather at pyramids dressed in white. Feria de la Obsidiana (March 16-25): charreadas, artisan market, prehispanic ball game demonstrations. Semana Santa (March 29 – April 5): continued tourist influx. All events within 7-21 days.",
+        "competitionLevel": "low",
+        "competitorDomains": [],
+        "notes": "Zero competitor geo pages for Teotihuacán. Strong tourism demand year-round but peaks at Equinoccio (March 21). Market smaller than VdB but significant. Good candidate for future content cycle. Equinoccio is 7 days away — too tight for this cycle's content to rank in time."
+      },
+      "keywords": {
+        "service": [
+          "administración airbnb teotihuacán",
+          "administración de renta vacacional teotihuacán",
+          "co-anfitrión airbnb teotihuacán",
+          "quién administra airbnb en teotihuacán"
+        ],
+        "informational": [
+          "es rentable airbnb en teotihuacán",
+          "cuánto se gana con airbnb en teotihuacán",
+          "mejores zonas airbnb teotihuacán",
+          "cómo rentar mi departamento en teotihuacán"
+        ]
+      }
+    },
+    {
+      "slug": "tepotzotlan",
+      "cityName": "Tepotzotlán",
+      "state": "Estado de México",
+      "qualified": true,
+      "urgent": false,
+      "research": {
+        "tourismProfile": "Pueblo Mágico. Home to Museo Nacional del Virreinato (UNESCO-linked colonial architecture). 45 km from CDMX on autopista México-Querétaro. Known for pastorelas (December) and gastronomy festivals.",
+        "businessDemand": "Limited. Proximity to CDMX corridors but primarily tourism-driven.",
+        "airbnbSupply": "60 properties, 2,200+ reviews. 4.8 average rating. 20 family-friendly, 20 pet-friendly. Average prices from $185 MXN/night. Smaller market.",
+        "events": "Festival Gastronómico del Queso, Café y Chocolate (April 18-19): within 60 days. Festival Mezcal, Queso y Vino (March 7-8): already passed. Semana Santa brings general tourism boost.",
+        "competitionLevel": "low",
+        "competitorDomains": [],
+        "notes": "Zero competitor geo pages. Small Airbnb market (60 properties) limits property management demand. Better as a future candidate after larger markets are covered. Close to CDMX is both advantage (tourism access) and disadvantage (day-trip means fewer overnight stays)."
+      },
+      "keywords": {
+        "service": [
+          "administración airbnb tepotzotlán",
+          "administración de renta vacacional tepotzotlán",
+          "co-anfitrión airbnb tepotzotlán",
+          "quién administra airbnb en tepotzotlán"
+        ],
+        "informational": [
+          "es rentable airbnb en tepotzotlán",
+          "cuánto se gana con airbnb en tepotzotlán",
+          "mejores zonas airbnb tepotzotlán"
+        ]
+      }
+    },
+    {
+      "slug": "ixtapan-de-la-sal",
+      "cityName": "Ixtapan de la Sal",
+      "state": "Estado de México",
+      "qualified": true,
+      "urgent": false,
+      "research": {
+        "tourismProfile": "Pueblo Mágico. Famous for thermal springs, spa tourism. Parque Acuático Ixtapan. Year-round warm climate. Popular family destination. Sábado de Gloria sees high attendance alongside Malinalco and Tonatico.",
+        "businessDemand": "Limited. Tourism and wellness-focused.",
+        "airbnbSupply": "100 total properties, 70 houses. ADR varies by season (April/May highest at ~$126-131 USD). 4.6 avg rating. 50 properties with pools.",
+        "events": "Semana Santa / Sábado de Gloria (March 29 – April 5): High traffic alongside Malinalco and Tonatico as preferred balneario destinations. No unique major event beyond Semana Santa in next 60 days.",
+        "competitionLevel": "low",
+        "competitorDomains": [],
+        "notes": "No competitor geo pages found. Good candidate for next content cycle after VdB, Malinalco, and Metepec."
+      },
+      "keywords": {
+        "service": [
+          "administración airbnb ixtapan de la sal",
+          "administración de renta vacacional ixtapan de la sal",
+          "co-anfitrión airbnb ixtapan de la sal",
+          "quién administra airbnb en ixtapan de la sal"
+        ],
+        "informational": [
+          "es rentable airbnb en ixtapan de la sal",
+          "cuánto se gana con airbnb en ixtapan de la sal",
+          "mejores zonas airbnb ixtapan de la sal"
+        ]
+      }
+    }
+  ],
+  "blogTopics": [
+    {
+      "slug": "semana-santa-airbnb-estado-de-mexico-2026",
+      "title": "Semana Santa 2026: Cómo preparar tu Airbnb en el Estado de México para la temporada alta",
+      "targetKeyword": "semana santa airbnb estado de méxico 2026",
+      "linkedGeoPages": [
+        "valle-de-bravo",
+        "malinalco",
+        "ixtapan-de-la-sal"
+      ],
+      "rationale": "URGENT seasonal topic. Semana Santa is March 29 – April 5 (2 weeks away). Property owners searching now for tips to maximize bookings. Links naturally to VdB and Malinalco geo pages being published this cycle. Time-sensitive but high conversion potential."
+    },
+    {
+      "slug": "cuanto-ganas-airbnb-estado-de-mexico",
+      "title": "¿Cuánto se gana con Airbnb en el Estado de México? Guía 2026",
+      "targetKeyword": "cuánto se gana con airbnb estado de méxico",
+      "linkedGeoPages": [
+        "toluca",
+        "valle-de-bravo",
+        "metepec",
+        "malinalco"
+      ],
+      "rationale": "Strong informational intent keyword. Links naturally to all geo pages. Evergreen with annual data refresh potential. Addresses the #1 question property owners have before hiring a manager."
+    }
+  ],
+  "competitorUpdates": [
+    {
+      "domain": "bnbhomemx.com",
+      "status": "active",
+      "newPages": [],
+      "changes": "Still a Wix site. Claims 60+ properties across Mexico. Lists CDMX, Querétaro, Valle de Bravo, Tequesquiapan, Mérida, Tulum as markets. No city-specific landing pages — single-page site with services page. No new geo pages since last check.",
+      "checkedAt": "2026-03-14"
+    },
+    {
+      "domain": "guestify.mx",
+      "status": "active",
+      "newPages": [],
+      "changes": "Professional CoHost selected by Airbnb. Offers two tiers of service. No city-specific pages detected. National scope but no geo-targeting strategy visible.",
+      "checkedAt": "2026-03-14"
+    },
+    {
+      "domain": "otium.com.mx",
+      "status": "active",
+      "newPages": [],
+      "changes": "NEW COMPETITOR DISCOVERED. Administers properties in CDMX, Valle de Bravo, Cuernavaca, Playa del Carmen. Luxury positioning. No city-specific landing pages — single homepage with service descriptions. No geo-targeting SEO strategy.",
+      "checkedAt": "2026-03-14"
+    }
+  ],
+  "contentPlan": [
+    {
+      "run": 1,
+      "type": "geo-page",
+      "ref": "valle-de-bravo",
+      "rationale": "URGENT: Semana Santa in 2 weeks (Mar 29 – Apr 5). Largest Airbnb market in EdoMex (1,477 listings, $154 ADR). Zero competitor geo pages. Festival Vallesano happening in March. 85%+ pre-SS hotel occupancy confirms massive demand. Publishing now captures pre-Semana Santa search traffic."
+    },
+    {
+      "run": 2,
+      "type": "geo-page",
+      "ref": "malinalco",
+      "rationale": "URGENT: Equinoccio de Primavera (March 21) + Semana Santa 'La Judea' (March 29-April 5) + Festival Cultural (April). Zero competition. Pueblo Mágico with strong tourism brand. Two-city SS content push alongside VdB maximizes seasonal impact."
+    },
+    {
+      "run": 3,
+      "type": "geo-page",
+      "ref": "metepec",
+      "rationale": "BnBuddy already launching in Metepec. Pueblo Mágico with Feria de San Isidro (May 1-17) featuring major artists. Zero competition. Natural extension from existing Toluca page. Supports on-the-ground operations and captures pre-feria traffic."
+    }
+  ],
+  "dataQuality": {
+    "searchesUsed": 12,
+    "searchBudget": 40,
+    "competitorSitesUnreachable": [],
+    "notes": "This run expanded city research to include Teotihuacán (120 listings) and Tepotzotlán (60 listings) as future candidates. Discovered otium.com.mx as new competitor serving VdB market without geo pages. Semana Santa 2026 confirmed as March 29 – April 5. All competitor sites reachable. Previous brief from earlier today (17:38 UTC) had identical content plan recommendations — research validates same priorities."
+  }
+}

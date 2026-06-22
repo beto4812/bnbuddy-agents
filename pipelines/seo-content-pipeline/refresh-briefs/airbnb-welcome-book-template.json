@@ -1,0 +1,68 @@
+{
+  "slug": "airbnb-welcome-book-template",
+  "targetPage": "airbnb-welcome-book-template",
+  "currentUrl": "https://bnbuddy.com/airbnb-welcome-book-template/",
+  "rationale": "This is BnBuddy's highest-authority page in the guidebook space. Currently positions BnBuddy as a paid SaaS product, but the business has pivoted — guidebooks are now free and the core business is co-hosting/management. The page needs to reflect this pivot, improve keyword targeting, and capture comparison/alternative queries that are currently going to competitors.",
+  "primaryKeyword": "airbnb welcome book template",
+  "targetKeywords": [
+    { "keyword": "airbnb welcome book template", "intent": "informational", "priority": 1 },
+    { "keyword": "airbnb welcome book template free", "intent": "commercial", "priority": 1 },
+    { "keyword": "free digital guidebook airbnb", "intent": "commercial", "priority": 2 },
+    { "keyword": "airbnb guest book template", "intent": "informational", "priority": 2 },
+    { "keyword": "touchstay alternative free", "intent": "commercial", "priority": 3 },
+    { "keyword": "hostfully alternative free", "intent": "commercial", "priority": 3 },
+    { "keyword": "guestview guide alternative", "intent": "commercial", "priority": 3 },
+    { "keyword": "airbnb house manual template", "intent": "informational", "priority": 3 },
+    { "keyword": "digital welcome book vacation rental", "intent": "informational", "priority": 3 }
+  ],
+  "competitors": [
+    {
+      "url": "https://www.smoothstay.io/articles/airbnb-welcome-book-template-free",
+      "notes": "Ranking well for 'airbnb welcome book template free'. Comprehensive listicle with 7 options. Promotes SmoothStay's free tier."
+    },
+    {
+      "url": "https://www.hostfully.com/blog/airbnb-guidebook-alternatives/",
+      "notes": "Strong domain authority. Comparison of Hostfully vs TouchStay vs RueBaRue. Good feature comparison tables."
+    },
+    {
+      "url": "https://betterstr.com/help/common-guide-questions/digital-guidebook-airbnb-touchstay-comparison.php",
+      "notes": "Positions as free alternative to TouchStay. Heavy on comparison tables and feature lists. Claims free-forever model."
+    },
+    {
+      "url": "https://goguidebook.com/blog/create-a-free-airbnb-welcome-book-multiple-options-template/",
+      "notes": "Step-by-step guide to creating a welcome book. Promotes GoGuidebook as upgrade option."
+    },
+    {
+      "url": "https://operto.com/blog/airbnb-welcome-book/",
+      "notes": "Comprehensive guide on what to include in a welcome book. Promotes Operto Guest."
+    }
+  ],
+  "contentGaps": [
+    "Current page positions BnBuddy as paid SaaS — needs to reflect free guidebook + co-hosting pivot",
+    "No 'alternative to X' sections targeting TouchStay, Hostfully, GuestView Guide searchers",
+    "Missing direct comparison table: BnBuddy (free) vs paid competitors with pricing",
+    "No mention of BnBuddy's AI assistant as a differentiator in the guidebook space",
+    "FAQ section exists but doesn't target high-value PAA queries",
+    "Year reference is 2025 — needs 2026 update",
+    "Missing 'how to create a welcome book' step-by-step section (competitors all have this)",
+    "No mention that GuestView Guide was discontinued — opportunity to capture those users"
+  ],
+  "positioningChanges": [
+    "BnBuddy digital guidebooks are now completely FREE — not a paid product, not a trial",
+    "Primary business is co-hosting and property management — guidebooks are a free tool to attract hosts",
+    "Position BnBuddy as 'the free alternative with AI' — free guidebook + free AI assistant vs paid competitors",
+    "De-emphasize SaaS subscription messaging, emphasize 'start for free, no credit card'",
+    "Add soft CTA for co-hosting services: 'Want us to handle everything? Learn about our management services'",
+    "Maintain the listicle format (it works for SEO) but restructure with BnBuddy as the clear free winner"
+  ],
+  "searchConsoleInsights": {
+    "totalImpressions": 0,
+    "totalClicks": 0,
+    "notes": "Page not appearing in current 28-day SC data — may be a crawl/indexation issue or the page URL may have changed. The /blog/ page shows impressions for 'alternative to guestview guide' (pos 30.8, 5 imp) which this refresh should capture.",
+    "relatedQueries": [
+      { "query": "alternative to guestview guide", "page": "/blog/", "impressions": 5, "position": 30.8 }
+    ]
+  },
+  "createdAt": "2026-03-22T22:10:00Z",
+  "createdBy": "manual"
+}

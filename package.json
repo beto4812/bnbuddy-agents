@@ -1,0 +1,26 @@
+{
+  "name": "bnbuddy-agents",
+  "version": "1.0.0",
+  "description": "BnBuddy agent pipelines and automation",
+  "scripts": {
+    "pull-ranking-data": "node pipelines/seo-content-pipeline/scripts/pull-ranking-data.js",
+    "compare-rankings": "node pipelines/seo-content-pipeline/scripts/compare-rankings.js",
+    "pull-keyword-data": "node pipelines/seo-content-pipeline/scripts/pull-keyword-data.js",
+    "generate-brief": "node pipelines/seo-content-pipeline/scripts/generate-brief.js",
+    "pull-exa-research": "node pipelines/seo-content-pipeline/scripts/pull-exa-research.js",
+    "pull-reddit-research": "node pipelines/seo-content-pipeline/scripts/pull-reddit-research.js",
+    "generate-content": "node pipelines/seo-content-pipeline/scripts/generate-content.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beto4812/bnbuddy-agents.git"
+  },
+  "author": "Alberto Vazquez",
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/vertex-sdk": "^0.17.1",
+    "exa-js": "^2.13.0",
+    "googleapis": "^171.4.0",
+    "rss-parser": "^3.13.0"
+  }
+}

@@ -1,0 +1,417 @@
+{
+  "generatedAt": "2026-04-08T17:15:00Z",
+  "weekOf": "2026-04-07",
+  "agentVersion": "3.0",
+
+  "existingPages": ["toluca", "metepec"],
+  "existingContent": ["valle-de-bravo", "malinalco", "metepec"],
+  "existingBlogPosts": [
+    "como-invertir-en-airbnb",
+    "optimizar-anuncio-alquiler-vacacional",
+    "guia-como-iniciar-en-airbnb"
+  ],
+
+  "notes": "Valle de Bravo and Malinalco content files exist (pipelines/seo-content-pipeline/content/*.md) but have NOT been built or deployed to public/es/. They need to go through the build-geo-pages + deploy pipeline before new geo pages are created. This week's plan prioritizes deploying existing content and creating one new geo page.",
+
+  "targetCities": [
+    {
+      "city": "San Juan Teotihuacán",
+      "slug": "teotihuacan",
+      "priority": 1,
+      "status": "no-page",
+      "urgent": false,
+      "keywords": [
+        {
+          "keyword": "administración airbnb teotihuacán",
+          "intent": "service",
+          "competition": "low",
+          "competitorPagesFound": []
+        },
+        {
+          "keyword": "administración de renta vacacional teotihuacán",
+          "intent": "service",
+          "competition": "low",
+          "competitorPagesFound": []
+        },
+        {
+          "keyword": "co-anfitrión airbnb teotihuacán",
+          "intent": "service",
+          "competition": "low",
+          "competitorPagesFound": []
+        },
+        {
+          "keyword": "es rentable airbnb en teotihuacán",
+          "intent": "informational",
+          "competition": "low",
+          "competitorPagesFound": []
+        }
+      ],
+      "research": {
+        "population": "~55,000 (municipality of San Juan Teotihuacán)",
+        "airbnbListingCount": "120 properties, 5,100+ reviews",
+        "meetsThreshold": "population + tourism (UNESCO World Heritage site)",
+        "highlights": [
+          "UNESCO World Heritage archaeological zone — Pyramids of the Sun and Moon",
+          "One of Mexico's most visited archaeological sites (~2.5M visitors/year)",
+          "Near AIFA airport — growing accessibility",
+          "Pueblo Mágico designation"
+        ],
+        "landmarks": [
+          "Pirámide del Sol — third-largest pyramid in the world",
+          "Pirámide de la Luna — ceremonial center of ancient Teotihuacán",
+          "Calzada de los Muertos — 2km ceremonial avenue",
+          "Museo de Sitio de la Cultura Teotihuacana",
+          "Zona de globos aerostáticos — hot air balloon rides over pyramids"
+        ],
+        "events": [
+          "Equinoccio de Primavera (March 21) — already passed for this cycle",
+          "Festival de la Obsidiana — annual artisan and cultural festival",
+          "Feria del Nopal (June) — within ~60 days, celebrates local agriculture and gastronomy"
+        ],
+        "businessDemand": "Limited. Primarily tourism-driven with some archaeological research activity.",
+        "tourismDataUrl": "DATA UNAVAILABLE — searched 'datatur teotihuacán 2026'",
+        "competitorGeoPages": [],
+        "notes": "Zero competitor geo pages found for Teotihuacán. Strong year-round tourism demand. The Equinoccio de Primavera has already passed (March 21). Next major event is Feria del Nopal in June. Not urgent but high-value evergreen target."
+      },
+      "contentGaps": {
+        "competitorKeywordsWeAreMissing": [],
+        "lowHangingFruit": [],
+        "decliningKeywords": [],
+        "supportingContentNeeded": [
+          "Blog post: '¿Es rentable Airbnb en Teotihuacán?' to support geo page",
+          "Blog post: 'Guía para anfitriones cerca de la zona arqueológica de Teotihuacán'"
+        ]
+      },
+      "topicCluster": {
+        "pillarPage": "/es/administracion-renta-vacacional/",
+        "geoPage": "/es/administracion-renta-vacacional-teotihuacan/",
+        "supportingContent": [
+          {
+            "title": "¿Es rentable Airbnb en Teotihuacán en 2026?",
+            "targetKeyword": "es rentable airbnb en teotihuacán",
+            "intent": "informational",
+            "priority": "medium",
+            "rationale": "Tourism-driven market with seasonal peaks. Income guide supports geo page."
+          }
+        ]
+      }
+    },
+    {
+      "city": "Ixtapan de la Sal",
+      "slug": "ixtapan-de-la-sal",
+      "priority": 2,
+      "status": "no-page",
+      "urgent": false,
+      "keywords": [
+        {
+          "keyword": "administración airbnb ixtapan de la sal",
+          "intent": "service",
+          "competition": "low",
+          "competitorPagesFound": []
+        },
+        {
+          "keyword": "administración de renta vacacional ixtapan de la sal",
+          "intent": "service",
+          "competition": "low",
+          "competitorPagesFound": []
+        },
+        {
+          "keyword": "es rentable airbnb en ixtapan de la sal",
+          "intent": "informational",
+          "competition": "low",
+          "competitorPagesFound": []
+        }
+      ],
+      "research": {
+        "population": "~35,000",
+        "airbnbListingCount": "100 properties, 50 with pools",
+        "meetsThreshold": "tourism (Pueblo Mágico + thermal springs)",
+        "highlights": [
+          "Pueblo Mágico — thermal springs capital of Estado de México",
+          "Parque Acuático Ixtapan — major family attraction",
+          "Year-round warm climate drives consistent tourism",
+          "Strong family/wellness tourism segment"
+        ],
+        "landmarks": [
+          "Gran Reserva Ixtapan — luxury spa resort",
+          "Parque Acuático Ixtapan — waterpark with thermal pools",
+          "Balneario Municipal — public thermal baths",
+          "Parque de Diana — central park and market area"
+        ],
+        "events": [
+          "Semana Santa (already passed — March 29-April 5)",
+          "Feria de la Sal (variable dates, typically May-June)",
+          "No major event in next 60 days beyond general tourism"
+        ],
+        "businessDemand": "Limited. Tourism and wellness-focused.",
+        "tourismDataUrl": "DATA UNAVAILABLE — searched 'turismo ixtapan de la sal 2026'",
+        "competitorGeoPages": [],
+        "notes": "Zero dedicated competitor geo pages. Good candidate for next content cycle after Teotihuacán. ADR varies by season (~$126-131 USD in April/May). Consistent demand from CDMX families."
+      },
+      "contentGaps": {
+        "competitorKeywordsWeAreMissing": [],
+        "lowHangingFruit": [],
+        "decliningKeywords": [],
+        "supportingContentNeeded": [
+          "Blog post: 'Mejores balnearios para invertir en Airbnb en Estado de México'"
+        ]
+      },
+      "topicCluster": {
+        "pillarPage": "/es/administracion-renta-vacacional/",
+        "geoPage": "/es/administracion-renta-vacacional-ixtapan-de-la-sal/",
+        "supportingContent": [
+          {
+            "title": "¿Es rentable Airbnb en Ixtapan de la Sal?",
+            "targetKeyword": "es rentable airbnb en ixtapan de la sal",
+            "intent": "informational",
+            "priority": "medium",
+            "rationale": "Wellness tourism niche with year-round demand. Supports geo page."
+          }
+        ]
+      }
+    },
+    {
+      "city": "Tepotzotlán",
+      "slug": "tepotzotlan",
+      "priority": 3,
+      "status": "no-page",
+      "urgent": false,
+      "keywords": [
+        {
+          "keyword": "administración airbnb tepotzotlán",
+          "intent": "service",
+          "competition": "low",
+          "competitorPagesFound": []
+        },
+        {
+          "keyword": "administración de renta vacacional tepotzotlán",
+          "intent": "service",
+          "competition": "low",
+          "competitorPagesFound": []
+        }
+      ],
+      "research": {
+        "population": "~100,000 (municipality)",
+        "airbnbListingCount": "60 properties, 2,200+ reviews",
+        "meetsThreshold": "population + tourism (Pueblo Mágico)",
+        "highlights": [
+          "Pueblo Mágico — Museo Nacional del Virreinato",
+          "45 km from CDMX on autopista México-Querétaro",
+          "Known for pastorelas (December) and gastronomy festivals"
+        ],
+        "landmarks": [
+          "Museo Nacional del Virreinato — colonial period museum in ex-Jesuit complex",
+          "Arcos del Sitio — 17th century aqueduct"
+        ],
+        "events": [],
+        "businessDemand": "Limited. Proximity to CDMX corridors.",
+        "tourismDataUrl": "DATA UNAVAILABLE",
+        "competitorGeoPages": [],
+        "notes": "Smallest Airbnb market of the three (60 properties). Better as a future candidate after larger markets are covered. Day-trip proximity to CDMX limits overnight stays."
+      },
+      "contentGaps": {
+        "competitorKeywordsWeAreMissing": [],
+        "lowHangingFruit": [],
+        "decliningKeywords": [],
+        "supportingContentNeeded": []
+      },
+      "topicCluster": {
+        "pillarPage": "/es/administracion-renta-vacacional/",
+        "geoPage": "/es/administracion-renta-vacacional-tepotzotlan/",
+        "supportingContent": []
+      }
+    }
+  ],
+
+  "blogTopics": [
+    {
+      "title": "¿Cuánto se gana con Airbnb en el Estado de México? Guía 2026",
+      "slug": "cuanto-ganar-airbnb-estado-mexico-2026",
+      "targetKeyword": "cuánto se gana con airbnb estado de méxico",
+      "intent": "informational",
+      "linksTo": ["toluca", "metepec", "valle-de-bravo", "malinalco", "teotihuacan"],
+      "priority": 1,
+      "urgent": false,
+      "notes": "Evergreen income guide linking to all geo pages. Supports Metepec cluster (rising traction: +350% impressions). Previous brief also recommended this — still not produced."
+    },
+    {
+      "title": "5 errores comunes de hosts nuevos en Airbnb (y cómo evitarlos)",
+      "slug": "errores-comunes-hosts-airbnb",
+      "targetKeyword": "errores hosts airbnb",
+      "intent": "informational",
+      "linksTo": ["toluca", "metepec"],
+      "priority": 2,
+      "urgent": false,
+      "notes": "Educational content targeting new hosts. Links naturally to service pages. Supports organic keyword 'como empezar en airbnb' (position 23 on /es/guia-como-iniciar-en-airbnb/)."
+    }
+  ],
+
+  "competitorUpdates": [
+    {
+      "competitor": "bnbhomemx.com",
+      "previousPageCount": 4,
+      "currentPageCount": 4,
+      "change": "No new pages detected. Still a single-page Wix site with services page. No city-specific landing pages.",
+      "newCities": [],
+      "checkedAt": "2026-04-08T17:16:00Z"
+    },
+    {
+      "competitor": "guestify.mx",
+      "previousPageCount": null,
+      "currentPageCount": null,
+      "change": "Still active. Professional CoHost selected by Airbnb. No city-specific pages detected. National scope without geo-targeting SEO strategy.",
+      "newCities": [],
+      "checkedAt": "2026-04-08T17:16:00Z"
+    },
+    {
+      "competitor": "otium.com.mx",
+      "previousPageCount": null,
+      "currentPageCount": null,
+      "change": "No indexable city-specific pages found via site: search. Luxury positioning with CDMX, Valle de Bravo, Cuernavaca presence. No new geo pages since last check.",
+      "newCities": [],
+      "checkedAt": "2026-04-08T17:16:00Z"
+    }
+  ],
+
+  "rankingInsights": {
+    "dataSource": "ranking-comparison.json",
+    "dataDate": "2026-04-08T16:46:31.987Z",
+    "decliningPages": [
+      {
+        "page": "/vacation-rental-website-builder/",
+        "position": 46.4,
+        "positionDelta": -3.9,
+        "trendDelta": -6.2,
+        "impressions": 428,
+        "impressionsPct": "-28%",
+        "action": "content-refresh candidate — declining 6.2 positions over 3 weeks"
+      },
+      {
+        "page": "/airbnb-alternative-platforms-for-hosts/",
+        "position": 11.1,
+        "positionDelta": -0.2,
+        "trendDelta": -3.6,
+        "impressions": 14,
+        "impressionsPct": "-7%",
+        "action": "monitor — smaller decline but near page 1"
+      }
+    ],
+    "lowHangingFruit": [
+      {
+        "page": "/es/optimizar-anuncio-alquiler-vacacional/",
+        "keyword": "optimizar los anuncios de alquiler vacacional",
+        "position": 12.3,
+        "impressions": 20,
+        "note": "Near page 1 — could reach with internal links and meta optimization"
+      },
+      {
+        "page": "/airbnb-management/",
+        "keyword": "airbnb management",
+        "position": 10.8,
+        "impressions": 19,
+        "note": "On page 1-2 boundary. 0% CTR — needs title/meta improvement"
+      },
+      {
+        "page": "/airbnb-alternative-platforms-for-hosts/",
+        "keyword": null,
+        "position": 11.1,
+        "impressions": 14,
+        "note": "Just off page 1. 0% CTR at position 11 — meta description refresh needed"
+      },
+      {
+        "page": "/es/optimizar-anuncio-alquiler-vacacional/",
+        "keyword": "optimizar los anuncios de alquiler vacacional",
+        "position": 16.5,
+        "impressions": 13,
+        "note": "Page 2 but growing fast (+82% impressions). Internal links could push to page 1"
+      }
+    ],
+    "geoPageTraction": [
+      {
+        "page": "/es/administracion-renta-vacacional-metepec/",
+        "position": 3.0,
+        "impressionsDelta": 7,
+        "impressionsPct": "+350%",
+        "signal": "rising strongly — prioritize supporting blog content for Metepec cluster"
+      },
+      {
+        "page": "/es/administracion-renta-vacacional-toluca/",
+        "position": 5.5,
+        "impressionsDelta": 3,
+        "impressionsPct": "+100%",
+        "signal": "rising — both geo pages showing positive momentum"
+      }
+    ],
+    "organicKeywordDiscovery": [
+      {
+        "page": "/es/guia-como-iniciar-en-airbnb/",
+        "keyword": "registrarse en airbnb",
+        "position": 78.0,
+        "isNew": true,
+        "note": "New keyword discovered by Google — deep position but shows content relevance expanding"
+      },
+      {
+        "page": "/es/guia-como-iniciar-en-airbnb/",
+        "keyword": "como empezar en airbnb",
+        "position": 23.0,
+        "isNew": false,
+        "note": "Position 23 — page 2-3, could improve with supporting content"
+      }
+    ],
+    "pagesWithZeroCTR": [
+      {
+        "page": "/create-your-ai-assistant-for-airbnb-in-3-easy-steps/",
+        "position": 5.5,
+        "impressions": 220,
+        "ctr": 0,
+        "action": "Position 5.5 with 220 impressions and 0% CTR is CRITICAL — title/meta description needs immediate improvement"
+      },
+      {
+        "page": "/vacation-rental-management-software/",
+        "position": 55.5,
+        "impressions": 1870,
+        "ctr": 0,
+        "action": "Deep position explains 0% CTR — not actionable until position improves"
+      }
+    ],
+    "deployedNotIndexed": []
+  },
+
+  "contentPlan": [
+    {
+      "run": 1,
+      "type": "geo-page",
+      "city": "teotihuacan",
+      "urgent": false,
+      "rationale": "Largest remaining unserved market (120 Airbnb listings, UNESCO World Heritage, ~2.5M visitors/year). Zero competitor geo pages. Pueblo Mágico status. Year-round tourism demand. Previous brief identified as qualified but deferred because VdB/Malinalco/Metepec were higher priority for Semana Santa."
+    },
+    {
+      "run": 2,
+      "type": "content-refresh",
+      "page": "/vacation-rental-website-builder/",
+      "urgent": false,
+      "rationale": "Declining 6.2 positions over 3 weeks (40.2 → 46.4) with -28% impressions this week. 0% CTR at 428 impressions. Needs: updated H1/H2 with clearer value prop, comparison table of builders, internal links from /vacation-rental-management-software/ and /blog/, refreshed meta description."
+    },
+    {
+      "run": 3,
+      "type": "blog-post",
+      "slug": "cuanto-ganar-airbnb-estado-mexico-2026",
+      "urgent": false,
+      "rationale": "Supports Metepec geo page cluster (rising traction: +350% impressions, position 3.0). Links naturally to all geo pages. Evergreen income calculator content. Previously recommended in March brief but not yet produced. Addresses top informational query for property owners."
+    }
+  ],
+
+  "dataQuality": {
+    "citiesResearched": 3,
+    "citiesQualified": 3,
+    "citiesRejected": [],
+    "citiesCarriedForward": ["teotihuacan (from March brief)", "ixtapan-de-la-sal (from March brief)", "tepotzotlan (from March brief)"],
+    "dataGaps": [
+      "tourismDataUrl missing for Teotihuacán — searched 'datatur teotihuacán 2026'",
+      "tourismDataUrl missing for Ixtapan de la Sal — searched 'turismo ixtapan de la sal 2026'"
+    ],
+    "competitorSitesUnreachable": [],
+    "rankingDataAge": "fresh (< 1 day — generated 2026-04-08T16:46:31.987Z)",
+    "notes": "This is the first brief using integrated ranking data from the Monitor Agent. The ranking comparison data is from today (2026-04-08). Valle de Bravo and Malinalco have written content but need build+deploy — not included in this week's content plan as they require a different pipeline step (build-geo-pages)."
+  }
+}
