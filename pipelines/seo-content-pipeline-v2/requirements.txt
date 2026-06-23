@@ -1,0 +1,17 @@
+# Google Agent Development Kit
+google-adk>=2.0.0
+
+# Multi-model support (Claude via Vertex AI)
+litellm>=1.40.0
+
+# Config
+pyyaml>=6.0
+
+# Exa API for web research
+exa-py>=1.0.0
+
+# Markdown frontmatter parsing (for validation)
+python-frontmatter>=1.1.0
+
+# Environment variables
+python-dotenv>=1.0.0

@@ -23,10 +23,13 @@ See [ORCHESTRATORS.md](pipelines/seo-content-pipeline/ORCHESTRATORS.md) for deta
 ## Commands
 
 ```bash
-npm run pull-ranking-data    # Pull fresh Search Console data
-npm run compare-rankings     # Pre-compute ranking deltas
-npm run pull-keyword-data    # Fetch keywords from DataForSEO
-npm run generate-brief       # Generate weekly content brief
+npm run pull-ranking-data      # Pull fresh Search Console data
+npm run compare-rankings       # Pre-compute ranking deltas
+npm run pull-keyword-data      # Fetch keywords from DataForSEO
+npm run pull-exa-research      # Semantic competitor search via Exa AI
+npm run pull-reddit-research   # Fetch top Reddit posts from host subreddits
+npm run generate-brief         # Generate weekly content brief
+npm run generate-content       # Write content via Claude (Vertex AI)
 ```
 
 ## Setup
@@ -35,9 +38,77 @@ npm run generate-brief       # Generate weekly content brief
 npm install
 ```
 
-Required environment variables (see `.env.example`):
-- Google Search Console service account credentials
-- DataForSEO API credentials
+### Credentials
+
+All credentials live in `~/.config/bnbuddy/` (outside the repo, never committed).
+
+#### Google Search Console — `gsc-service-account.json`
+
+Used by: `npm run pull-ranking-data`
+
+```
+~/.config/bnbuddy/gsc-service-account.json
+```
+
+Standard GCP service account JSON key. The service account must be added as a user in [Google Search Console](https://search.google.com/search-console) for `bnbuddy.com`.
+
+```json
+{
+  "type": "service_account",
+  "project_id": "your-project-id",
+  "private_key_id": "...",
+  "private_key": "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n",
+  "client_email": "name@project.iam.gserviceaccount.com",
+  "client_id": "...",
+  "auth_uri": "https://oauth2.googleapis.com/auth",
+  "token_uri": "https://oauth2.googleapis.com/token"
+}
+```
+
+#### DataForSEO — `dataforseo.env`
+
+Used by: `npm run pull-keyword-data`
+
+```
+~/.config/bnbuddy/dataforseo.env
+```
+
+```env
+DATAFORSEO_LOGIN=your@email.com
+DATAFORSEO_PASSWORD=your-api-password
+```
+
+Get credentials at [app.dataforseo.com](https://app.dataforseo.com/register).
+
+#### Exa AI — `exa.env`
+
+Used by: `npm run pull-exa-research`
+
+```
+~/.config/bnbuddy/exa.env
+```
+
+```env
+EXA_API_KEY=exa-xxxxxxxxxxxx
+```
+
+Get your API key at [dashboard.exa.ai](https://dashboard.exa.ai/api-keys).
+
+#### GCP Vertex AI (Application Default Credentials)
+
+Used by: `npm run generate-content` (Claude via Vertex AI)
+
+No file needed — uses `gcloud` ADC:
+
+```bash
+gcloud auth application-default login
+```
+
+#### Reddit / Jina (no credentials)
+
+Used by: `npm run pull-reddit-research`
+
+No API keys required — uses public RSS feeds + `r.jina.ai` free tier.
 
 ## Directory Structure
 

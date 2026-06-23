@@ -3,30 +3,55 @@
 /**
  * pull-reddit-research.js
  *
- * Discovers top Reddit posts from vacation-rental host subreddits via RSS,
- * crawls full thread content via r.jina.ai, and writes structured research
- * output for the SEO content pipeline.
+ * Discovers top Reddit posts from vacation-rental host subreddits via RSS
+ * and enriches them with Exa web search for related discussions.
+ *
+ * Strategy:
+ *   1. Fetch Reddit RSS to get trending post titles, URLs, dates, and snippets.
+ *   2. Use the RSS contentSnippet as the post content (no crawling needed).
+ *   3. Run one Exa search per subreddit to find related discussions on the web.
+ *
+ * Reddit blocks all crawlers (Jina, Exa getContents, etc.), so we rely on
+ * RSS data which includes enough signal for the content pipeline.
  *
  * Outputs:
- *   - data/reddit-research.json           — structured summary of all posts
- *   - data/reddit-crawls/[sub]/[slug].md  — full crawled markdown per post
+ *   - data/reddit-research.json  — structured post summaries + Exa context
  *
  * Usage:
  *   node pipelines/seo-content-pipeline/scripts/pull-reddit-research.js
  *   node pipelines/seo-content-pipeline/scripts/pull-reddit-research.js --dry-run
  *   node pipelines/seo-content-pipeline/scripts/pull-reddit-research.js --subreddit airbnb_hosts
  *
- * Prerequisites:
- *   - npm install rss-parser (project-level)
- *
- * No authentication required — uses public Reddit RSS + Jina free tier.
+ * Credentials: ~/.config/bnbuddy/exa.env  (EXA_API_KEY=exa-xxxx)
  */
 
 'use strict';
 
+const os     = require('os');
 const https  = require('https');
 const fs     = require('fs');
 const path   = require('path');
+
+// ─── Credentials ──────────────────────────────────────────────────────────────
+
+function loadCreds() {
+  const CREDS_FILE = path.join(os.homedir(), '.config/bnbuddy/exa.env');
+  if (!fs.existsSync(CREDS_FILE)) {
+    console.error(`❌  Credentials file not found at ${CREDS_FILE}`);
+    process.exit(1);
+  }
+  const lines = fs.readFileSync(CREDS_FILE, 'utf8').split('\n');
+  const env = {};
+  for (const line of lines) {
+    const [key, ...rest] = line.trim().split('=');
+    if (key && !key.startsWith('#')) env[key.trim()] = rest.join('=').trim();
+  }
+  if (!env.EXA_API_KEY) {
+    console.error('❌  EXA_API_KEY missing in credentials file.');
+    process.exit(1);
+  }
+  return env;
+}
 
 // ─── Paths ────────────────────────────────────────────────────────────────────
 
@@ -39,20 +64,15 @@ const OUTPUT_FILE = path.join(DATA_DIR, 'reddit-research.json');
 
 const USER_AGENT = 'BnBuddy-SEO-Bot/1.0 (contact: hello@bnbuddy.com)';
 const RATE_LIMIT_MS = 5000; // 5 seconds between requests
-const TOP_N = 5;            // top posts to crawl per subreddit
+const TOP_N = 8;            // top posts to collect per subreddit (more since we only use one)
 
+// Primary subreddit — the most active vacation rental host community.
+// AirBnBHosts and ShortTermRentals consistently 429 when fetched in sequence,
+// and airbnb_hosts alone provides strong enough signal for the pipeline.
 const SUBREDDITS = [
   {
     name: 'airbnb_hosts',
     rssUrl: 'https://www.reddit.com/r/airbnb_hosts/top/.rss?t=week',
-  },
-  {
-    name: 'AirBnBHosts',
-    rssUrl: 'https://www.reddit.com/r/AirBnBHosts/top/.rss?t=week',
-  },
-  {
-    name: 'ShortTermRentals',
-    rssUrl: 'https://www.reddit.com/r/ShortTermRentals/top/.rss?t=week',
   },
 ];
 
@@ -157,11 +177,33 @@ function httpGet(url, maxRedirects = 5) {
 }
 
 /**
- * Crawl a URL via Jina AI reader and return the markdown content.
+ * Search Exa for discussions related to a subreddit's topic.
+ * Reddit is blocked from includeDomains, so we search broadly.
  */
-async function crawlViaJina(url) {
-  const jinaUrl = `https://r.jina.ai/${url}`;
-  return httpGet(jinaUrl);
+async function searchExaForSubreddit(subredditName, exa) {
+  const topicMap = {
+    airbnb_hosts:      'airbnb host problems tips vacation rental management',
+    AirBnBHosts:       'airbnb host tips reviews guest issues short term rental',
+    ShortTermRentals:  'short term rental host strategy pricing Vrbo Airbnb tips',
+  };
+  const query = topicMap[subredditName]
+    || `${subredditName} vacation rental host discussion`;
+
+  try {
+    const result = await exa.searchAndContents(query, {
+      type: 'auto',
+      numResults: 5,
+      text: { maxCharacters: 800 },
+    });
+    return (result.results || []).map(r => ({
+      url:   r.url,
+      title: r.title,
+      text:  r.text,
+    }));
+  } catch (err) {
+    console.error(`   ⚠️  Exa search failed for ${subredditName}: ${err.message}`);
+    return [];
+  }
 }
 
 // ─── RSS Parsing ──────────────────────────────────────────────────────────────
@@ -190,10 +232,9 @@ async function fetchSubredditRSS(subreddit) {
     title: item.title || 'Untitled',
     url: item.link || '',
     date: item.isoDate || item.pubDate || '',
-    // RSS items from Reddit top/.rss are already sorted by score.
-    // Use reverse index as a proxy for ranking (first = highest score).
     sortOrder: index,
-    contentSnippet: (item.contentSnippet || '').slice(0, 200),
+    // RSS includes a decent text preview — use it directly (no crawling needed).
+    contentSnippet: (item.contentSnippet || '').slice(0, 800),
   }));
 
   console.log(`   📋 Found ${posts.length} posts in r/${subreddit.name}`);
@@ -203,8 +244,13 @@ async function fetchSubredditRSS(subreddit) {
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 async function main() {
+  const creds = loadCreds();
+  const { Exa } = require('exa-js');
+  const exa = new Exa(creds.EXA_API_KEY);
+
   console.log('🔍 Reddit Research — Pull top posts from host subreddits');
-  console.log(`   Mode: ${DRY_RUN ? '🏜️  DRY RUN (no crawling)' : '🚀 LIVE (will crawl via Jina)'}`);
+  console.log(`   Strategy: RSS snippets + Exa web search (no crawling — Reddit blocks all crawlers)`);
+  console.log(`   Mode: ${DRY_RUN ? '🏜️  DRY RUN' : '🚀 LIVE'}`);
 
   if (FILTER_SUB) {
     console.log(`   Filter: only r/${FILTER_SUB}`);
@@ -212,7 +258,6 @@ async function main() {
 
   console.log('');
 
-  // Determine which subreddits to process
   const targetSubs = FILTER_SUB
     ? SUBREDDITS.filter((s) => s.name.toLowerCase() === FILTER_SUB.toLowerCase())
     : SUBREDDITS;
@@ -227,105 +272,58 @@ async function main() {
 
   for (const subreddit of targetSubs) {
     try {
-      // Phase 1: Fetch RSS
+      // Phase 1: Fetch RSS and extract top posts with their snippets
       const posts = await fetchSubredditRSS(subreddit);
-      await sleep(RATE_LIMIT_MS);
-
-      // Take top N posts (already sorted by Reddit's top ranking)
       const topPosts = posts.slice(0, TOP_N);
+
+      const postSummaries = topPosts.map((p) => ({
+        title:          p.title,
+        url:            p.url,
+        date:           formatDate(p.date),
+        contentSnippet: p.contentSnippet,
+      }));
+
+      console.log(`   📋 Top ${topPosts.length} posts collected from RSS.`);
+
+      // Phase 2: Exa search for related discussions (non-Reddit)
+      let exaContext = [];
+      if (!DRY_RUN) {
+        console.log(`   🔍 Searching Exa for related discussions...`);
+        exaContext = await searchExaForSubreddit(subreddit.name, exa);
+        console.log(`   ✅ Got ${exaContext.length} Exa results.`);
+      }
 
       if (DRY_RUN) {
         console.log(`\n   📝 Top ${topPosts.length} posts from r/${subreddit.name}:`);
         for (const post of topPosts) {
           console.log(`      • ${post.title}`);
           console.log(`        ${post.url}`);
-          console.log(`        ${formatDate(post.date)}`);
-        }
-      }
-
-      const crawledPosts = [];
-
-      if (!DRY_RUN) {
-        // Phase 2: Crawl top posts via Jina
-        const subCrawlDir = path.join(CRAWL_DIR, subreddit.name);
-        ensureDir(subCrawlDir);
-
-        for (let i = 0; i < topPosts.length; i++) {
-          const post = topPosts[i];
-          const slug = slugify(post.title);
-          const crawlFile = path.join(subCrawlDir, `${slug}.md`);
-          const relativeCrawlFile = path.relative(
-            path.join(REPO_ROOT, 'pipelines/seo-content-pipeline'),
-            crawlFile
-          );
-
-          console.log(`   📖 [${i + 1}/${topPosts.length}] Crawling: ${post.title.slice(0, 60)}...`);
-
-          try {
-            const markdown = await crawlViaJina(post.url);
-
-            // Write crawl file in standard format per AGENTS.md
-            const crawlContent = [
-              `Title: ${post.title}`,
-              `URL: ${post.url}`,
-              `Publish Time: ${formatDate(post.date)}`,
-              '',
-              markdown,
-            ].join('\n');
-
-            fs.writeFileSync(crawlFile, crawlContent, 'utf8');
-            console.log(`   ✅ Saved → ${relativeCrawlFile}`);
-
-            crawledPosts.push({
-              title: post.title,
-              url: post.url,
-              date: formatDate(post.date),
-              crawlFile: relativeCrawlFile,
-            });
-          } catch (crawlErr) {
-            console.error(`   ⚠️  Failed to crawl: ${crawlErr.message}`);
-            crawledPosts.push({
-              title: post.title,
-              url: post.url,
-              date: formatDate(post.date),
-              crawlFile: null,
-              error: crawlErr.message,
-            });
-          }
-
-          // Rate limit between crawl requests
-          if (i < topPosts.length - 1) {
-            await sleep(RATE_LIMIT_MS);
-          }
         }
       }
 
       results.push({
-        name: subreddit.name,
-        rssUrl: subreddit.rssUrl,
+        name:         subreddit.name,
+        rssUrl:       subreddit.rssUrl,
         postsScanned: posts.length,
-        topPosts: DRY_RUN
-          ? topPosts.map((p) => ({
-              title: p.title,
-              url: p.url,
-              date: formatDate(p.date),
-            }))
-          : crawledPosts,
+        topPosts:     postSummaries,
+        exaContext,
       });
     } catch (subErr) {
       console.error(`\n❌ Error processing r/${subreddit.name}: ${subErr.message}`);
       results.push({
-        name: subreddit.name,
-        rssUrl: subreddit.rssUrl,
+        name:         subreddit.name,
+        rssUrl:       subreddit.rssUrl,
         postsScanned: 0,
-        topPosts: [],
-        error: subErr.message,
+        topPosts:     [],
+        exaContext:   [],
+        error:        subErr.message,
       });
     }
 
-    // Rate limit between subreddits
+    // Rate limit between subreddits — Reddit 429s if hit too fast
     if (subreddit !== targetSubs[targetSubs.length - 1]) {
-      await sleep(RATE_LIMIT_MS);
+      console.log(`   ⏳ Waiting 3s before next subreddit...`);
+      await sleep(3000);
     }
   }
 
@@ -348,14 +346,9 @@ async function main() {
   console.log('✅ Reddit research complete');
   console.log(`   Subreddits processed: ${results.length}`);
   console.log(`   Posts scanned (RSS):  ${totalScanned}`);
-  console.log(`   Top posts selected:   ${totalTop}`);
-  if (errors > 0) {
-    console.log(`   ⚠️  Subreddits with errors: ${errors}`);
-  }
+  console.log(`   Top posts collected:  ${totalTop}`);
+  if (errors > 0) console.log(`   ⚠️  Subreddits with errors: ${errors}`);
   console.log(`   Output: ${path.relative(REPO_ROOT, OUTPUT_FILE)}`);
-  if (!DRY_RUN) {
-    console.log(`   Crawls: ${path.relative(REPO_ROOT, CRAWL_DIR)}/`);
-  }
 }
 
 main().catch((err) => {

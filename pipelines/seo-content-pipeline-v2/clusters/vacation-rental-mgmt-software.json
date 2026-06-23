@@ -1,0 +1,135 @@
+{
+  "id": "vacation-rental-mgmt-software",
+  "name": "Vacation Rental Management Software",
+  "priority": "P0",
+  "source": "docs/seo-strategy/topical-clusters.md",
+
+  "pillar": {
+    "slug": "vacation-rental-management-software",
+    "title": "Vacation Rental Management Software: The Complete Guide for Hosts",
+    "primaryKeyword": "vacation rental management software",
+    "existingUrl": "/vacation-rental-management-software/",
+    "action": "rewrite",
+    "contentType": "pillar",
+    "wordCountTarget": 3000,
+    "productFocus": "all",
+    "notes": "Existing page has 2,575 imp/mo at position 70.9 with 0% CTR. 'vacation rental management software for beginners' already at position 5.6 (Page 1). Rewrite as comprehensive pillar."
+  },
+
+  "articles": [
+    {
+      "slug": "vacation-rental-management-software-for-beginners",
+      "title": "Best Vacation Rental Management Software for Beginners",
+      "primaryKeyword": "vacation rental management software for beginners",
+      "contentType": "blog-post",
+      "wordCountTarget": 1800,
+      "productFocus": "digital-guidebooks",
+      "suggestedIgCategories": ["tool-comparison", "superhost-tip"],
+      "siblingLinks": ["choosing-vacation-rental-software"],
+      "rationale": "Already position 5.6 — a dedicated article could hit #1"
+    },
+    {
+      "slug": "automate-guest-communication-vacation-rental",
+      "title": "How to Automate Guest Communication for Your Vacation Rental",
+      "primaryKeyword": "automate guest communication vacation rental",
+      "contentType": "blog-post",
+      "wordCountTarget": 1800,
+      "productFocus": "ai-guest-assistant",
+      "suggestedIgCategories": ["guest-comms", "ab-test"],
+      "siblingLinks": ["digital-guidebook-vacation-rental"],
+      "rationale": "Core pain point hosts face; top Reddit topic"
+    },
+    {
+      "slug": "vacation-rental-channel-management",
+      "title": "Vacation Rental Channel Management: Airbnb, VRBO, and Direct Bookings",
+      "primaryKeyword": "vacation rental channel management",
+      "contentType": "blog-post",
+      "wordCountTarget": 1800,
+      "productFocus": "direct-booking-portal",
+      "suggestedIgCategories": ["tool-comparison", "occupancy-data"],
+      "siblingLinks": ["manage-multiple-airbnb-listings"],
+      "rationale": "Adjacent concern for anyone evaluating software"
+    },
+    {
+      "slug": "diy-vacation-rental-management-vs-property-manager",
+      "title": "DIY Vacation Rental Management vs Hiring a Property Manager",
+      "primaryKeyword": "diy vacation rental management vs property manager",
+      "contentType": "blog-post",
+      "wordCountTarget": 1800,
+      "productFocus": "all",
+      "suggestedIgCategories": ["occupancy-data", "market-insight"],
+      "siblingLinks": ["vacation-rental-management-software-for-beginners"],
+      "rationale": "Decision-stage question your customers ask"
+    },
+    {
+      "slug": "digital-guidebook-vacation-rental",
+      "title": "How to Create a Digital Guidebook for Your Vacation Rental",
+      "primaryKeyword": "digital guidebook vacation rental",
+      "contentType": "blog-post",
+      "wordCountTarget": 1800,
+      "productFocus": "digital-guidebooks",
+      "suggestedIgCategories": ["ab-test", "guest-comms"],
+      "siblingLinks": ["automate-guest-communication-vacation-rental"],
+      "rationale": "Unique to BnBuddy — few competitors cover this well"
+    },
+    {
+      "slug": "manage-multiple-airbnb-listings",
+      "title": "How to Manage Multiple Airbnb Listings Without Burning Out",
+      "primaryKeyword": "manage multiple airbnb listings",
+      "contentType": "blog-post",
+      "wordCountTarget": 1800,
+      "productFocus": "ai-guest-assistant",
+      "suggestedIgCategories": ["occupancy-data", "superhost-tip"],
+      "siblingLinks": ["vacation-rental-channel-management", "vacation-rental-pricing-tools"],
+      "rationale": "Scaling pain point; high Reddit engagement"
+    },
+    {
+      "slug": "vacation-rental-pricing-tools",
+      "title": "Vacation Rental Pricing Tools and Strategies That Actually Work",
+      "primaryKeyword": "vacation rental pricing tools",
+      "contentType": "blog-post",
+      "wordCountTarget": 1800,
+      "productFocus": "all",
+      "suggestedIgCategories": ["occupancy-data", "ab-test"],
+      "siblingLinks": ["manage-multiple-airbnb-listings"],
+      "rationale": "Adjacent topic that software users care about"
+    },
+    {
+      "slug": "choosing-vacation-rental-software",
+      "title": "What to Look for When Choosing Vacation Rental Software",
+      "primaryKeyword": "choosing vacation rental software",
+      "contentType": "blog-post",
+      "wordCountTarget": 1800,
+      "productFocus": "all",
+      "suggestedIgCategories": ["tool-comparison", "superhost-tip"],
+      "siblingLinks": ["vacation-rental-management-software-for-beginners"],
+      "rationale": "Bottom-funnel evaluation intent"
+    }
+  ],
+
+  "refreshes": [
+    {
+      "slug": "airbnb-management",
+      "existingUrl": "/airbnb-management/",
+      "action": "refresh",
+      "issues": ["Missing H1", "Thin content", "Position 7.9 but 0% CTR"]
+    },
+    {
+      "slug": "airbnb-alternative-platforms",
+      "existingUrl": "/airbnb-alternative-platforms/",
+      "action": "refresh",
+      "issues": ["Position 7.7 but low impressions", "Needs cluster backlink"]
+    }
+  ],
+
+  "linkingRules": {
+    "strategy": "hub-and-spoke",
+    "rules": [
+      "Every supporting article links to the pillar in the first 2 paragraphs",
+      "The pillar links to every supporting article",
+      "Each supporting article links to 2-3 sibling articles (see siblingLinks)",
+      "Use descriptive anchor text containing the target article's primary keyword",
+      "Don't link outside the cluster from supporting articles (external links go in pillar)"
+    ]
+  }
+}

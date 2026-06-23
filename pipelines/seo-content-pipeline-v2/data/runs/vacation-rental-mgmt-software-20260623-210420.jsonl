@@ -1,0 +1,9 @@
+{"ts": "2026-06-23T21:04:20.944462+00:00", "agent": "DataPull", "event_id": "84dcb7eb-3c7a-4719-8e8f-2cf070104167", "tokens": {"input": 832, "output": 49}}
+{"ts": "2026-06-23T21:04:31.011255+00:00", "agent": "DataPull", "event_id": "1ac97bfc-ee3a-4f66-95a7-ee9d647dd446", "tokens": {"input": 832, "output": 49}}
+{"ts": "2026-06-23T21:04:31.016653+00:00", "agent": "DataPull", "event_id": "6b942136-4548-41aa-8012-d38d13a855ec", "tokens": {"input": 2760, "output": 98}}
+{"ts": "2026-06-23T21:04:39.096173+00:00", "agent": "DataPull", "event_id": "f7956bb7-5af9-4296-98d8-68b9d034b4ac", "tokens": {"input": 2760, "output": 98}}
+{"ts": "2026-06-23T21:04:39.105547+00:00", "agent": "DataPull", "event_id": "fd71e818-ea06-45a9-82f7-b5dcc9e430f5", "tokens": {"input": 5069, "output": 306}}
+{"ts": "2026-06-23T21:04:42.759786+00:00", "agent": "DataPull", "event_id": "ead20e4a-f5f4-455f-b85a-7b83c0350e31", "tokens": {"input": 5069, "output": 306}}
+{"ts": "2026-06-23T21:04:42.764293+00:00", "agent": "DataPull", "event_id": "bfbef448-d594-4acb-96db-554d0e6ded10", "tokens": {"input": 57940, "output": 50309}, "text_preview": "```json\n{\n  \"reddit\": {\n    \"generatedAt\": \"2026-06-23T21:00:41.169Z\",\n    \"dryRun\": false,\n    \"subreddits\": [\n      {\n        \"name\": \"airbnb_hosts\",\n        \"rssUrl\": \"https://www.reddit.com/r/airb"}
+{"ts": "2026-06-23T21:07:45.893518+00:00", "agent": "ClusterPlanner", "event_id": "569ae9ae-14e8-4db9-a906-e9e9025ef311", "tokens": {"input": 154162, "output": 93}}
+{"ts": "2026-06-23T21:08:11.102597+00:00", "agent": "ClusterPlanner", "event_id": "5163bbe1-6a46-4828-8bd8-15721feb03c1", "tokens": {"input": 154162, "output": 93}}

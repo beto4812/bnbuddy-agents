@@ -1,0 +1,79 @@
+{
+  "version": "1.0",
+  "description": "Information Gain sources — proprietary data that competitors cannot replicate. Every article must include at least 'requiredPerArticle' items from these categories.",
+  "requiredPerArticle": 2,
+  "categories": [
+    {
+      "id": "occupancy-data",
+      "label": "Occupancy & Revenue Data",
+      "description": "Real performance metrics from BnBuddy-managed properties",
+      "examples": [
+        "Our listings in Toluca average 80% occupancy at $X/night ADR",
+        "We saw a 15% booking increase after implementing dynamic pricing",
+        "Average revenue per property in our portfolio: $X/month"
+      ],
+      "source": "BnBuddy internal dashboard",
+      "applicableTo": ["property-management", "pricing", "revenue", "occupancy", "airbnb-hosting"]
+    },
+    {
+      "id": "ab-test",
+      "label": "A/B Test Results",
+      "description": "Experiments run on actual BnBuddy-managed listings",
+      "examples": [
+        "We tested professional vs phone photos — bookings increased 23%",
+        "Adding a digital guidebook QR code reduced guest questions by 40%",
+        "Switching to AI auto-responses cut our average reply time from 12min to 30sec"
+      ],
+      "source": "BnBuddy property experiments",
+      "applicableTo": ["automation", "guest-communication", "listing-optimization", "photography"]
+    },
+    {
+      "id": "tool-comparison",
+      "label": "First-Hand Tool Comparison",
+      "description": "Real experience using competitor tools side-by-side",
+      "examples": [
+        "We tested Lodgify vs Guesty for 3 months — here's what happened to our booking rate",
+        "After switching from manual to AI messaging, response time dropped from 12min to 30sec",
+        "We evaluated 5 channel managers — here's the one that worked best for small portfolios"
+      ],
+      "source": "BnBuddy team experience",
+      "applicableTo": ["software-comparison", "tools", "channel-management", "pms"]
+    },
+    {
+      "id": "guest-comms",
+      "label": "Guest Communication Templates",
+      "description": "Actual message templates and scripts with proven results",
+      "examples": [
+        "Here's the exact welcome message that gets us 100% 5-star reviews",
+        "Our check-in instructions template that eliminated late-night calls",
+        "The 3-message sequence we use to secure repeat bookings"
+      ],
+      "source": "BnBuddy AI Assistant data",
+      "applicableTo": ["guest-communication", "reviews", "check-in", "automation", "ai-assistant"]
+    },
+    {
+      "id": "market-insight",
+      "label": "Market-Specific Insights",
+      "description": "Data from specific markets BnBuddy operates in",
+      "examples": [
+        "Toluca's vacation rental market grew 18% in 2025",
+        "Semana Santa 2026 bookings were up 22% over 2025 in our properties",
+        "Average nightly rate in Metepec: $X MXN (vs $Y MXN in Toluca)"
+      ],
+      "source": "BnBuddy market analysis",
+      "applicableTo": ["market-analysis", "investment", "pricing", "seasonal-trends"]
+    },
+    {
+      "id": "superhost-tip",
+      "label": "Superhost Experience",
+      "description": "Lessons learned as a Superhost with 100% 5-star reviews, Airbnb Top 5%",
+      "examples": [
+        "The 3 things that got us into Airbnb's Top 5%",
+        "Why we stopped offering early check-in (and what we do instead)",
+        "How we maintain 100% 5-star reviews across all properties"
+      ],
+      "source": "Alberto's Superhost experience",
+      "applicableTo": ["superhost", "reviews", "guest-experience", "hosting-tips", "best-practices"]
+    }
+  ]
+}

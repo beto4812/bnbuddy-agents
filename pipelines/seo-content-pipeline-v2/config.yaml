@@ -1,0 +1,38 @@
+# SEO Content Pipeline v2 — Configuration
+# Models are accessed via Vertex AI (GCP project)
+
+gcp:
+  project: "bnbuddy-agents"
+  location: "us-east5"       # Region with Claude model availability
+
+models:
+  # Cheap: planning, research synthesis, keyword analysis
+  planner: "gemini-2.5-flash"
+  researcher: "gemini-2.5-flash"
+
+  # Premium: creative article writing
+  # TODO: Switch back to Claude once quota is approved (48h from 2025-06-23)
+  # writer: "vertex_ai/claude-sonnet-4-6"
+  writer: "gemini-2.5-pro"
+
+  # Fallback if writer model is unavailable
+  writer_fallback: "gemini-2.5-flash"
+
+defaults:
+  pillar_word_count: 3000
+  article_word_count: 1800
+  ig_required: 2              # Min information gain items per article
+  max_parallel_writers: 9     # Max concurrent writer agents
+
+paths:
+  # Relative to pipeline root
+  clusters_dir: "clusters"
+  content_dir: "content"                                  # Staging dir (validation reads from here)
+  content_output_dir: "../seo-content-pipeline/content"   # Final output (build pipeline reads from here)
+  prompts_dir: "prompts"
+  data_dir: "data"
+
+  # Relative to repo root (for existing Node.js scripts)
+  repo_root: "../.."
+  v1_scripts: "../seo-content-pipeline/scripts"
+  v1_data: "../seo-content-pipeline/data"
