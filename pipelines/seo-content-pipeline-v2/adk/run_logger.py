@@ -7,6 +7,7 @@ Processes ADK Event objects to provide:
 - Run summary with total cost estimate
 """
 
+import asyncio
 import json
 import time
 from datetime import datetime, timezone
@@ -22,6 +23,9 @@ _COST_PER_1M = {
 }
 _DEFAULT_COST = {"input": 1.00, "output": 5.00}
 
+INACTIVITY_WARN_SECS = 180
+INACTIVITY_KILL_SECS = 600
+TOKEN_WARN_THRESHOLD = 100_000
 
 class RunLogger:
     """Captures ADK pipeline events and writes structured logs.
@@ -40,6 +44,7 @@ class RunLogger:
         runs_dir: str,
         writer_model: str = "",
         planner_model: str = "",
+        total_articles: int = 1,
     ):
         self.cluster_id = cluster_id
         self.writer_model = writer_model
@@ -57,6 +62,19 @@ class RunLogger:
         self._total_input_tokens = 0
         self._total_output_tokens = 0
 
+        # Pool progress & results
+        self._pool_progress: dict[str, list[int]] = {
+            "Researcher": [0, total_articles],
+            "Writer": [0, total_articles],
+            "ArticleValidator": [0, total_articles],
+        }
+        self._validator_results: list[tuple[str, str, str]] = []
+
+        # Watchdog & token limits
+        self._last_event_time = time.monotonic()
+        self._watchdog_task: Optional[asyncio.Task] = None
+        self._warned_agents: set[str] = set()
+
         # JSONL log file
         runs_path = Path(runs_dir)
         runs_path.mkdir(parents=True, exist_ok=True)
@@ -72,6 +90,7 @@ class RunLogger:
     def process_event(self, event: Any) -> None:
         """Process a single ADK Event and log it."""
         self._event_count += 1
+        self._last_event_time = time.monotonic()
 
         author = getattr(event, "author", "unknown")
         timestamp = getattr(event, "timestamp", time.time())
@@ -93,6 +112,7 @@ class RunLogger:
 
         # Extract token usage
         usage = getattr(event, "usage_metadata", None)
+        budget_warning = False
         if usage:
             input_tokens = getattr(usage, "prompt_token_count", 0) or 0
             output_tokens = getattr(usage, "candidates_token_count", 0) or 0
@@ -109,6 +129,12 @@ class RunLogger:
                 self._agent_tokens[author]["output"] += output_tokens
                 self._total_input_tokens += input_tokens
                 self._total_output_tokens += output_tokens
+                
+                # Token budget warning
+                if input_tokens >= TOKEN_WARN_THRESHOLD and author not in self._warned_agents:
+                    self._warned_agents.add(author)
+                    budget_warning = True
+                    print(f"  ⚠️  {author} context: {_format_tokens(input_tokens)} input tokens — large context, may be slow")
 
         # Extract errors
         error_code = getattr(event, "error_code", None)
@@ -121,19 +147,74 @@ class RunLogger:
             )
             self._print_error(author, error_code, error_msg)
 
-        # Extract text content for log
+        # Extract text content and tool calls for log
         text_preview = ""
+        tool_calls = []
+        tool_responses = []
+        
         content = getattr(event, "content", None)
         if content:
             parts = getattr(content, "parts", None) or []
             for part in parts:
                 text = getattr(part, "text", None)
                 if text:
-                    text_preview = text[:300]
-                    # Stream a small snippet to the terminal for visibility
-                    preview_line = text_preview.replace("\n", " ")[:80]
-                    print(f"    ↳ {author} says: {preview_line}...")
-                    break
+                    if not text_preview:
+                        text_preview = text[:300]
+                        # Stream a small snippet to the terminal for visibility
+                        preview_line = text_preview.replace("\n", " ")[:80]
+                        print(f"    ↳ {author} says: {preview_line}...")
+                        
+                    # Item 4: Planner brief preview
+                    if author == "ClusterPlanner" and getattr(event, "turn_complete", False):
+                        try:
+                            import re
+                            json_str = re.search(r"```json(.*?)```", text, re.DOTALL)
+                            data = json.loads(json_str.group(1) if json_str else text)
+                            keywords = [v.get("primaryKeyword") for v in data.values() if isinstance(v, dict) and "primaryKeyword" in v]
+                            if not keywords and isinstance(data, list):
+                                keywords = [item.get("primaryKeyword") for item in data if isinstance(item, dict) and "primaryKeyword" in item]
+                            kw_preview = str(keywords[:5])
+                            print(f"    ↳ Plan preview: {len(keywords)} articles · keywords: {kw_preview}")
+                        except Exception:
+                            pass
+                            
+                    # Item 5: Validator table collection
+                    if author.startswith("ArticleValidator_") and getattr(event, "turn_complete", False):
+                        status = "FAIL"
+                        if "PASS" in text:
+                            status = "PASS"
+                        elif "WARN" in text:
+                            status = "WARN"
+                        import re
+                        match = re.search(r"([\d,]+)\s+words", text, re.IGNORECASE)
+                        words = match.group(1) if match else "?"
+                        slug = author.replace("ArticleValidator_", "")
+                        self._validator_results.append((slug, status, words))
+
+                # Item 1: Tool calls
+                fc = getattr(part, "function_call", None)
+                if fc:
+                    name = getattr(fc, "name", "unknown")
+                    args = getattr(fc, "args", {})
+                    args_dict = dict(args) if hasattr(args, "items") else (args if isinstance(args, dict) else {})
+                    args_str = json.dumps(args_dict)
+                    print(f"    ↳ tool_call  {name}({args_str[:100]}...)")
+                    tool_calls.append({"name": name, "args": args_dict})
+                    
+                fr = getattr(part, "function_response", None)
+                if fr:
+                    name = getattr(fr, "name", "unknown")
+                    resp = getattr(fr, "response", {})
+                    resp_dict = dict(resp) if hasattr(resp, "items") else (resp if isinstance(resp, dict) else {})
+                    result = resp_dict.get("result", "")
+                    if name == "write_file":
+                        summary = str(result)[:80]
+                    elif name == "search_exa":
+                        summary = f"Exa search returned {len(str(result))} chars"
+                    else:
+                        summary = str(result)[:80]
+                    print(f"    ↳ tool_resp  {name} → {summary}")
+                    tool_responses.append({"name": name, "response": summary})
 
         # Write JSONL line
         log_entry = {
@@ -145,7 +226,15 @@ class RunLogger:
             "error": error_code,
             "error_msg": error_msg,
             "text_preview": text_preview[:200] if text_preview else None,
+            "running_cost_usd": self._estimate_cost() if self._total_input_tokens > 0 else None,
         }
+        if tool_calls:
+            log_entry["tool_calls"] = tool_calls
+        if tool_responses:
+            log_entry["tool_responses"] = tool_responses
+        if budget_warning:
+            log_entry["budget_warning"] = True
+            
         # Remove None values for cleaner logs
         log_entry = {k: v for k, v in log_entry.items() if v is not None}
         self._log_file.write(json.dumps(log_entry) + "\n")
@@ -162,11 +251,43 @@ class RunLogger:
         run_elapsed = time.monotonic() - self.start_time
         mins, secs = divmod(int(run_elapsed), 60)
         token_str = ""
+        cost_str = ""
         if tokens:
             inp = tokens.get("input", 0)
             out = tokens.get("output", 0)
             token_str = f", {_format_tokens(inp)} in / {_format_tokens(out)} out"
-        print(f"  [{mins:02d}:{secs:02d}] ✅ {agent} done ({elapsed:.1f}s{token_str})")
+            
+            pricing = _COST_PER_1M.get(self.writer_model if "Writer" in agent else self.planner_model, _DEFAULT_COST)
+            agent_cost = (inp / 1_000_000 * pricing["input"]) + (out / 1_000_000 * pricing["output"])
+            total_cost = self._estimate_cost()
+            cost_str = f"  ~${agent_cost:.3f}  [total: ${total_cost:.3f}]"
+
+        pool_str = ""
+        print_validators = False
+        for prefix, counts in self._pool_progress.items():
+            if agent.startswith(prefix + "_"):
+                counts[0] += 1
+                pool_str = f"  →  {prefix}Pool [{counts[0]}/{counts[1]} done]"
+                if prefix == "ArticleValidator" and counts[0] == counts[1]:
+                    print_validators = True
+                break
+
+        print(f"  [{mins:02d}:{secs:02d}] ✅ {agent} done ({elapsed:.1f}s{token_str}){cost_str}{pool_str}")
+        
+        if print_validators:
+            self._print_validator_table()
+
+    def _print_validator_table(self):
+        print(f"\n  ── Validation Results ──────────────────────────────────────")
+        passes = warns = fails = 0
+        for slug, status, words in self._validator_results:
+            icon = "✅" if status == "PASS" else "⚠️ " if status == "WARN" else "❌"
+            print(f"  {icon} {slug[:38]:<38} {status:<6} {words} words")
+            if status == "PASS": passes += 1
+            elif status == "WARN": warns += 1
+            else: fails += 1
+        print(f"  ────────────────────────────────────────────────────────────")
+        print(f"  {len(self._validator_results)} validated  ·  {passes} PASS  ·  {warns} WARN  ·  {fails} FAIL\n")
 
     def _print_error(self, agent: str, code: Optional[str], msg: Optional[str]) -> None:
         """Print error message."""
@@ -176,6 +297,7 @@ class RunLogger:
 
     def finalize(self) -> None:
         """Mark the final active agent as done and close the log file."""
+        self.stop_watchdog()
         now = time.monotonic()
         if self._active_agent and self._active_agent not in self._completed_agents:
             elapsed = now - self._agent_starts.get(self._active_agent, now)
@@ -226,6 +348,45 @@ class RunLogger:
             cost += tokens.get("input", 0) / 1_000_000 * pricing["input"]
             cost += tokens.get("output", 0) / 1_000_000 * pricing["output"]
         return cost
+
+    def start_watchdog(self, loop: asyncio.AbstractEventLoop) -> None:
+        """Start the background inactivity watchdog task."""
+        self._last_event_time = time.monotonic()
+        self._watchdog_task = loop.create_task(self._watchdog_loop())
+
+    def stop_watchdog(self) -> None:
+        """Stop the background inactivity watchdog task."""
+        if self._watchdog_task and not self._watchdog_task.done():
+            self._watchdog_task.cancel()
+
+    async def _watchdog_loop(self) -> None:
+        """Background loop to check for pipeline hangs."""
+        warned = False
+        while True:
+            try:
+                await asyncio.sleep(60)
+            except asyncio.CancelledError:
+                break
+
+            now = time.monotonic()
+            elapsed = now - self._last_event_time
+            agent = self._active_agent or "unknown"
+
+            if elapsed > INACTIVITY_KILL_SECS:
+                mins = int(INACTIVITY_KILL_SECS / 60)
+                print(f"\n  ❌  [{mins}m] Inactivity timeout — killing run. Last agent: {agent}")
+                # Raise TimeoutError to crash the run_sprint loop cleanly
+                raise TimeoutError(f"Pipeline hung for > {mins}m at {agent}")
+            elif elapsed > INACTIVITY_WARN_SECS and not warned:
+                mins = int(INACTIVITY_WARN_SECS / 60)
+                agent_tokens = self._agent_tokens.get(agent, {}).get("input", 0)
+                token_str = f" ({_format_tokens(agent_tokens)} input tokens)" if agent_tokens else ""
+                print(f"\n  ⚠️  [{mins}m] No events — {agent} may be hung{token_str}")
+                print(f"             Consider Ctrl+C and re-running with --skip-data-pull\n")
+                warned = True
+            elif elapsed < INACTIVITY_WARN_SECS and warned:
+                # Reset if activity resumed
+                warned = False
 
 
 def _format_tokens(n: int) -> str:

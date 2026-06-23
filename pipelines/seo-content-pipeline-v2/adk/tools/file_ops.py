@@ -40,6 +40,7 @@ def write_file(path: str, content: str) -> str:
         p = Path(path)
         p.parent.mkdir(parents=True, exist_ok=True)
         p.write_text(content, encoding="utf-8")
+        print(f"    [write] {path} ({len(content):,} bytes)")
         return f"[ok] Written {len(content)} bytes to {path}"
     except Exception as e:
         return f"[error] Failed to write {path}: {e}"

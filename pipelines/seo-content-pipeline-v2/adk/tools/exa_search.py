@@ -42,7 +42,6 @@ def search_exa(
             type="auto",
             num_results=num_results,
             text={"max_characters": text_length},
-            use_autoprompt=True,
         )
 
         if not results.results:

@@ -178,18 +178,25 @@ async def run_sprint(
         runs_dir=runs_dir,
         writer_model=config["models"]["writer"],
         planner_model=config["models"]["planner"],
+        total_articles=len(all_articles),
     )
 
     # Execute the pipeline with structured logging
-    async for event in runner.run_async(
-        user_id="pipeline",
-        session_id=session.id,
-        new_message=genai_types.Content(
-            role="user",
-            parts=[genai_types.Part(text=f"Execute cluster sprint for: {cluster['name']}")],
-        ),
-    ):
-        logger.process_event(event)
+    loop = asyncio.get_running_loop()
+    logger.start_watchdog(loop)
+    try:
+        async for event in runner.run_async(
+            user_id="pipeline",
+            session_id=session.id,
+            new_message=genai_types.Content(
+                role="user",
+                parts=[genai_types.Part(text=f"Execute cluster sprint for: {cluster['name']}")],
+            ),
+        ):
+            logger.process_event(event)
+    except TimeoutError as e:
+        print(f"\n[fatal] {e}")
+        sys.exit(1)
 
     # Finalize logging
     logger.finalize()
