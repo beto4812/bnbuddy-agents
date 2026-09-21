@@ -63,7 +63,7 @@ pipelines/seo-content-pipeline/
 └── page-template.html   ← HTML template for content pages
 ```
 
-> **Note:** Geo pages (Toluca, Metepec) are frozen as of 2026-05-02. No new geo pages.
+> **Note:** Geo pages are active. Current cities: Toluca, Metepec, Valle de Bravo, Malinalco, CDMX.
 
 ## Gemini / Jules Instructions
 
@@ -82,7 +82,7 @@ pipelines/seo-content-pipeline/
 - **Digital Guidebooks** — interactive property guides with QR codes
 - **Direct Booking Portal** — branded booking pages that skip OTA fees
 
-**Secondary service:** Full-service co-hosting/management in Toluca and Metepec (Mexico).
+**Secondary service:** Full-service co-hosting/management in Toluca, Metepec, and CDMX (Mexico).
 
 **Credibility signals:**
 - Superhost status

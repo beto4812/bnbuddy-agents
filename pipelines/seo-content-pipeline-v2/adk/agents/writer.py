@@ -59,7 +59,7 @@ def make_writer(
 
     # Article-specific context injected into the writer prompt.
     # Uses ADK {{key}} template syntax (doubled braces escape the f-string).
-    article_context = f"""
+    article_context_part1 = f"""
 ## Your Assignment
 
 Write a **{content_type}** article with these specifications:
@@ -82,12 +82,11 @@ Write a **{content_type}** article with these specifications:
 {json.dumps(ig_categories)}
 (Include at least 2 IG items. See the writer instructions for details.)
 
-### Enriched Brief (from Planner)
-The cluster planner produced the following enriched brief. Use the outline,
-secondary keywords, and IG guidance for your article:
+### Your Article Brief (from Planner)
+Use ONLY this brief for your article. Ignore any other articles in the cluster.
+"""
 
-{{{{cluster_plan}}}}
-
+    article_context_part2 = f"""
 ### SERP Research
 The following competitor analysis was gathered for your keyword. Use it
 to differentiate your article:
@@ -100,6 +99,7 @@ Use the write_file tool to save your article to:
 
 The file must include YAML frontmatter followed by the full markdown article.
 """
+    article_context = article_context_part1 + "\n{{article_brief_" + safe_slug + "}}\n" + article_context_part2
 
     # Determine the model object — use LiteLlm for Vertex AI models,
     # with optional fallback model support

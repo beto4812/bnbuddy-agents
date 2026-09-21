@@ -27,9 +27,32 @@ const os = require("os");
 
 // ── Config ───────────────────────────────────────────────────────────────────
 
-const KEY_PATH =
-  process.env.GSC_KEY_PATH ||
-  path.join(os.homedir(), ".config", "bnbuddy", "gsc-service-account.json");
+function resolveKeyPath() {
+  if (process.env.GSC_KEY_PATH) {
+    return process.env.GSC_KEY_PATH;
+  }
+  const defaultPath = path.join(
+    os.homedir(),
+    ".config",
+    "bnbuddy",
+    "gsc-service-account.json"
+  );
+  if (fs.existsSync(defaultPath)) {
+    return defaultPath;
+  }
+  const fallbackPath = path.join(
+    os.homedir(),
+    ".config",
+    "bnbuddy",
+    "bnbuddy-agents-service-account.json"
+  );
+  if (fs.existsSync(fallbackPath)) {
+    return fallbackPath;
+  }
+  return defaultPath;
+}
+
+const KEY_PATH = resolveKeyPath();
 
 const SITE_URL = process.env.GSC_SITE || "sc-domain:bnbuddy.com";
 const DAYS = parseInt(process.env.GSC_DAYS || "28", 10);

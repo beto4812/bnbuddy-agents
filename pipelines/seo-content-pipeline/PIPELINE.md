@@ -52,9 +52,9 @@ This document describes the complete end-to-end flow of the BnBuddy SEO pipeline
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
-> **Geo Pages Frozen (2026-05-02):** Existing geo pages (Toluca, Metepec) remain live and
-> are monitored, but **no new geo pages will be created**. This pipeline now handles
-> **product-led EN blog content** + **comparison posts** + **content refreshes** only.
+> **Geo Pages Active:** Geo pages for managed markets (Toluca, Metepec, Valle de Bravo, Malinalco, CDMX)
+> are live and monitored. This pipeline handles **geo pages** + **product-led EN blog content** +
+> **comparison posts** + **content refreshes**.
 
 All agent runs happen across two days — **Monday (data)** and **Thursday (writing)** —
 to maximize token budgets across providers. See `ORCHESTRATORS.md` for provider assignments.

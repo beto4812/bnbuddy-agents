@@ -19,7 +19,7 @@ models:
   writer_fallback: "gemini-2.5-flash"
 
 defaults:
-  pillar_word_count: 3000
+  pillar_word_count: 4000
   article_word_count: 1800
   ig_required: 2              # Min information gain items per article
   max_parallel_writers: 9     # Max concurrent writer agents

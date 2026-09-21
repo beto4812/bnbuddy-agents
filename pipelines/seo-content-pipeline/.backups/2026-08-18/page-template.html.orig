@@ -53,40 +53,8 @@
 }
 </script>
 
-<!--
-  FAQ_SCHEMA build contract:
-  build-geo-pages.js must replace the FAQ_SCHEMA token below with a JSON-LD
-  FAQPage block generated from the "Preguntas Frecuentes" H2 section of the
-  source markdown, or with an EMPTY STRING when the page has no FAQ section.
-  See BUILD-CONTRACT.md for the reference implementation.
--->
-{{FAQ_SCHEMA}}
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Administración de renta vacacional y Airbnb",
-  "name": "{{TITLE}}",
-  "description": "{{DESCRIPTION}}",
-  "url": "{{CANONICAL_URL}}",
-  "areaServed": {
-    "@type": "City",
-    "name": "{{CITY_NAME}}"
-  },
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "BnBuddy",
-    "url": "https://bnbuddy.com/es/home-es/",
-    "image": "https://bnbuddy.com/wp-content/uploads/2025/02/cropped-Logo-azul-270x270.png",
-    "priceRange": "15%-25%"
-  },
-  "inLanguage": "es-MX"
-}
-</script>
-
-<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbnbuddy.com%2Fes%2F{{URL_PATH}}%2F">
-<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbnbuddy.com%2Fes%2F{{URL_PATH}}%2F#038;format=xml">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbnbuddy.com%2Fes%2Fadministracion-renta-vacacional-{{SLUG}}%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbnbuddy.com%2Fes%2Fadministracion-renta-vacacional-{{SLUG}}%2F#038;format=xml">
 <style id="wp-img-auto-sizes-contain-inline-css" type="text/css">img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=wp-img-auto-sizes-contain-inline-css */</style>
 <style id="wp-block-paragraph-inline-css" type="text/css">.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
@@ -350,7 +318,7 @@ src="https://www.facebook.com/tr?id=724805200379519&ev=PageView&noscript=1" /></
             
 </ul>
 <h1 class="bde-heading-338-102 bde-heading">
-{{H1}}
+Administración de Renta Vacacional en {{CITY_NAME}}
 </h1>
 <div class="bde-rich-text-338-101 bde-rich-text breakdance-rich-text-styles">
 {{CONTENT_HTML}}

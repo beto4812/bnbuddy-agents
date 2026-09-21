@@ -17,6 +17,7 @@ from adk.agents.researcher import make_researcher
 from adk.agents.writer import make_writer
 from adk.agents.validator import make_article_validator, build_validation_aggregator
 from adk.agents.committer import build_committer_agent
+from adk.agents.brief_router import BriefRouter
 
 
 def build_sprint_pipeline(
@@ -84,7 +85,10 @@ def build_sprint_pipeline(
         model=cheap_model,
     )
 
-    # --- Step 3: Research Pool (parallel) ---
+    # --- Step 3: Brief Router ---
+    brief_router = BriefRouter()
+
+    # --- Step 4: Research Pool (parallel) ---
     # Create one researcher per article (pillar + supporting)
     all_articles = [cluster_config["pillar"]] + cluster_config["articles"]
     researcher_prompt = str(root / prompts_dir / "researcher.md")
@@ -158,11 +162,10 @@ def build_sprint_pipeline(
         model=cheap_model,
     )
 
-    # --- Root Pipeline ---
     steps: list[BaseAgent] = []
     if not skip_data_pull:
         steps.append(data_pull)
-    steps.extend([planner, research_pool, writer_pool, validator_pool, aggregator, committer])
+    steps.extend([planner, brief_router, research_pool, writer_pool, validator_pool, aggregator, committer])
 
     return SequentialAgent(
         name="ClusterSprint",

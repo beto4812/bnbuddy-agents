@@ -4,7 +4,7 @@ city: "Valle de Bravo"
 slug: "valle-de-bravo"
 title: "Administración de renta vacacional en Valle de Bravo - BnBuddy"
 description: "Servicio profesional de administración de renta vacacional en Valle de Bravo. Gestión integral de tu Airbnb en el Pueblo Mágico más visitado del Estado de México."
-ogImage: ""
+ogImage: "https://bnbuddy.com/wp-content/uploads/2026/08/bnbuddy-og-default.jpg"
 date: "2026-03-14"
 readingTime: "7 minutos"
 ---
