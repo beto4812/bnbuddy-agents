@@ -236,7 +236,7 @@ Monitor Agent ──────────────────▶ Research
 | Content Agent writes bad content | Bad .md file exists → skipped on next run | Delete the .md file, agent will redo it |
 | Build script fails | No HTML generated | Fix script, re-run |
 | Post-processing breaks page | Broken HTML in public/ | Revert git commit, fix |
-| Monitor Agent has no Search Console | Reports "no data" | Check gsc-service-account.json path |
+| Monitor Agent has no Search Console | Reports "no data" | Check key path (`gsc-service-account.json` or `bnbuddy-agents-service-account.json` in `~/.config/bnbuddy/` or `GSC_KEY_PATH`); see `RANKING-DATA.md` |
 
 ---
 
@@ -431,7 +431,7 @@ bnbuddy-landing/
 | 4 | Update `content-agent.md` for markdown output + refresh type | ✅ Done | Content Agent |
 | 5 | Create Content Agent cron job | ❌ Pending | Automated runs |
 | 6 | Discord channel allowlisted in cron config | ❌ Pending | Notifications |
-| 7 | Google Search Console API access | ✅ Done — `pull-ranking-data.js` + `~/.config/bnbuddy/gsc-service-account.json` | Monitor Agent |
+| 7 | Google Search Console API access | ✅ Done — `pull-ranking-data.js` + `~/.config/bnbuddy/` service account (`RANKING-DATA.md`) | Monitor Agent |
 | 8 | DataForSEO API credentials | ✅ Done — `~/.config/bnbuddy/dataforseo.env` + `pull-keyword-data.js` | Keyword Discovery |
 | 9 | Keyword queue populated | ✅ Done — `data/dataforseo/keyword-queue.json` (59 keywords) | Research Agent |
 | 10 | Test: manual content → build → verify | ❌ Pending | Confidence |

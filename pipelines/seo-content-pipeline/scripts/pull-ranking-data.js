@@ -4,20 +4,26 @@
  * pull-ranking-data.js
  *
  * Pulls Google Search Console performance data for bnbuddy.com and writes
- * it to ranking-data.json. Archives the previous data file before overwriting.
+ * it to data/ranking-data.json. Archives the previous data file before overwriting.
  *
  * Usage:
+ *   npm run pull-ranking-data
  *   node pipelines/seo-content-pipeline/scripts/pull-ranking-data.js
  *
  * Prerequisites:
- *   - npm install googleapis (project-level)
- *   - Service account key at ~/.config/bnbuddy/gsc-service-account.json
- *   - Service account added as user in Google Search Console for bnbuddy.com
+ *   - Service account key in ~/.config/bnbuddy/ (resolved in this order):
+ *       1. GSC_KEY_PATH environment variable (if specified)
+ *       2. ~/.config/bnbuddy/gsc-service-account.json (canonical path)
+ *       3. ~/.config/bnbuddy/bnbuddy-agents-service-account.json (automatic fallback)
+ *   - Service account added as a user in Google Search Console for bnbuddy.com
+ *     (active service account: bnbuddy-agents-servcie-account@bnbuddy-agents.iam.gserviceaccount.com)
  *
  * Environment variables (optional overrides):
  *   GSC_KEY_PATH  — path to service account JSON key
  *   GSC_SITE      — Search Console property (default: sc-domain:bnbuddy.com)
  *   GSC_DAYS      — number of days to look back (default: 28)
+ *
+ * See pipelines/seo-content-pipeline/RANKING-DATA.md for full agent documentation.
  */
 
 const { google } = require("googleapis");
@@ -98,7 +104,7 @@ async function main() {
   if (!fs.existsSync(KEY_PATH)) {
     console.error(`❌ Service account key not found at: ${KEY_PATH}`);
     console.error(
-      "   Place the GSC service account JSON key there, or set GSC_KEY_PATH."
+      "   Place gsc-service-account.json or bnbuddy-agents-service-account.json in ~/.config/bnbuddy/, or set GSC_KEY_PATH."
     );
     process.exit(1);
   }

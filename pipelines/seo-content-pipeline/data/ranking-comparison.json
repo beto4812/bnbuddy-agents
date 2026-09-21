@@ -1,424 +1,873 @@
 {
-  "generatedAt": "2026-06-22T19:22:26.492Z",
+  "generatedAt": "2026-09-21T23:22:43.091Z",
   "currentPeriod": {
+    "startDate": "2026-08-24",
+    "endDate": "2026-09-20",
+    "days": 28
+  },
+  "previousPeriod": {
     "startDate": "2026-05-25",
     "endDate": "2026-06-21",
     "days": 28
   },
-  "previousPeriod": {
-    "startDate": "2026-05-23",
-    "endDate": "2026-06-19",
-    "days": 28
-  },
-  "archiveCount": 7,
+  "archiveCount": 8,
   "hasMultiWeekTrends": true,
   "summary": {
-    "pagesTracked": 25,
-    "previousPagesTracked": 20,
-    "totalImpressions": 3734,
-    "prevTotalImpressions": 3799,
-    "impressionsDelta": -65,
-    "impressionsPct": "-2%",
-    "totalClicks": 48,
-    "prevTotalClicks": 43,
-    "clicksDelta": 5
+    "pagesTracked": 30,
+    "previousPagesTracked": 25,
+    "totalImpressions": 1461,
+    "prevTotalImpressions": 3734,
+    "impressionsDelta": -2273,
+    "impressionsPct": "-61%",
+    "totalClicks": 13,
+    "prevTotalClicks": 48,
+    "clicksDelta": -35
   },
   "alerts": [
     {
-      "type": "page1",
-      "emoji": "🎉",
-      "page": "/",
-      "keyword": "bnbuddy company description",
-      "position": 2
+      "type": "improvement",
+      "emoji": "📈",
+      "page": "/vacation-rental-management-software/",
+      "delta": 17,
+      "from": 71.2,
+      "to": 54.2
     },
     {
-      "type": "page1",
-      "emoji": "🎉",
-      "page": "/airbnb-alternative-platforms-for-hosts/",
-      "keyword": "airbnb alternative strategy for hosts",
-      "position": 6
+      "type": "drop",
+      "emoji": "⚠️",
+      "page": "/vacation-rental-website-builder/",
+      "delta": -17.3,
+      "from": 7.5,
+      "to": 24.8
     },
     {
-      "type": "page1",
-      "emoji": "🎉",
-      "page": "/create-your-ai-assistant-for-airbnb-in-3-easy-steps/",
-      "keyword": "bnbuddy company description",
-      "position": 5.3
+      "type": "drop",
+      "emoji": "⚠️",
+      "page": "/es/como-invertir-en-airbnb/",
+      "delta": -36.5,
+      "from": 8.5,
+      "to": 45
     },
     {
-      "type": "page1",
-      "emoji": "🎉",
-      "page": "/create-your-ai-assistant-for-airbnb-in-3-easy-steps/",
-      "keyword": "airbnb ai assistant",
-      "position": 9
+      "type": "drop",
+      "emoji": "⚠️",
+      "page": "/es/administracion-renta-vacacional-metepec/",
+      "delta": -43.5,
+      "from": 10,
+      "to": 53.5
     },
     {
-      "type": "page1",
-      "emoji": "🎉",
-      "page": "/es/blog-es/",
-      "keyword": "blog airbnb",
-      "position": 9.5
-    },
-    {
-      "type": "page1",
-      "emoji": "🎉",
-      "page": "/terms/",
-      "keyword": "bnbuddy company description",
-      "position": 3.9
+      "type": "drop",
+      "emoji": "⚠️",
+      "page": "/airbnb-management/",
+      "delta": -17.5,
+      "from": 1.7,
+      "to": 19.3
     },
     {
       "type": "improvement",
       "emoji": "📈",
-      "page": "/es/administracion-renta-vacacional-metepec/",
-      "delta": 14,
-      "from": 24,
-      "to": 10
-    },
-    {
-      "type": "newlyIndexed",
-      "emoji": "📊",
-      "page": "https://app.bnbuddy.com/rentals/beto4812/properties",
-      "position": 1,
-      "impressions": 1
-    },
-    {
-      "type": "newlyIndexed",
-      "emoji": "📊",
-      "page": "/es/administracion-renta-vacacional-toluca/",
-      "position": 1,
-      "impressions": 2
-    },
-    {
-      "type": "newlyIndexed",
-      "emoji": "📊",
-      "page": "/es/administracion-renta-vacacional/",
-      "position": 2,
-      "impressions": 1
-    },
-    {
-      "type": "newlyIndexed",
-      "emoji": "📊",
       "page": "/optimize-vacation-rental-listing/",
-      "position": 25,
+      "delta": 12.5,
+      "from": 25,
+      "to": 12.5
+    },
+    {
+      "type": "drop",
+      "emoji": "⚠️",
+      "page": "https://rentals.bnbuddy.com/",
+      "delta": -50,
+      "from": 1.6,
+      "to": 51.6
+    },
+    {
+      "type": "improvement",
+      "emoji": "📈",
+      "page": "/es/optimizar-anuncio-alquiler-vacacional/",
+      "delta": 21.3,
+      "from": 29.8,
+      "to": 8.5
+    },
+    {
+      "type": "improvement",
+      "emoji": "📈",
+      "page": "/es/blog-es/",
+      "delta": 5,
+      "from": 6,
+      "to": 1
+    },
+    {
+      "type": "newlyIndexed",
+      "emoji": "📊",
+      "page": "https://app.bnbuddy.com/",
+      "position": 6,
+      "impressions": 3
+    },
+    {
+      "type": "newlyIndexed",
+      "emoji": "📊",
+      "page": "/#ai-cohost",
+      "position": 5.8,
+      "impressions": 5
+    },
+    {
+      "type": "newlyIndexed",
+      "emoji": "📊",
+      "page": "/#demo",
+      "position": 7,
+      "impressions": 4
+    },
+    {
+      "type": "newlyIndexed",
+      "emoji": "📊",
+      "page": "/#guidebook",
+      "position": 5.8,
+      "impressions": 5
+    },
+    {
+      "type": "newlyIndexed",
+      "emoji": "📊",
+      "page": "/create-your-ai-assistant-for-airbnb-in-3-easy-steps",
+      "position": 1,
       "impressions": 1
     },
     {
       "type": "newlyIndexed",
       "emoji": "📊",
-      "page": "/vacation-rental-website-builder/",
-      "position": 7.5,
+      "page": "/es/guia-como-iniciar-en-airbnb/",
+      "position": 8,
       "impressions": 2
+    },
+    {
+      "type": "newlyIndexed",
+      "emoji": "📊",
+      "page": "/es/guias-digitales/",
+      "position": 6.1,
+      "impressions": 8
+    },
+    {
+      "type": "newlyIndexed",
+      "emoji": "📊",
+      "page": "/es/herramientas/calculadora-comision-airbnb-mexico/",
+      "position": 7.9,
+      "impressions": 105
+    },
+    {
+      "type": "newlyIndexed",
+      "emoji": "📊",
+      "page": "/es/precios-administracion-airbnb/",
+      "position": 9.9,
+      "impressions": 36
+    },
+    {
+      "type": "newlyIndexed",
+      "emoji": "📊",
+      "page": "/plans/",
+      "position": 9.1,
+      "impressions": 69
+    },
+    {
+      "type": "deindexed",
+      "emoji": "🚨",
+      "page": "https://rentals.bnbuddy.com/e49dea43-3d60-4b4c-8bfc-d83318f74aa6"
+    },
+    {
+      "type": "deindexed",
+      "emoji": "🚨",
+      "page": "https://app.bnbuddy.com/rentals/beto4812/properties"
+    },
+    {
+      "type": "deindexed",
+      "emoji": "🚨",
+      "page": "/es/administracion-renta-vacacional-valle-de-bravo/"
+    },
+    {
+      "type": "deindexed",
+      "emoji": "🚨",
+      "page": "/es/administracion-renta-vacacional/"
+    },
+    {
+      "type": "deindexed",
+      "emoji": "🚨",
+      "page": "/vacation-rental-property-management/"
+    },
+    {
+      "type": "newKeyword",
+      "emoji": "🔍",
+      "page": "/airbnb-management/",
+      "keyword": "bnbmanager",
+      "position": 50,
+      "impressions": 3
+    },
+    {
+      "type": "newKeyword",
+      "emoji": "🔍",
+      "page": "/",
+      "keyword": "bnbbuddy",
+      "position": 29,
+      "impressions": 5
+    },
+    {
+      "type": "newKeyword",
+      "emoji": "🔍",
+      "page": "/es/administracion-renta-vacacional-metepec/",
+      "keyword": "administración de renta vacacional en los cabos",
+      "position": 74.6,
+      "impressions": 28
+    },
+    {
+      "type": "newKeyword",
+      "emoji": "🔍",
+      "page": "/es/como-invertir-en-airbnb/",
+      "keyword": "cómo ganar más con airbnb",
+      "position": 60.9,
+      "impressions": 18
+    },
+    {
+      "type": "newKeyword",
+      "emoji": "🔍",
+      "page": "/es/como-invertir-en-airbnb/",
+      "keyword": "ganar dinero con airbnb",
+      "position": 52.3,
+      "impressions": 3
+    },
+    {
+      "type": "newKeyword",
+      "emoji": "🔍",
+      "page": "/es/como-invertir-en-airbnb/",
+      "keyword": "maximiza tus inversiones",
+      "position": 89.7,
+      "impressions": 3
+    },
+    {
+      "type": "newKeyword",
+      "emoji": "🔍",
+      "page": "/es/cuanto-ganar-airbnb-estado-mexico-2026/",
+      "keyword": "cuanto se gana en airbnb méxico",
+      "position": 6.6,
+      "impressions": 8
+    },
+    {
+      "type": "newKeyword",
+      "emoji": "🔍",
+      "page": "/es/precios-administracion-airbnb/",
+      "keyword": "empresa administracion de airbnb ciudad de mexico \"administramos tu propiedad\" -site:instagram.com -site:facebook.com -site:tiktok.com -site:youtube.com -site:linkedin.com",
+      "position": 5.5,
+      "impressions": 4
+    },
+    {
+      "type": "newKeyword",
+      "emoji": "🔍",
+      "page": "/plans/",
+      "keyword": "bnbbuddy",
+      "position": 63.2,
+      "impressions": 6
+    },
+    {
+      "type": "newKeyword",
+      "emoji": "🔍",
+      "page": "/vacation-rental-management-software/",
+      "keyword": "airbnb booking management software",
+      "position": 69.5,
+      "impressions": 19
+    },
+    {
+      "type": "newKeyword",
+      "emoji": "🔍",
+      "page": "/vacation-rental-management-software/",
+      "keyword": "airbnb booking software",
+      "position": 67.3,
+      "impressions": 13
+    },
+    {
+      "type": "newKeyword",
+      "emoji": "🔍",
+      "page": "/vacation-rental-management-software/",
+      "keyword": "best airbnb software",
+      "position": 54,
+      "impressions": 7
+    },
+    {
+      "type": "newKeyword",
+      "emoji": "🔍",
+      "page": "/vacation-rental-website-builder/",
+      "keyword": "holiday rental website builder",
+      "position": 75.8,
+      "impressions": 6
+    },
+    {
+      "type": "newKeyword",
+      "emoji": "🔍",
+      "page": "/vacation-rental-website-builder/",
+      "keyword": "best website builder for vacation rentals",
+      "position": 71,
+      "impressions": 4
+    },
+    {
+      "type": "newKeyword",
+      "emoji": "🔍",
+      "page": "/vacation-rental-website-builder/",
+      "keyword": "best website builder for rental properties",
+      "position": 66.7,
+      "impressions": 3
+    },
+    {
+      "type": "newKeyword",
+      "emoji": "🔍",
+      "page": "/vacation-rental-website-builder/",
+      "keyword": "best website builder for short term rentals",
+      "position": 64.7,
+      "impressions": 3
     }
   ],
   "newlyIndexed": [
     {
-      "page": "https://app.bnbuddy.com/rentals/beto4812/properties",
+      "page": "https://app.bnbuddy.com/",
+      "impressions": 3,
+      "clicks": 0,
+      "position": 6
+    },
+    {
+      "page": "/#ai-cohost",
+      "impressions": 5,
+      "clicks": 0,
+      "position": 5.8
+    },
+    {
+      "page": "/#demo",
+      "impressions": 4,
+      "clicks": 0,
+      "position": 7
+    },
+    {
+      "page": "/#guidebook",
+      "impressions": 5,
+      "clicks": 0,
+      "position": 5.8
+    },
+    {
+      "page": "/create-your-ai-assistant-for-airbnb-in-3-easy-steps",
       "impressions": 1,
       "clicks": 0,
       "position": 1
     },
     {
-      "page": "/es/administracion-renta-vacacional-toluca/",
+      "page": "/es/guia-como-iniciar-en-airbnb/",
       "impressions": 2,
       "clicks": 0,
-      "position": 1
+      "position": 8
+    },
+    {
+      "page": "/es/guias-digitales/",
+      "impressions": 8,
+      "clicks": 0,
+      "position": 6.1
+    },
+    {
+      "page": "/es/herramientas/calculadora-comision-airbnb-mexico/",
+      "impressions": 105,
+      "clicks": 0,
+      "position": 7.9
+    },
+    {
+      "page": "/es/precios-administracion-airbnb/",
+      "impressions": 36,
+      "clicks": 0,
+      "position": 9.9
+    },
+    {
+      "page": "/plans/",
+      "impressions": 69,
+      "clicks": 0,
+      "position": 9.1
+    }
+  ],
+  "deindexed": [
+    {
+      "page": "https://rentals.bnbuddy.com/e49dea43-3d60-4b4c-8bfc-d83318f74aa6",
+      "previousImpressions": 3,
+      "previousPosition": 5
+    },
+    {
+      "page": "https://app.bnbuddy.com/rentals/beto4812/properties",
+      "previousImpressions": 1,
+      "previousPosition": 1
+    },
+    {
+      "page": "/es/administracion-renta-vacacional-valle-de-bravo/",
+      "previousImpressions": 1,
+      "previousPosition": 9
     },
     {
       "page": "/es/administracion-renta-vacacional/",
-      "impressions": 1,
-      "clicks": 0,
-      "position": 2
-    },
-    {
-      "page": "/optimize-vacation-rental-listing/",
-      "impressions": 1,
-      "clicks": 0,
-      "position": 25
-    },
-    {
-      "page": "/vacation-rental-website-builder/",
-      "impressions": 2,
-      "clicks": 0,
-      "position": 7.5
-    }
-  ],
-  "deindexed": [],
-  "newKeywords": [],
-  "pageChanges": [
-    {
-      "page": "/vacation-rental-management-software/",
-      "position": 71.2,
-      "impressions": 2473,
-      "clicks": 0,
-      "ctr": 0,
-      "prevPosition": 70.9,
-      "positionDelta": -0.2,
-      "prevImpressions": 2575,
-      "impressionsDelta": -102,
-      "impressionsPct": "-4%",
-      "oldestPosition": 56.3,
-      "trendDelta": -14.9,
-      "oldestImpressions": 1572,
-      "trendImpressionsDelta": 901,
-      "trendImpressionsPct": "+57%"
-    },
-    {
-      "page": "/",
-      "position": 3.6,
-      "impressions": 270,
-      "clicks": 45,
-      "ctr": 16.7,
-      "prevPosition": 3.7,
-      "positionDelta": 0.1,
-      "prevImpressions": 260,
-      "impressionsDelta": 10,
-      "impressionsPct": "+4%",
-      "oldestPosition": 2.1,
-      "trendDelta": -1.5,
-      "oldestImpressions": 108,
-      "trendImpressionsDelta": 162,
-      "trendImpressionsPct": "+150%"
-    },
-    {
-      "page": "/create-your-ai-assistant-for-airbnb-in-3-easy-steps/",
-      "position": 5.9,
-      "impressions": 242,
-      "clicks": 2,
-      "ctr": 0.8,
-      "prevPosition": 5.9,
-      "positionDelta": 0,
-      "prevImpressions": 236,
-      "impressionsDelta": 6,
-      "impressionsPct": "+3%",
-      "oldestPosition": 7.4,
-      "trendDelta": 1.5,
-      "oldestImpressions": 42,
-      "trendImpressionsDelta": 200,
-      "trendImpressionsPct": "+476%"
+      "previousImpressions": 1,
+      "previousPosition": 2
     },
     {
       "page": "/vacation-rental-property-management/",
-      "position": 70.8,
-      "impressions": 118,
-      "clicks": 0,
-      "ctr": 0,
-      "prevPosition": 68.9,
-      "positionDelta": -2,
-      "prevImpressions": 150,
-      "impressionsDelta": -32,
-      "impressionsPct": "-21%",
-      "oldestPosition": 31.3,
-      "trendDelta": -39.6,
-      "oldestImpressions": 64,
-      "trendImpressionsDelta": 54,
-      "trendImpressionsPct": "+84%"
-    },
-    {
-      "page": "/about-us/",
-      "position": 3,
-      "impressions": 117,
-      "clicks": 0,
-      "ctr": 0,
-      "prevPosition": 2.7,
-      "positionDelta": -0.2,
-      "prevImpressions": 108,
-      "impressionsDelta": 9,
-      "impressionsPct": "+8%",
-      "oldestPosition": 1.5,
-      "trendDelta": -1.5,
-      "oldestImpressions": 2,
-      "trendImpressionsDelta": 115,
-      "trendImpressionsPct": "+5750%"
-    },
+      "previousImpressions": 118,
+      "previousPosition": 70.8
+    }
+  ],
+  "newKeywords": [
     {
       "page": "/airbnb-management/",
-      "position": 1.7,
-      "impressions": 107,
-      "clicks": 0,
-      "ctr": 0,
-      "prevPosition": 1.4,
-      "positionDelta": -0.3,
-      "prevImpressions": 94,
-      "impressionsDelta": 13,
-      "impressionsPct": "+14%",
-      "oldestPosition": 9.6,
-      "trendDelta": 7.9,
-      "oldestImpressions": 23,
-      "trendImpressionsDelta": 84,
-      "trendImpressionsPct": "+365%"
+      "keyword": "bnbmanager",
+      "impressions": 3,
+      "position": 50
     },
     {
-      "page": "/blog/",
-      "position": 3.3,
-      "impressions": 106,
-      "clicks": 0,
-      "ctr": 0,
-      "prevPosition": 3.2,
-      "positionDelta": -0.1,
-      "prevImpressions": 104,
-      "impressionsDelta": 2,
-      "impressionsPct": "+2%",
-      "oldestPosition": 4.9,
-      "trendDelta": 1.6,
-      "oldestImpressions": 76,
-      "trendImpressionsDelta": 30,
-      "trendImpressionsPct": "+39%"
-    },
-    {
-      "page": "/terms/",
-      "position": 2.8,
-      "impressions": 79,
-      "clicks": 0,
-      "ctr": 0,
-      "prevPosition": 2.9,
-      "positionDelta": 0.1,
-      "prevImpressions": 72,
-      "impressionsDelta": 7,
-      "impressionsPct": "+10%",
-      "oldestPosition": 3.4,
-      "trendDelta": 0.6,
-      "oldestImpressions": 24,
-      "trendImpressionsDelta": 55,
-      "trendImpressionsPct": "+229%"
-    },
-    {
-      "page": "https://rentals.bnbuddy.com/",
-      "position": 1.6,
-      "impressions": 53,
-      "clicks": 0,
-      "ctr": 0,
-      "prevPosition": 1.5,
-      "positionDelta": -0.1,
-      "prevImpressions": 53,
-      "impressionsDelta": 0,
-      "impressionsPct": "+0%"
-    },
-    {
-      "page": "/es/home-es/",
-      "position": 2.5,
-      "impressions": 38,
-      "clicks": 0,
-      "ctr": 0,
-      "prevPosition": 2.5,
-      "positionDelta": 0,
-      "prevImpressions": 38,
-      "impressionsDelta": 0,
-      "impressionsPct": "+0%",
-      "oldestPosition": 4,
-      "trendDelta": 1.5,
-      "oldestImpressions": 26,
-      "trendImpressionsDelta": 12,
-      "trendImpressionsPct": "+46%"
-    },
-    {
-      "page": "/privacy/",
-      "position": 3.6,
-      "impressions": 37,
-      "clicks": 0,
-      "ctr": 0,
-      "prevPosition": 2,
-      "positionDelta": -1.6,
-      "prevImpressions": 33,
-      "impressionsDelta": 4,
-      "impressionsPct": "+12%",
-      "oldestPosition": 2.9,
-      "trendDelta": -0.7,
-      "oldestImpressions": 36,
-      "trendImpressionsDelta": 1,
-      "trendImpressionsPct": "+3%"
-    },
-    {
-      "page": "/es/optimizar-anuncio-alquiler-vacacional/",
-      "position": 29.8,
-      "impressions": 28,
-      "clicks": 0,
-      "ctr": 0,
-      "prevPosition": 26.6,
-      "positionDelta": -3.3,
-      "prevImpressions": 29,
-      "impressionsDelta": -1,
-      "impressionsPct": "-3%"
-    },
-    {
-      "page": "/es/cuanto-ganar-airbnb-estado-mexico-2026/",
-      "position": 6.8,
-      "impressions": 20,
-      "clicks": 0,
-      "ctr": 0,
-      "prevPosition": 7.9,
-      "positionDelta": 1,
-      "prevImpressions": 17,
-      "impressionsDelta": 3,
-      "impressionsPct": "+18%"
-    },
-    {
-      "page": "/airbnb-alternative-platforms-for-hosts/",
-      "position": 10.4,
-      "impressions": 16,
-      "clicks": 0,
-      "ctr": 0,
-      "prevPosition": 10.4,
-      "positionDelta": 0,
-      "prevImpressions": 16,
-      "impressionsDelta": 0,
-      "impressionsPct": "+0%",
-      "oldestPosition": 7.5,
-      "trendDelta": -2.9,
-      "oldestImpressions": 6,
-      "trendImpressionsDelta": 10,
-      "trendImpressionsPct": "+167%"
-    },
-    {
-      "page": "/es/administracion-renta-vacacional-malinalco/",
-      "position": 3.8,
-      "impressions": 6,
-      "clicks": 0,
-      "ctr": 0,
-      "prevPosition": 6.5,
-      "positionDelta": 2.7,
-      "prevImpressions": 2,
-      "impressionsDelta": 4,
-      "impressionsPct": "+200%"
+      "page": "/",
+      "keyword": "bnbbuddy",
+      "impressions": 5,
+      "position": 29
     },
     {
       "page": "/es/administracion-renta-vacacional-metepec/",
-      "position": 10,
-      "impressions": 6,
-      "clicks": 0,
-      "ctr": 0,
-      "prevPosition": 24,
-      "positionDelta": 14,
-      "prevImpressions": 2,
-      "impressionsDelta": 4,
-      "impressionsPct": "+200%"
+      "keyword": "administración de renta vacacional en los cabos",
+      "impressions": 28,
+      "position": 74.6
     },
     {
-      "page": "/es/blog-es/",
-      "position": 6,
+      "page": "/es/como-invertir-en-airbnb/",
+      "keyword": "cómo ganar más con airbnb",
+      "impressions": 18,
+      "position": 60.9
+    },
+    {
+      "page": "/es/como-invertir-en-airbnb/",
+      "keyword": "ganar dinero con airbnb",
+      "impressions": 3,
+      "position": 52.3
+    },
+    {
+      "page": "/es/como-invertir-en-airbnb/",
+      "keyword": "maximiza tus inversiones",
+      "impressions": 3,
+      "position": 89.7
+    },
+    {
+      "page": "/es/cuanto-ganar-airbnb-estado-mexico-2026/",
+      "keyword": "cuanto se gana en airbnb méxico",
+      "impressions": 8,
+      "position": 6.6
+    },
+    {
+      "page": "/es/precios-administracion-airbnb/",
+      "keyword": "empresa administracion de airbnb ciudad de mexico \"administramos tu propiedad\" -site:instagram.com -site:facebook.com -site:tiktok.com -site:youtube.com -site:linkedin.com",
+      "impressions": 4,
+      "position": 5.5
+    },
+    {
+      "page": "/plans/",
+      "keyword": "bnbbuddy",
+      "impressions": 6,
+      "position": 63.2
+    },
+    {
+      "page": "/vacation-rental-management-software/",
+      "keyword": "airbnb booking management software",
+      "impressions": 19,
+      "position": 69.5
+    },
+    {
+      "page": "/vacation-rental-management-software/",
+      "keyword": "airbnb booking software",
+      "impressions": 13,
+      "position": 67.3
+    },
+    {
+      "page": "/vacation-rental-management-software/",
+      "keyword": "best airbnb software",
+      "impressions": 7,
+      "position": 54
+    },
+    {
+      "page": "/vacation-rental-website-builder/",
+      "keyword": "holiday rental website builder",
+      "impressions": 6,
+      "position": 75.8
+    },
+    {
+      "page": "/vacation-rental-website-builder/",
+      "keyword": "best website builder for vacation rentals",
+      "impressions": 4,
+      "position": 71
+    },
+    {
+      "page": "/vacation-rental-website-builder/",
+      "keyword": "best website builder for rental properties",
+      "impressions": 3,
+      "position": 66.7
+    },
+    {
+      "page": "/vacation-rental-website-builder/",
+      "keyword": "best website builder for short term rentals",
+      "impressions": 3,
+      "position": 64.7
+    }
+  ],
+  "pageChanges": [
+    {
+      "page": "/vacation-rental-management-software/",
+      "position": 54.2,
+      "impressions": 368,
+      "clicks": 0,
+      "ctr": 0,
+      "prevPosition": 71.2,
+      "positionDelta": 17,
+      "prevImpressions": 2473,
+      "impressionsDelta": -2105,
+      "impressionsPct": "-85%",
+      "oldestPosition": 56.3,
+      "trendDelta": 2.1,
+      "oldestImpressions": 1572,
+      "trendImpressionsDelta": -1204,
+      "trendImpressionsPct": "-77%"
+    },
+    {
+      "page": "/",
+      "position": 8.3,
+      "impressions": 248,
+      "clicks": 9,
+      "ctr": 3.6,
+      "prevPosition": 3.6,
+      "positionDelta": -4.7,
+      "prevImpressions": 270,
+      "impressionsDelta": -22,
+      "impressionsPct": "-8%",
+      "oldestPosition": 2.1,
+      "trendDelta": -6.1,
+      "oldestImpressions": 108,
+      "trendImpressionsDelta": 140,
+      "trendImpressionsPct": "+130%"
+    },
+    {
+      "page": "/es/herramientas/calculadora-comision-airbnb-mexico/",
+      "position": 7.9,
+      "impressions": 105,
+      "clicks": 0,
+      "ctr": 0,
+      "prevPosition": null,
+      "positionDelta": null,
+      "prevImpressions": null,
+      "impressionsDelta": null
+    },
+    {
+      "page": "/create-your-ai-assistant-for-airbnb-in-3-easy-steps/",
+      "position": 9.4,
+      "impressions": 102,
+      "clicks": 1,
+      "ctr": 1,
+      "prevPosition": 5.9,
+      "positionDelta": -3.5,
+      "prevImpressions": 242,
+      "impressionsDelta": -140,
+      "impressionsPct": "-58%",
+      "oldestPosition": 7.4,
+      "trendDelta": -2,
+      "oldestImpressions": 42,
+      "trendImpressionsDelta": 60,
+      "trendImpressionsPct": "+143%"
+    },
+    {
+      "page": "/vacation-rental-website-builder/",
+      "position": 24.8,
+      "impressions": 79,
+      "clicks": 0,
+      "ctr": 0,
+      "prevPosition": 7.5,
+      "positionDelta": -17.3,
+      "prevImpressions": 2,
+      "impressionsDelta": 77,
+      "impressionsPct": "+3850%",
+      "oldestPosition": 40.2,
+      "trendDelta": 15.4,
+      "oldestImpressions": 549,
+      "trendImpressionsDelta": -470,
+      "trendImpressionsPct": "-86%"
+    },
+    {
+      "page": "/plans/",
+      "position": 9.1,
+      "impressions": 69,
+      "clicks": 0,
+      "ctr": 0,
+      "prevPosition": null,
+      "positionDelta": null,
+      "prevImpressions": null,
+      "impressionsDelta": null
+    },
+    {
+      "page": "/blog/",
+      "position": 4.7,
+      "impressions": 59,
+      "clicks": 0,
+      "ctr": 0,
+      "prevPosition": 3.3,
+      "positionDelta": -1.4,
+      "prevImpressions": 106,
+      "impressionsDelta": -47,
+      "impressionsPct": "-44%",
+      "oldestPosition": 4.9,
+      "trendDelta": 0.2,
+      "oldestImpressions": 76,
+      "trendImpressionsDelta": -17,
+      "trendImpressionsPct": "-22%"
+    },
+    {
+      "page": "/about-us/",
+      "position": 2.7,
+      "impressions": 51,
+      "clicks": 0,
+      "ctr": 0,
+      "prevPosition": 3,
+      "positionDelta": 0.2,
+      "prevImpressions": 117,
+      "impressionsDelta": -66,
+      "impressionsPct": "-56%",
+      "oldestPosition": 1.5,
+      "trendDelta": -1.2,
+      "oldestImpressions": 2,
+      "trendImpressionsDelta": 49,
+      "trendImpressionsPct": "+2450%"
+    },
+    {
+      "page": "/terms/",
+      "position": 3.7,
+      "impressions": 51,
+      "clicks": 0,
+      "ctr": 0,
+      "prevPosition": 2.8,
+      "positionDelta": -0.9,
+      "prevImpressions": 79,
+      "impressionsDelta": -28,
+      "impressionsPct": "-35%",
+      "oldestPosition": 3.4,
+      "trendDelta": -0.3,
+      "oldestImpressions": 24,
+      "trendImpressionsDelta": 27,
+      "trendImpressionsPct": "+113%"
+    },
+    {
+      "page": "/es/cuanto-ganar-airbnb-estado-mexico-2026/",
+      "position": 7.2,
+      "impressions": 48,
+      "clicks": 1,
+      "ctr": 2.1,
+      "prevPosition": 6.8,
+      "positionDelta": -0.4,
+      "prevImpressions": 20,
+      "impressionsDelta": 28,
+      "impressionsPct": "+140%"
+    },
+    {
+      "page": "/es/como-invertir-en-airbnb/",
+      "position": 45,
+      "impressions": 47,
+      "clicks": 0,
+      "ctr": 0,
+      "prevPosition": 8.5,
+      "positionDelta": -36.5,
+      "prevImpressions": 2,
+      "impressionsDelta": 45,
+      "impressionsPct": "+2250%"
+    },
+    {
+      "page": "/es/administracion-renta-vacacional-metepec/",
+      "position": 53.5,
+      "impressions": 40,
+      "clicks": 0,
+      "ctr": 0,
+      "prevPosition": 10,
+      "positionDelta": -43.5,
+      "prevImpressions": 6,
+      "impressionsDelta": 34,
+      "impressionsPct": "+567%"
+    },
+    {
+      "page": "/es/precios-administracion-airbnb/",
+      "position": 9.9,
+      "impressions": 36,
+      "clicks": 0,
+      "ctr": 0,
+      "prevPosition": null,
+      "positionDelta": null,
+      "prevImpressions": null,
+      "impressionsDelta": null
+    },
+    {
+      "page": "/airbnb-management/",
+      "position": 19.3,
+      "impressions": 35,
+      "clicks": 1,
+      "ctr": 2.9,
+      "prevPosition": 1.7,
+      "positionDelta": -17.5,
+      "prevImpressions": 107,
+      "impressionsDelta": -72,
+      "impressionsPct": "-67%",
+      "oldestPosition": 9.6,
+      "trendDelta": -9.6,
+      "oldestImpressions": 23,
+      "trendImpressionsDelta": 12,
+      "trendImpressionsPct": "+52%"
+    },
+    {
+      "page": "/privacy/",
+      "position": 13.4,
+      "impressions": 25,
+      "clicks": 0,
+      "ctr": 0,
+      "prevPosition": 3.6,
+      "positionDelta": -9.8,
+      "prevImpressions": 37,
+      "impressionsDelta": -12,
+      "impressionsPct": "-32%",
+      "oldestPosition": 2.9,
+      "trendDelta": -10.5,
+      "oldestImpressions": 36,
+      "trendImpressionsDelta": -11,
+      "trendImpressionsPct": "-31%"
+    },
+    {
+      "page": "/optimize-vacation-rental-listing/",
+      "position": 12.5,
+      "impressions": 21,
+      "clicks": 1,
+      "ctr": 4.8,
+      "prevPosition": 25,
+      "positionDelta": 12.5,
+      "prevImpressions": 1,
+      "impressionsDelta": 20,
+      "impressionsPct": "+2000%",
+      "oldestPosition": 53,
+      "trendDelta": 40.5,
+      "oldestImpressions": 260,
+      "trendImpressionsDelta": -239,
+      "trendImpressionsPct": "-92%"
+    },
+    {
+      "page": "https://rentals.bnbuddy.com/",
+      "position": 51.6,
+      "impressions": 17,
+      "clicks": 0,
+      "ctr": 0,
+      "prevPosition": 1.6,
+      "positionDelta": -50,
+      "prevImpressions": 53,
+      "impressionsDelta": -36,
+      "impressionsPct": "-68%"
+    },
+    {
+      "page": "/es/home-es/",
+      "position": 6.4,
+      "impressions": 14,
+      "clicks": 0,
+      "ctr": 0,
+      "prevPosition": 2.5,
+      "positionDelta": -4,
+      "prevImpressions": 38,
+      "impressionsDelta": -24,
+      "impressionsPct": "-63%",
+      "oldestPosition": 4,
+      "trendDelta": -2.4,
+      "oldestImpressions": 26,
+      "trendImpressionsDelta": -12,
+      "trendImpressionsPct": "-46%"
+    },
+    {
+      "page": "/airbnb-alternative-platforms-for-hosts/",
+      "position": 9.9,
+      "impressions": 11,
+      "clicks": 0,
+      "ctr": 0,
+      "prevPosition": 10.4,
+      "positionDelta": 0.5,
+      "prevImpressions": 16,
+      "impressionsDelta": -5,
+      "impressionsPct": "-31%",
+      "oldestPosition": 7.5,
+      "trendDelta": -2.4,
+      "oldestImpressions": 6,
+      "trendImpressionsDelta": 5,
+      "trendImpressionsPct": "+83%"
+    },
+    {
+      "page": "/es/guias-digitales/",
+      "position": 6.1,
+      "impressions": 8,
+      "clicks": 0,
+      "ctr": 0,
+      "prevPosition": null,
+      "positionDelta": null,
+      "prevImpressions": null,
+      "impressionsDelta": null,
+      "oldestPosition": 6.5,
+      "trendDelta": 0.4,
+      "oldestImpressions": 2,
+      "trendImpressionsDelta": 6,
+      "trendImpressionsPct": "+300%"
+    },
+    {
+      "page": "/#ai-cohost",
+      "position": 5.8,
       "impressions": 5,
       "clicks": 0,
       "ctr": 0,
-      "prevPosition": 5.3,
-      "positionDelta": -0.8,
-      "prevImpressions": 4,
-      "impressionsDelta": 1,
-      "impressionsPct": "+25%"
+      "prevPosition": null,
+      "positionDelta": null,
+      "prevImpressions": null,
+      "impressionsDelta": null
     },
     {
-      "page": "https://rentals.bnbuddy.com/e49dea43-3d60-4b4c-8bfc-d83318f74aa6",
-      "position": 5,
+      "page": "/#guidebook",
+      "position": 5.8,
+      "impressions": 5,
+      "clicks": 0,
+      "ctr": 0,
+      "prevPosition": null,
+      "positionDelta": null,
+      "prevImpressions": null,
+      "impressionsDelta": null
+    },
+    {
+      "page": "/#demo",
+      "position": 7,
+      "impressions": 4,
+      "clicks": 0,
+      "ctr": 0,
+      "prevPosition": null,
+      "positionDelta": null,
+      "prevImpressions": null,
+      "impressionsDelta": null
+    },
+    {
+      "page": "https://app.bnbuddy.com/",
+      "position": 6,
       "impressions": 3,
-      "clicks": 1,
-      "ctr": 33.3,
-      "prevPosition": 5,
-      "positionDelta": 0,
-      "prevImpressions": 3,
-      "impressionsDelta": 0,
-      "impressionsPct": "+0%"
+      "clicks": 0,
+      "ctr": 0,
+      "prevPosition": null,
+      "positionDelta": null,
+      "prevImpressions": null,
+      "impressionsDelta": null
     },
     {
-      "page": "/es/administracion-renta-vacacional-toluca/",
-      "position": 1,
+      "page": "/es/administracion-renta-vacacional-malinalco/",
+      "position": 8.7,
+      "impressions": 3,
+      "clicks": 0,
+      "ctr": 0,
+      "prevPosition": 3.8,
+      "positionDelta": -4.8,
+      "prevImpressions": 6,
+      "impressionsDelta": -3,
+      "impressionsPct": "-50%"
+    },
+    {
+      "page": "/es/guia-como-iniciar-en-airbnb/",
+      "position": 8,
       "impressions": 2,
       "clicks": 0,
       "ctr": 0,
@@ -428,35 +877,19 @@
       "impressionsDelta": null
     },
     {
-      "page": "/es/como-invertir-en-airbnb/",
+      "page": "/es/optimizar-anuncio-alquiler-vacacional/",
       "position": 8.5,
       "impressions": 2,
       "clicks": 0,
       "ctr": 0,
-      "prevPosition": 8.5,
-      "positionDelta": 0,
-      "prevImpressions": 2,
-      "impressionsDelta": 0,
-      "impressionsPct": "+0%"
+      "prevPosition": 29.8,
+      "positionDelta": 21.3,
+      "prevImpressions": 28,
+      "impressionsDelta": -26,
+      "impressionsPct": "-93%"
     },
     {
-      "page": "/vacation-rental-website-builder/",
-      "position": 7.5,
-      "impressions": 2,
-      "clicks": 0,
-      "ctr": 0,
-      "prevPosition": null,
-      "positionDelta": null,
-      "prevImpressions": null,
-      "impressionsDelta": null,
-      "oldestPosition": 40.2,
-      "trendDelta": 32.7,
-      "oldestImpressions": 549,
-      "trendImpressionsDelta": -547,
-      "trendImpressionsPct": "-100%"
-    },
-    {
-      "page": "https://app.bnbuddy.com/rentals/beto4812/properties",
+      "page": "/create-your-ai-assistant-for-airbnb-in-3-easy-steps",
       "position": 1,
       "impressions": 1,
       "clicks": 0,
@@ -467,104 +900,75 @@
       "impressionsDelta": null
     },
     {
-      "page": "/es/administracion-renta-vacacional-valle-de-bravo/",
-      "position": 9,
+      "page": "/es/administracion-renta-vacacional-toluca/",
+      "position": 10,
       "impressions": 1,
       "clicks": 0,
       "ctr": 0,
-      "prevPosition": 9,
-      "positionDelta": 0,
-      "prevImpressions": 1,
-      "impressionsDelta": 0,
-      "impressionsPct": "+0%"
+      "prevPosition": 1,
+      "positionDelta": -9,
+      "prevImpressions": 2,
+      "impressionsDelta": -1,
+      "impressionsPct": "-50%"
     },
     {
-      "page": "/es/administracion-renta-vacacional/",
-      "position": 2,
+      "page": "/es/blog-es/",
+      "position": 1,
       "impressions": 1,
       "clicks": 0,
       "ctr": 0,
-      "prevPosition": null,
-      "positionDelta": null,
-      "prevImpressions": null,
-      "impressionsDelta": null
-    },
-    {
-      "page": "/optimize-vacation-rental-listing/",
-      "position": 25,
-      "impressions": 1,
-      "clicks": 0,
-      "ctr": 0,
-      "prevPosition": null,
-      "positionDelta": null,
-      "prevImpressions": null,
-      "impressionsDelta": null,
-      "oldestPosition": 53,
-      "trendDelta": 28,
-      "oldestImpressions": 260,
-      "trendImpressionsDelta": -259,
-      "trendImpressionsPct": "-100%"
+      "prevPosition": 6,
+      "positionDelta": 5,
+      "prevImpressions": 5,
+      "impressionsDelta": -4,
+      "impressionsPct": "-80%"
     }
   ],
   "keywordsByPage": {
-    "/": [
+    "/airbnb-management/": [
       {
-        "keyword": "bnbuddy company description",
-        "position": 2,
-        "impressions": 32,
+        "keyword": "bnbmanager",
+        "position": 50,
+        "impressions": 3,
         "clicks": 0,
-        "prevPosition": 2,
-        "positionDelta": 0,
-        "prevImpressions": 32,
-        "isNew": false
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
       },
       {
-        "keyword": "bnbgeeks",
-        "position": 61,
-        "impressions": 4,
-        "clicks": 0,
-        "prevPosition": 61,
-        "positionDelta": 0,
-        "prevImpressions": 4,
-        "isNew": false
+        "keyword": "bnb management services",
+        "position": 7,
+        "impressions": 1,
+        "clicks": 1,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
       },
       {
-        "keyword": "bnbfinder",
-        "position": 70,
+        "keyword": "airbnb management",
+        "position": 79,
         "impressions": 1,
         "clicks": 0,
-        "prevPosition": 70,
-        "positionDelta": 0,
-        "prevImpressions": 1,
-        "isNew": false
-      }
-    ],
-    "/airbnb-alternative-platforms-for-hosts/": [
-      {
-        "keyword": "airbnb alternative strategy for hosts",
-        "position": 6,
-        "impressions": 2,
-        "clicks": 0,
-        "prevPosition": 6,
-        "positionDelta": 0,
-        "prevImpressions": 2,
-        "isNew": false
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
       },
       {
-        "keyword": "outperform airbnb competitors",
-        "position": 66,
+        "keyword": "airbnb management service",
+        "position": 52,
         "impressions": 1,
         "clicks": 0,
-        "prevPosition": 66,
-        "positionDelta": 0,
-        "prevImpressions": 1,
-        "isNew": false
-      }
-    ],
-    "/blog/": [
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
       {
-        "keyword": "bnbbuddy",
-        "position": 34,
+        "keyword": "professional airbnb management",
+        "position": 27,
         "impressions": 1,
         "clicks": 0,
         "prevPosition": null,
@@ -573,76 +977,408 @@
         "isNew": true
       }
     ],
-    "/create-your-ai-assistant-for-airbnb-in-3-easy-steps/": [
+    "https://app.bnbuddy.com/": [
       {
-        "keyword": "bnbuddy company description",
-        "position": 5.3,
+        "keyword": "buddy bnb",
+        "position": 11,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      }
+    ],
+    "/": [
+      {
+        "keyword": "bnbgeeks",
+        "position": 24.9,
         "impressions": 32,
         "clicks": 0,
-        "prevPosition": 5.3,
-        "positionDelta": 0,
-        "prevImpressions": 32,
-        "isNew": false
-      },
-      {
-        "keyword": "airbnb ai assistant",
-        "position": 9,
-        "impressions": 3,
-        "clicks": 0,
-        "prevPosition": 9.8,
-        "positionDelta": 0.8,
+        "prevPosition": 61,
+        "positionDelta": 36.1,
         "prevImpressions": 4,
         "isNew": false
       },
       {
-        "keyword": "ai b&b",
+        "keyword": "bnbbuddy",
+        "position": 29,
+        "impressions": 5,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "bnbills",
+        "position": 52.5,
+        "impressions": 2,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "buddy bnb",
+        "position": 6,
+        "impressions": 2,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "bnb copilot",
+        "position": 3,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "bnblord",
+        "position": 52,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "bnbtally",
+        "position": 66,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      }
+    ],
+    "/#ai-cohost": [
+      {
+        "keyword": "buddy bnb",
+        "position": 11,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      }
+    ],
+    "/#demo": [
+      {
+        "keyword": "buddy bnb",
+        "position": 11,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      }
+    ],
+    "/#guidebook": [
+      {
+        "keyword": "buddy bnb",
+        "position": 11,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      }
+    ],
+    "/airbnb-alternative-platforms-for-hosts/": [
+      {
+        "keyword": "airbnb alternative",
+        "position": 71,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      }
+    ],
+    "/blog/": [
+      {
+        "keyword": "bnbbuddy",
         "position": 38,
         "impressions": 1,
         "clicks": 0,
-        "prevPosition": 38,
-        "positionDelta": 0,
+        "prevPosition": 34,
+        "positionDelta": -4,
         "prevImpressions": 1,
         "isNew": false
-      },
+      }
+    ],
+    "/create-your-ai-assistant-for-airbnb-in-3-easy-steps/": [
       {
-        "keyword": "airbnb host ai assistant",
+        "keyword": "ai assistant for airbnb",
         "position": 37,
         "impressions": 1,
         "clicks": 0,
-        "prevPosition": 37,
-        "positionDelta": 0,
-        "prevImpressions": 1,
-        "isNew": false
-      }
-    ],
-    "/es/blog-es/": [
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
       {
-        "keyword": "blog airbnb",
-        "position": 9.5,
-        "impressions": 2,
+        "keyword": "ai host assistant for airbnb",
+        "position": 43,
+        "impressions": 1,
         "clicks": 0,
-        "prevPosition": 10,
-        "positionDelta": 0.5,
-        "prevImpressions": 1,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "airbnb ai assistant",
+        "position": 29,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": 9,
+        "positionDelta": -20,
+        "prevImpressions": 3,
         "isNew": false
       }
     ],
-    "/es/optimizar-anuncio-alquiler-vacacional/": [
+    "/es/administracion-renta-vacacional-metepec/": [
       {
-        "keyword": "optimizar los anuncios de alquiler vacacional",
-        "position": 29.8,
+        "keyword": "administración de renta vacacional en los cabos",
+        "position": 74.6,
         "impressions": 28,
         "clicks": 0,
-        "prevPosition": 26.6,
-        "positionDelta": -3.3,
-        "prevImpressions": 29,
-        "isNew": false
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "si",
+        "position": 2,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      }
+    ],
+    "/es/como-invertir-en-airbnb/": [
+      {
+        "keyword": "cómo ganar más con airbnb",
+        "position": 60.9,
+        "impressions": 18,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "ganar dinero con airbnb",
+        "position": 52.3,
+        "impressions": 3,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "maximiza tus inversiones",
+        "position": 89.7,
+        "impressions": 3,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "como ganar dinero con airbnb",
+        "position": 54,
+        "impressions": 2,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "inversión en bienes raíces para airbnb",
+        "position": 53,
+        "impressions": 2,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "airbnb invest",
+        "position": 52,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "airbnb investment",
+        "position": 57,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "incrementar ingresos con airbnb",
+        "position": 59,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "invertir poco capital alquiler vacacional",
+        "position": 13,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      }
+    ],
+    "/es/cuanto-ganar-airbnb-estado-mexico-2026/": [
+      {
+        "keyword": "cuanto se gana en airbnb méxico",
+        "position": 6.6,
+        "impressions": 8,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "toluca",
+        "position": 2,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "y en méxico ?",
+        "position": 10,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      }
+    ],
+    "/es/home-es/": [
+      {
+        "keyword": "bnbird",
+        "position": 31,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "buddy bnb",
+        "position": 11,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      }
+    ],
+    "/es/precios-administracion-airbnb/": [
+      {
+        "keyword": "empresa administracion de airbnb ciudad de mexico \"administramos tu propiedad\" -site:instagram.com -site:facebook.com -site:tiktok.com -site:youtube.com -site:linkedin.com",
+        "position": 5.5,
+        "impressions": 4,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "cuanto cobra un administrador de airbnb",
+        "position": 53,
+        "impressions": 2,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
       }
     ],
     "/optimize-vacation-rental-listing/": [
       {
-        "keyword": "how to boost my airbnb listing",
-        "position": 25,
+        "keyword": "airbnb listing optimization",
+        "position": 10,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "airbnb listing optimization tips",
+        "position": 11,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      }
+    ],
+    "/plans/": [
+      {
+        "keyword": "bnbbuddy",
+        "position": 63.2,
+        "impressions": 6,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "buddy bnb",
+        "position": 11,
         "impressions": 1,
         "clicks": 0,
         "prevPosition": null,
@@ -654,6 +1390,18 @@
     "/privacy/": [
       {
         "keyword": "bnbbuddy",
+        "position": 58.2,
+        "impressions": 5,
+        "clicks": 0,
+        "prevPosition": 50,
+        "positionDelta": -8.2,
+        "prevImpressions": 1,
+        "isNew": false
+      }
+    ],
+    "/terms/": [
+      {
+        "keyword": "bnbbuddy",
         "position": 50,
         "impressions": 1,
         "clicks": 0,
@@ -663,220 +1411,260 @@
         "isNew": true
       }
     ],
-    "/terms/": [
-      {
-        "keyword": "bnbuddy company description",
-        "position": 3.9,
-        "impressions": 32,
-        "clicks": 0,
-        "prevPosition": 3.9,
-        "positionDelta": 0,
-        "prevImpressions": 32,
-        "isNew": false
-      }
-    ],
     "/vacation-rental-management-software/": [
       {
+        "keyword": "best airbnb management software",
+        "position": 53.1,
+        "impressions": 43,
+        "clicks": 0,
+        "prevPosition": 73.8,
+        "positionDelta": 20.7,
+        "prevImpressions": 4,
+        "isNew": false
+      },
+      {
         "keyword": "vacation rental management software",
-        "position": 72.6,
-        "impressions": 1226,
+        "position": 50.5,
+        "impressions": 38,
         "clicks": 0,
-        "prevPosition": 72.5,
-        "positionDelta": -0.1,
-        "prevImpressions": 1308,
-        "isNew": false
-      },
-      {
-        "keyword": "vacation rental software",
-        "position": 71,
-        "impressions": 297,
-        "clicks": 0,
-        "prevPosition": 70.8,
-        "positionDelta": -0.3,
-        "prevImpressions": 305,
-        "isNew": false
-      },
-      {
-        "keyword": "best vacation rental software",
-        "position": 64.5,
-        "impressions": 69,
-        "clicks": 0,
-        "prevPosition": 64.1,
-        "positionDelta": -0.4,
-        "prevImpressions": 72,
+        "prevPosition": 72.6,
+        "positionDelta": 22.1,
+        "prevImpressions": 1226,
         "isNew": false
       },
       {
         "keyword": "vrbo management software",
-        "position": 65.2,
-        "impressions": 58,
+        "position": 63.6,
+        "impressions": 33,
         "clicks": 0,
-        "prevPosition": 64.8,
-        "positionDelta": -0.4,
+        "prevPosition": 65.2,
+        "positionDelta": 1.6,
         "prevImpressions": 58,
         "isNew": false
       },
       {
-        "keyword": "vacation rental operations software",
-        "position": 81.8,
-        "impressions": 40,
-        "clicks": 0,
-        "prevPosition": 81.5,
-        "positionDelta": -0.3,
-        "prevImpressions": 36,
-        "isNew": false
-      },
-      {
-        "keyword": "top vacation rental software",
+        "keyword": "airbnb management software",
         "position": 67.1,
-        "impressions": 38,
+        "impressions": 29,
         "clicks": 0,
-        "prevPosition": 65.8,
-        "positionDelta": -1.3,
-        "prevImpressions": 40,
+        "prevPosition": 67.6,
+        "positionDelta": 0.5,
+        "prevImpressions": 17,
         "isNew": false
       },
       {
-        "keyword": "vacation rental management system",
-        "position": 75.7,
-        "impressions": 37,
+        "keyword": "vacation rental turnover software",
+        "position": 77.3,
+        "impressions": 29,
         "clicks": 0,
-        "prevPosition": 75.7,
-        "positionDelta": 0,
-        "prevImpressions": 35,
-        "isNew": false
-      },
-      {
-        "keyword": "vacation rental property management software",
-        "position": 71.9,
-        "impressions": 37,
-        "clicks": 0,
-        "prevPosition": 72.2,
-        "positionDelta": 0.4,
-        "prevImpressions": 37,
-        "isNew": false
-      },
-      {
-        "keyword": "vacation rental software management",
-        "position": 74,
-        "impressions": 37,
-        "clicks": 0,
-        "prevPosition": 74,
-        "positionDelta": 0,
-        "prevImpressions": 41,
-        "isNew": false
-      },
-      {
-        "keyword": "vacation rental management platform",
-        "position": 77.5,
-        "impressions": 28,
-        "clicks": 0,
-        "prevPosition": 77.4,
-        "positionDelta": -0.1,
-        "prevImpressions": 28,
-        "isNew": false
-      }
-    ],
-    "/vacation-rental-property-management/": [
-      {
-        "keyword": "vacation rental management",
-        "position": 62,
-        "impressions": 32,
-        "clicks": 0,
-        "prevPosition": 62.2,
-        "positionDelta": 0.1,
-        "prevImpressions": 44,
-        "isNew": false
-      },
-      {
-        "keyword": "vacation property management",
-        "position": 70.9,
-        "impressions": 8,
-        "clicks": 0,
-        "prevPosition": 70.7,
-        "positionDelta": -0.2,
-        "prevImpressions": 10,
-        "isNew": false
-      },
-      {
-        "keyword": "vacation rental owner management",
-        "position": 76.1,
-        "impressions": 7,
-        "clicks": 0,
-        "prevPosition": 72.9,
-        "positionDelta": -3.3,
-        "prevImpressions": 9,
-        "isNew": false
-      },
-      {
-        "keyword": "vacation property manager",
-        "position": 79.5,
-        "impressions": 6,
-        "clicks": 0,
-        "prevPosition": 79,
-        "positionDelta": -0.5,
-        "prevImpressions": 9,
-        "isNew": false
-      },
-      {
-        "keyword": "managing vacation rentals",
-        "position": 78.6,
-        "impressions": 5,
-        "clicks": 0,
-        "prevPosition": 78.3,
-        "positionDelta": -0.3,
-        "prevImpressions": 7,
-        "isNew": false
-      },
-      {
-        "keyword": "managing vacation rental property",
-        "position": 83.5,
-        "impressions": 4,
-        "clicks": 0,
-        "prevPosition": 79.8,
-        "positionDelta": -3.7,
+        "prevPosition": 85.8,
+        "positionDelta": 8.5,
         "prevImpressions": 6,
         "isNew": false
       },
       {
-        "keyword": "manage vacation rental property",
-        "position": 84.3,
+        "keyword": "vacation rental software",
+        "position": 55.1,
+        "impressions": 24,
+        "clicks": 0,
+        "prevPosition": 71,
+        "positionDelta": 16,
+        "prevImpressions": 297,
+        "isNew": false
+      },
+      {
+        "keyword": "airbnb booking management software",
+        "position": 69.5,
+        "impressions": 19,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "vacation rental software airbnb",
+        "position": 65.9,
+        "impressions": 15,
+        "clicks": 0,
+        "prevPosition": 66.6,
+        "positionDelta": 0.7,
+        "prevImpressions": 5,
+        "isNew": false
+      },
+      {
+        "keyword": "airbnb booking software",
+        "position": 67.3,
+        "impressions": 13,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "best airbnb software",
+        "position": 54,
+        "impressions": 7,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      }
+    ],
+    "/vacation-rental-website-builder/": [
+      {
+        "keyword": "holiday rental website builder",
+        "position": 75.8,
+        "impressions": 6,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "best website builder for vacation rentals",
+        "position": 71,
+        "impressions": 4,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "best website builder for rental properties",
+        "position": 66.7,
         "impressions": 3,
         "clicks": 0,
-        "prevPosition": 84.3,
-        "positionDelta": 0,
-        "prevImpressions": 3,
-        "isNew": false
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
       },
       {
-        "keyword": "how to manage a vacation home",
-        "position": 81.5,
-        "impressions": 2,
+        "keyword": "best website builder for short term rentals",
+        "position": 64.7,
+        "impressions": 3,
         "clicks": 0,
-        "prevPosition": 81.5,
-        "positionDelta": 0,
-        "prevImpressions": 2,
-        "isNew": false
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
       },
       {
-        "keyword": "how to manage vacation rental property",
-        "position": 94.5,
-        "impressions": 2,
+        "keyword": "best website builder for holiday rentals",
+        "position": 63,
+        "impressions": 1,
         "clicks": 0,
-        "prevPosition": 94.5,
-        "positionDelta": 0,
-        "prevImpressions": 2,
-        "isNew": false
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
       },
       {
-        "keyword": "managing a holiday rental property",
+        "keyword": "best website builder for rental property",
+        "position": 70,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "best website builders for creating multi-language vacation rental sites?",
+        "position": 1,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "casa turistica",
+        "position": 12,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "holiday home rental website builder",
+        "position": 74,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "holiday rental website pricing",
+        "position": 1,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      }
+    ],
+    "https://rentals.bnbuddy.com/": [
+      {
+        "keyword": "bend studio apartments",
+        "position": 66,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "bnb days",
+        "position": 90,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "bouserentals",
+        "position": 68,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "brandy apartments",
         "position": 85,
-        "impressions": 2,
+        "impressions": 1,
         "clicks": 0,
-        "prevPosition": 85,
-        "positionDelta": 0,
-        "prevImpressions": 2,
-        "isNew": false
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
+      },
+      {
+        "keyword": "studio blanqui design & cozy shellter rentals",
+        "position": 29,
+        "impressions": 1,
+        "clicks": 0,
+        "prevPosition": null,
+        "positionDelta": null,
+        "prevImpressions": null,
+        "isNew": true
       }
     ]
   },
@@ -886,11 +1674,15 @@
       "status": "not in SC data"
     },
     {
-      "page": "/es/guia-como-iniciar-en-airbnb/",
+      "page": "/es/administracion-renta-vacacional/",
       "status": "not in SC data"
     },
     {
-      "page": "/es/guias-digitales/",
+      "page": "/es/administracion-renta-vacacional-valle-de-bravo/",
+      "status": "not in SC data"
+    },
+    {
+      "page": "/es/herramientas/",
       "status": "not in SC data"
     }
   ]

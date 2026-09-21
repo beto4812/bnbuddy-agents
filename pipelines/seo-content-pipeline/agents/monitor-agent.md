@@ -25,15 +25,18 @@ npm run pull-ranking-data
 ```
 
 This script (`pipelines/seo-content-pipeline/scripts/pull-ranking-data.js`):
-- Authenticates using the service account key at `~/.config/bnbuddy/gsc-service-account.json`
-- Pulls 28 days of performance data for `sc-domain:bnbuddy.com`
+- Authenticates using the service account key in `~/.config/bnbuddy/` (checks `GSC_KEY_PATH` override → `gsc-service-account.json` → `bnbuddy-agents-service-account.json`)
+- Pulls 28 days of performance data for `sc-domain:bnbuddy.com` (configurable via `GSC_SITE` and `GSC_DAYS`)
 - Archives the previous `ranking-data.json` to `data/archive/ranking-data-YYYY-MM-DD.json`
 - Writes fresh data to `pipelines/seo-content-pipeline/data/ranking-data.json`
 
+See [RANKING-DATA.md](../RANKING-DATA.md) for full technical documentation and schema details.
+
 **If the script fails** (e.g., auth error, network issue):
-- Check that the service account key exists at the expected path
-- Check that `bnbuddy-google-search-console@bnbuddy-gmail-push.iam.gserviceaccount.com` is listed as a user in [Google Search Console](https://search.google.com/search-console) → Settings → Users and permissions
-- If still failing, read the existing `ranking-data.json` as stale data and note the staleness in your report header
+- Check that `gsc-service-account.json` or `bnbuddy-agents-service-account.json` exists in `~/.config/bnbuddy/` (or pass `GSC_KEY_PATH`).
+- Check that the active service account (`bnbuddy-agents-servcie-account@bnbuddy-agents.iam.gserviceaccount.com`) is listed as a user in [Google Search Console](https://search.google.com/search-console) → Settings → Users and permissions with Read access for `sc-domain:bnbuddy.com`.
+- If GSC API is down or credentials are unavailable, do NOT fail the agent run: read the existing `pipelines/seo-content-pipeline/data/ranking-data.json` as fallback data and add a warning banner to your report header:
+  `> ⚠️ **Search Console pull failed:** Using snapshot data from YYYY-MM-DD.`
 
 ### Step 2: Run the comparison script
 

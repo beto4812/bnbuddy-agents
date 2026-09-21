@@ -105,7 +105,7 @@ En un mercado con más de 21,000 propiedades activas y una ocupación promedio c
 ## Preguntas Frecuentes sobre administración de Airbnb en CDMX
 
 **¿Cuánto se puede ganar con un Airbnb en CDMX?**
-Según AirROI, a julio de 2026 el ingreso anual promedio por propiedad activa es de **USD $15,228** (≈ MXN $263,000), con una tarifa diaria promedio de USD $125 y una ocupación de mercado del 43.3%. Es un promedio que incluye anuncios mal gestionados: las propiedades profesionalmente administradas en colonias premium como Roma Norte, Condesa y Polanco operan por encima de esa referencia. Puedes estimar tu caso con nuestra [calculadora de comisión de Airbnb](/es/calculadora-comision-airbnb-mexico/).
+Según AirROI, a julio de 2026 el ingreso anual promedio por propiedad activa es de **USD $15,228** (≈ MXN $263,000), con una tarifa diaria promedio de USD $125 y una ocupación de mercado del 43.3%. Es un promedio que incluye anuncios mal gestionados: las propiedades profesionalmente administradas en colonias premium como Roma Norte, Condesa y Polanco operan por encima de esa referencia. Puedes estimar tu caso con nuestra [calculadora de comisión de Airbnb](/es/herramientas/calculadora-comision-airbnb-mexico/).
 
 **¿Cuánto cobra un administrador de Airbnb en CDMX?**
 El rango de mercado va del **15% al 25% de los ingresos por reserva**, según el alcance del servicio (solo co-hosting digital vs. operación integral con limpieza, mantenimiento y contabilidad fiscal). Desconfía de comisiones muy por debajo de ese rango: normalmente excluyen la operación en sitio o el cumplimiento regulatorio, que en CDMX es justo donde está el riesgo.

@@ -42,23 +42,26 @@ npm install
 
 All credentials live in `~/.config/bnbuddy/` (outside the repo, never committed).
 
-#### Google Search Console — `gsc-service-account.json`
+#### Google Search Console — Service Account Key
 
 Used by: `npm run pull-ranking-data`
 
-```
-~/.config/bnbuddy/gsc-service-account.json
-```
+The script automatically searches for credentials in this order:
+1. `GSC_KEY_PATH` (environment variable override)
+2. `~/.config/bnbuddy/gsc-service-account.json` (canonical default)
+3. `~/.config/bnbuddy/bnbuddy-agents-service-account.json` (automatic fallback)
 
-Standard GCP service account JSON key. The service account must be added as a user in [Google Search Console](https://search.google.com/search-console) for `bnbuddy.com`.
+Standard GCP service account JSON key. The service account (`bnbuddy-agents-servcie-account@bnbuddy-agents.iam.gserviceaccount.com`) must be added as a user with Read permissions in [Google Search Console](https://search.google.com/search-console) for `sc-domain:bnbuddy.com`.
+
+See [RANKING-DATA.md](pipelines/seo-content-pipeline/RANKING-DATA.md) for full ranking data documentation and troubleshooting.
 
 ```json
 {
   "type": "service_account",
-  "project_id": "your-project-id",
+  "project_id": "bnbuddy-agents",
   "private_key_id": "...",
   "private_key": "-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY-----\n",
-  "client_email": "name@project.iam.gserviceaccount.com",
+  "client_email": "bnbuddy-agents-servcie-account@bnbuddy-agents.iam.gserviceaccount.com",
   "client_id": "...",
   "auth_uri": "https://oauth2.googleapis.com/auth",
   "token_uri": "https://oauth2.googleapis.com/token"

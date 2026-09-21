@@ -22,7 +22,7 @@ Provider-to-agent mapping and schedules are in `pipelines/seo-content-pipeline/O
 
 ## Commands
 
-- `npm run pull-ranking-data` — Pull fresh Search Console data
+- `npm run pull-ranking-data` — Pull fresh Search Console data (see `pipelines/seo-content-pipeline/RANKING-DATA.md`)
 - `npm run compare-rankings` — Pre-compute ranking deltas
 - `npm run pull-keyword-data` — Fetch keyword data from DataForSEO
 - `npm run generate-brief` — Generate weekly content brief

@@ -147,6 +147,8 @@ Si ya tienes una propiedad en el Estado de México — o estás considerando inv
 
 > **Cambio fiscal 2026 — personas morales:** a partir del 1 de enero de 2026, las empresas y sociedades que rentan a través de Airbnb ya no están exentas de retenciones. Las plataformas ahora deben retener **2.5% de ISR** y **50% del IVA** sobre los ingresos brutos de personas morales. Si tu propiedad está a nombre de una empresa, consulta con tu contador para adecuar tu declaración mensual.
 
+> **Cambio de comisión septiembre 2026:** Airbnb subió la comisión de anfitrión del 4% al 16% en México. Si no ajustaste tus precios, estás perdiendo el 12.5% de tu ingreso neto en cada reserva. Usa nuestra [calculadora de comisión Airbnb México](/es/herramientas/calculadora-comision-airbnb-mexico/) para calcular exactamente cuánto subir.
+
 ## Preguntas frecuentes
 
 **¿Cuánto se gana con Airbnb en el Estado de México al mes?**
@@ -159,4 +161,4 @@ Sí, siempre que elijas una ubicación con demanda sostenida y administres la pr
 No. Un servicio de administración profesional se encarga de todo: comunicación con huéspedes, limpieza, mantenimiento, precios dinámicos y reportes. Tú recibes tus ingresos sin la carga operativa diaria.
 
 **¿Qué impuestos pago por rentar en Airbnb en el Estado de México?**
-Los principales son: ISR (Impuesto Sobre la Renta), IVA (16%), e ISH (Impuesto Sobre Hospedaje, **4%** en Estado de México). Airbnb retiene y remite el ISH automáticamente en esta entidad, pero el ISR y el IVA requieren declaración mensual ante el SAT. Se recomienda consultar con un contador especializado en plataformas digitales.
+Los principales son: ISR (Impuesto Sobre la Renta), IVA (16%), e ISH (Impuesto Sobre Hospedaje, **4%** en Estado de México). Airbnb retiene y remite el ISH automáticamente en esta entidad, pero el ISR y el IVA requieren declaración mensual ante el SAT. Además, desde septiembre de 2026 la comisión de anfitrión pasó del 4% al 16% — puedes calcular el impacto exacto en tus ingresos con la [calculadora de comisión Airbnb](/es/herramientas/calculadora-comision-airbnb-mexico/). Se recomienda consultar con un contador especializado en plataformas digitales.
